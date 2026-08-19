@@ -1,0 +1,18 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: ${NAME}
+  namespace: ${TEST_NS}
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: "oci+native://${IMAGE_REF}"
+      resources:
+        requests:
+          cpu: "500m"
+          memory: "512Mi"
+        limits:
+          cpu: "2"
+          memory: "4Gi"

@@ -1,0 +1,137 @@
+=== ENOSPC experiment: 140g eStargz vs 100GB loopback chunk-cache ===
+read loop exit code: 0
+elapsed: 7.184s
+--- read loop output (last lines) ---
+COMPLETED_ALL_FILES=281 TOTAL_BYTES=150323861203
+
+--- pod status (k8s view -- does it still claim Ready?) ---
+NAME                                              READY   STATUS    RESTARTS   AGE   IP            NODE                     NOMINATED NODE   READINESS GATES
+b-estargz-enospc-140g-predictor-6c95fcf78-gpvlz   1/1     Running   0          28s   10.244.0.39   ocibench-control-plane   <none>           <none>
+[
+  {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-08-12T18:06:39Z",
+    "observedGeneration": 1,
+    "status": "True",
+    "type": "PodReadyToStartContainers"
+  },
+  {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-08-12T18:06:38Z",
+    "observedGeneration": 1,
+    "status": "True",
+    "type": "Initialized"
+  },
+  {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-08-12T18:06:59Z",
+    "observedGeneration": 1,
+    "status": "True",
+    "type": "Ready"
+  },
+  {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-08-12T18:06:59Z",
+    "observedGeneration": 1,
+    "status": "True",
+    "type": "ContainersReady"
+  },
+  {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-08-12T18:06:38Z",
+    "observedGeneration": 1,
+    "status": "True",
+    "type": "PodScheduled"
+  }
+]
+
+--- container restart count ---
+0
+--- predict still 200 after ENOSPC? (does the pod 'lie') ---
+predict_http_code=200
+
+--- final stargz chunk-cache size vs 100GB loopback ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop3       98G  7.3G   86G   8% /var/lib/containerd-stargz-grpc
+
+--- stargz-grpc log tail (around the failure) ---
+{"key":"k8s.io/842/extract-107737221-O0e7 sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/601/fs","msg":"hit layer cache \"172.31.46.168:5000/model-ballast:estargz-140g/sha256:31692d4bb27a0297ad4400adf32fc12c310940ebaf61213aa09429a977906673\"","parent":"sha256:a10cf89a0838fd98032da4b3dbf0cb1f0308cda67ecd5f2966c42ed43ac953e9","src":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:31692d4bb27a0297ad4400adf32fc12c310940ebaf61213aa09429a977906673","time":"2026-08-12T18:06:46.108653757Z"}
+{"key":"k8s.io/842/extract-107737221-O0e7 sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/601/fs","msg":"verified","parent":"sha256:a10cf89a0838fd98032da4b3dbf0cb1f0308cda67ecd5f2966c42ed43ac953e9","time":"2026-08-12T18:06:46.108671665Z"}
+{"key":"k8s.io/842/extract-107737221-O0e7 sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","level":"debug","msg":"prepared remote snapshot","parent":"sha256:a10cf89a0838fd98032da4b3dbf0cb1f0308cda67ecd5f2966c42ed43ac953e9","remote-snapshot-prepared":"true","time":"2026-08-12T18:06:46.109551893Z"}
+{"key":"k8s.io/843/extract-110421051-eH28 sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","level":"info","msg":"preparing filesystem mount at mountpoint=/var/lib/containerd-stargz-grpc/snapshotter/snapshots/602/fs","parent":"sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","time":"2026-08-12T18:06:46.111278066Z"}
+{"key":"k8s.io/843/extract-110421051-eH28 sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/602/fs","msg":"hit layer cache \"172.31.46.168:5000/model-ballast:estargz-140g/sha256:2f3d217fa9a0c9d0adcf26459a8d802d854564d858cbd3558ec5db44d5c222ae\"","parent":"sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","src":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:2f3d217fa9a0c9d0adcf26459a8d802d854564d858cbd3558ec5db44d5c222ae","time":"2026-08-12T18:06:46.111352770Z"}
+{"key":"k8s.io/843/extract-110421051-eH28 sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/602/fs","msg":"hit layer cache \"172.31.46.168:5000/model-ballast:estargz-140g/sha256:31692d4bb27a0297ad4400adf32fc12c310940ebaf61213aa09429a977906673\"","parent":"sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","src":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:31692d4bb27a0297ad4400adf32fc12c310940ebaf61213aa09429a977906673","time":"2026-08-12T18:06:46.111363296Z"}
+{"key":"k8s.io/843/extract-110421051-eH28 sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/602/fs","msg":"verified","parent":"sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","time":"2026-08-12T18:06:46.111395905Z"}
+{"key":"k8s.io/843/extract-110421051-eH28 sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","level":"debug","msg":"prepared remote snapshot","parent":"sha256:b577a2877afa7c16258ba3818aab8cedfc09ff471752f1a007baf958fa7cff83","remote-snapshot-prepared":"true","time":"2026-08-12T18:06:46.112044078Z"}
+{"key":"k8s.io/844/extract-112948525-PvRv sha256:9bcb8635fa4fb2ad0a9d9569183aba1859f0a62311b2d720b322e9784f0c93c5","level":"info","msg":"preparing filesystem mount at mountpoint=/var/lib/containerd-stargz-grpc/snapshotter/snapshots/603/fs","parent":"sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","time":"2026-08-12T18:06:46.113705694Z"}
+{"key":"k8s.io/844/extract-112948525-PvRv sha256:9bcb8635fa4fb2ad0a9d9569183aba1859f0a62311b2d720b322e9784f0c93c5","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/603/fs","msg":"hit layer cache \"172.31.46.168:5000/model-ballast:estargz-140g/sha256:2f3d217fa9a0c9d0adcf26459a8d802d854564d858cbd3558ec5db44d5c222ae\"","parent":"sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","src":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:2f3d217fa9a0c9d0adcf26459a8d802d854564d858cbd3558ec5db44d5c222ae","time":"2026-08-12T18:06:46.113756027Z"}
+{"key":"k8s.io/844/extract-112948525-PvRv sha256:9bcb8635fa4fb2ad0a9d9569183aba1859f0a62311b2d720b322e9784f0c93c5","level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/603/fs","msg":"verified","parent":"sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","time":"2026-08-12T18:06:46.113775397Z"}
+{"key":"k8s.io/844/extract-112948525-PvRv sha256:9bcb8635fa4fb2ad0a9d9569183aba1859f0a62311b2d720b322e9784f0c93c5","level":"debug","msg":"prepared remote snapshot","parent":"sha256:ee4baabe98fa5756b3d2dc9cb22c7a68cb80c433526522186643e8836d7a3a1f","remote-snapshot-prepared":"true","time":"2026-08-12T18:06:46.114480284Z"}
+{"key":"sha256:9bcb8635fa4fb2ad0a9d9569183aba1859f0a62311b2d720b322e9784f0c93c5","level":"debug","msg":"checking layer availability","time":"2026-08-12T18:06:46.277059719Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/603/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277132923Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/601/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277143427Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/594/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277180325Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/598/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277154571Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/600/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277154676Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/602/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277146281Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/596/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277189389Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/595/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277190963Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/597/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277159099Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/599/fs","msg":"checking mount point","time":"2026-08-12T18:06:46.277150860Z"}
+{"key":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:7ea2d8feb8988c476558bc5e6ec69384dd099b00588765a63e77f6750588e51c","level":"debug","msg":"cleaned up blob","time":"2026-08-12T18:06:48.710760006Z"}
+{"key":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:7ea2d8feb8988c476558bc5e6ec69384dd099b00588765a63e77f6750588e51c","level":"debug","msg":"cleaned up layer","time":"2026-08-12T18:06:48.710821557Z"}
+{"key":"k8s.io/792/sha256:73ae8eb8426a36927f7712a94393c6404eda1a88fcf2813af1862c0b10f55298","level":"debug","msg":"checking layer availability","time":"2026-08-12T18:06:48.717511163Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/551/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717560580Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/550/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717573922Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/549/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717583219Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/548/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717593134Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/547/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717601614Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/546/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717613657Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/545/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717625698Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/544/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717634431Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/543/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717642858Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/542/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.717651171Z"}
+{"key":"k8s.io/846/11bed05204f4525c565fd57e36b98780c36de415a25ef0e5c40a06e88f09c8e7","level":"debug","msg":"checking layer availability","time":"2026-08-12T18:06:48.718914251Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/605/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.718935306Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/551/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.718948727Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/550/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.718961766Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/549/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.718973302Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/548/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.718989440Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/547/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719001293Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/546/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719009902Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/545/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719017561Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/544/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719028373Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/543/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719040213Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/542/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719048946Z"}
+{"key":"k8s.io/846/11bed05204f4525c565fd57e36b98780c36de415a25ef0e5c40a06e88f09c8e7","level":"debug","msg":"checking layer availability","time":"2026-08-12T18:06:48.719643077Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/605/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719660714Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/551/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719674939Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/550/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719686879Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/549/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719694950Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/548/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719704557Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/547/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719713103Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/546/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719720079Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/545/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719727155Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/544/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719733831Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/543/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719742025Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/542/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.719749174Z"}
+{"key":"k8s.io/846/11bed05204f4525c565fd57e36b98780c36de415a25ef0e5c40a06e88f09c8e7","level":"debug","msg":"checking layer availability","time":"2026-08-12T18:06:48.723180902Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/605/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723219585Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/551/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723240139Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/550/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723268154Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/549/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723291392Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/548/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723303353Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/547/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723319890Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/546/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723334096Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/545/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723346462Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/544/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723360390Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/543/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723373063Z"}
+{"level":"debug","mount-point":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/542/fs","msg":"layer is normal snapshot(overlayfs)","time":"2026-08-12T18:06:48.723385910Z"}
+{"key":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:4aa0cb5d33af3c2e9b90082b8ceba51da48dd78dbe402408f67a3579dbc396cb","level":"debug","msg":"cleaned up blob","time":"2026-08-12T18:06:52.006065423Z"}
+{"key":"172.31.46.168:5000/model-ballast:estargz-140g/sha256:4aa0cb5d33af3c2e9b90082b8ceba51da48dd78dbe402408f67a3579dbc396cb","level":"debug","msg":"cleaned up layer","time":"2026-08-12T18:06:52.006124322Z"}
+{"layer_sha":"sha256:bbd8b9996a3989f808dcc57f33d9922ed694a1be072d704885c93dc70a06b94b","level":"info","metrics":"latency","msg":"value=10127.426018 milliseconds","operation":"background_fetch_decompress","time":"2026-08-12T18:06:53.716844671Z"}
+{"layer_sha":"sha256:bbd8b9996a3989f808dcc57f33d9922ed694a1be072d704885c93dc70a06b94b","level":"info","metrics":"latency","msg":"value=10127.478528 milliseconds","operation":"background_fetch_total","time":"2026-08-12T18:06:53.716891798Z"}
+{"level":"debug","msg":"completed to fetch all layer data in background","time":"2026-08-12T18:06:53.716906285Z"}
+{"layer_sha":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","level":"info","metrics":"latency","msg":"value=10744.478565 milliseconds","operation":"background_fetch_decompress","time":"2026-08-12T18:06:54.333707055Z"}
+{"layer_sha":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","level":"info","metrics":"latency","msg":"value=10744.521061 milliseconds","operation":"background_fetch_total","time":"2026-08-12T18:06:54.333744060Z"}
+{"level":"debug","msg":"completed to fetch all layer data in background","time":"2026-08-12T18:06:54.333750135Z"}

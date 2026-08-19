@@ -1,0 +1,8 @@
+=== fio node-host /data ===
+seqwrite: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+seqwrite: Laying out IO file (1 file / 4096MiB)
+seqwrite: (groupid=0, jobs=1): err= 0: pid=55756: Wed Aug 12 02:21:23 2026
+  write: IOPS=1053, BW=1054MiB/s (1105MB/s)(64.0GiB/62204msec); 0 zone resets
+  WRITE: bw=1054MiB/s (1105MB/s), 1054MiB/s-1054MiB/s (1105MB/s-1105MB/s), io=64.0GiB (68.7GB), run=62204-62204msec
+   READ: bw=1341MiB/s (1406MB/s), 1341MiB/s-1341MiB/s (1406MB/s-1406MB/s), io=78.6GiB (84.4GB), run=60001-60001msec
+=== fio registry-host /data ===

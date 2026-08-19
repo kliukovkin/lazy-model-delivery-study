@@ -1,0 +1,6 @@
+seqwrite: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+seqwrite: Laying out IO file (1 file / 4096MiB)
+seqwrite: (groupid=0, jobs=1): err= 0: pid=14996: Wed Aug 12 03:06:49 2026
+  write: IOPS=800, BW=801MiB/s (840MB/s)(48.0GiB/61377msec); 0 zone resets
+  WRITE: bw=801MiB/s (840MB/s), 801MiB/s-801MiB/s (840MB/s-840MB/s), io=48.0GiB (51.5GB), run=61377-61377msec
+   READ: bw=1092MiB/s (1145MB/s), 1092MiB/s-1092MiB/s (1145MB/s-1145MB/s), io=64.0GiB (68.7GB), run=60002-60002msec

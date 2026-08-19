@@ -1,0 +1,9 @@
+size_gb=14 ttfp_s=57.861 kubelet_pull=41.828s cold_read_s=1.695 cold_read_rc=0 warm_read_s=1.692 net_bytes_during_cold_read=52579
+size_gb=14 ttfp_s=17.402 kubelet_pull=59ms cold_read_s=104.941 cold_read_rc=0 warm_read_s=6.394 net_bytes_during_cold_read=15062862941
+size_gb=140 ttfp_s=17.873 kubelet_pull=1.229s cold_read_s=349.582 cold_read_rc=1 warm_read_s=31.570 net_bytes_during_cold_read=49052650433
+size_gb=14 ttfp_s=900.687 kubelet_pull=n/a cold_read_s=0.078 cold_read_rc=1 warm_read_s=0.070 net_bytes_during_cold_read=69426
+size_gb=14 ttfp_s=900.605 kubelet_pull=n/a cold_read_s=0.074 cold_read_rc=1 warm_read_s=0.067 net_bytes_during_cold_read=69268
+size_gb=14 ttfp_s=900.525 kubelet_pull=n/a cold_read_s=0.079 cold_read_rc=1 warm_read_s=0.070 net_bytes_during_cold_read=69593
+size_gb=140 ttfp_s=900.560 kubelet_pull=n/a cold_read_s=0.079 cold_read_rc=1 warm_read_s=0.069 net_bytes_during_cold_read=69729
+size_gb=14 ttfp_s=17.712 kubelet_pull=68ms cold_read_s=101.972 cold_read_rc=0 warm_read_s=6.349 net_bytes_during_cold_read=15446502343
+direct_eager_warm_read_s=1.807 (compare against estargz-14g warm_read_s in summary.txt for FUSE tax)

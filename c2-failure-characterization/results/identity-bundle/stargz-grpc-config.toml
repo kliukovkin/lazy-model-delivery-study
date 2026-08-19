@@ -1,0 +1,5 @@
+metrics_address = "0.0.0.0:9110"
+
+[[resolver.host."172.31.67.78:5000".mirrors]]
+  host = "172.31.67.78:5000"
+  insecure = true

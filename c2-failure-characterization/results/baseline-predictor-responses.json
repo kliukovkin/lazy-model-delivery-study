@@ -1,0 +1,8 @@
+=== seed=1 ===
+{"predictions": [{"file": "ballast-2.bin", "offset": 417340169, "sha256": "8130f7937fbe6a90dd54c3978cc3cc6dc9fb6450622e7b7699fd30d83bd55082"}, {"file": "ballast-3.bin", "offset": 427698730, "sha256": "ec096f5d7858635624c33d0e7141f81f2f3c9216c41fe395b3e272fa63a47901"}, {"file": "ballast-1.bin", "offset": 279682047, "sha256": "d384ad7b5c00cc4a24a1d3bd1f846fc71dc7ded68937a7ed37ab1e09800c0bbb"}]}
+=== seed=2 ===
+{"predictions": [{"file": "ballast-1.bin", "offset": 240763530, "sha256": "84cb60563e61f35e061475eaf4d3d0ec0dc2d25cedb54c5b9f9efb5f1b2605ff"}, {"file": "ballast-4.bin", "offset": 314838158, "sha256": "48539cc8e804a42c1ba1358000d84d914db6bba2ece3e6a8c39c5373c1e8fead"}, {"file": "ballast-3.bin", "offset": 390568833, "sha256": "5aaa2f2d2a4880da36dfb64db55bcddf6c8c2403801c9161512a665b14172fbc"}]}
+=== seed=3 ===
+{"predictions": [{"file": "ballast-2.bin", "offset": 342994189, "sha256": "cec35f7ec67a12cfa39e1d52aa9458fc6dc489f5b16a3b0c54815d8a3cf51503"}, {"file": "ballast-3.bin", "offset": 156430081, "sha256": "94dcd6157fc07f094561195a6824e6c91781ad8f2871618b072975f005af846e"}, {"file": "ballast-1.bin", "offset": 105459226, "sha256": "ca5f16573197bef5fcf1662d9428d28343446c30c0d6d7a2aa0ea863adb5e805"}]}
+=== seed=42 ===
+{"predictions": [{"file": "ballast-1.bin", "offset": 232741156, "sha256": "1766ce5e4a4b03982e491df72962cfbbb1eaff8c69cc04a217f8ee6abb5f7354"}, {"file": "ballast-4.bin", "offset": 348767716, "sha256": "80619486d461be426c8c1ac85b604efd3c5c77bc797a979036b19184e4714a93"}, {"file": "ballast-2.bin", "offset": 430292489, "sha256": "1f94b4e70c54f10c959e813dff26ac1adbf11a8656de9ce34fa827e525a9a773"}]}

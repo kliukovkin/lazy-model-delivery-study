@@ -1,0 +1,6 @@
+=== fio node-host /data END ===
+seqwrite: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+seqwrite: (groupid=0, jobs=1): err= 0: pid=1265574: Fri Aug 14 15:39:55 2026
+  write: IOPS=1059, BW=1060MiB/s (1111MB/s)(64.0GiB/61841msec); 0 zone resets
+  WRITE: bw=1060MiB/s (1111MB/s), 1060MiB/s-1060MiB/s (1111MB/s-1111MB/s), io=64.0GiB (68.7GB), run=61841-61841msec
+   READ: bw=1367MiB/s (1433MB/s), 1367MiB/s-1367MiB/s (1433MB/s-1433MB/s), io=80.1GiB (86.0GB), run=60001-60001msec

@@ -1,0 +1,1 @@
+invalidated: every rep failed FailedCreatePodSandBox (AlreadyExists on shared pause-image snapshot) after clean_cache() deleted /cache-part/snapshotter/* out from under the node-wide default stargz snapshotter. rc=1 in all 10 rows reflects sandbox-creation failure, not a real read attempt. Root-caused and fixed in 15-p05-pressure-matrix.sh; cluster was fully recreated to recover.

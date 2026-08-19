@@ -1,0 +1,9 @@
+=== recovery-2: free space under LIVE pod, reread SAME pod ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G   92G     0 100% /var/lib/containerd-stargz-grpc
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G   45G   42G  52% /var/lib/containerd-stargz-grpc
+--- reread ballast-2.bin after freeing space (same pod, same mount) ---
+1+0 records in
+1+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.035423 s, 118 MB/s

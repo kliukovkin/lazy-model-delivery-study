@@ -1,0 +1,6 @@
+digest=null
+size=19 bytes, time=0.001481s, speed=12829 B/s
+manifest_digest=sha256:9af59fc1ef41b86e5a047dcb304598a5fdb2c352b2164ad9a21b0e97f7901581
+blob_digest=sha256:034d6572bf287fa79604fee9be062f0683809ae3a3685bc7b0e17bd1c48c50e8
+size=2206402 bytes, time=0.009805s, speed=225028250 B/s
+size=15036978710 bytes, time=30.416024s, speed=494376868 B/s

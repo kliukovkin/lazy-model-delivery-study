@@ -1,0 +1,13 @@
+=== fio node-host /data (start) ===
+seqwrite: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+seqwrite: Laying out IO file (1 file / 4096MiB)
+seqwrite: (groupid=0, jobs=1): err= 0: pid=65422: Thu Aug 13 16:32:38 2026
+  write: IOPS=1059, BW=1059MiB/s (1110MB/s)(64.0GiB/61883msec); 0 zone resets
+  WRITE: bw=1059MiB/s (1110MB/s), 1059MiB/s-1059MiB/s (1110MB/s-1110MB/s), io=64.0GiB (68.7GB), run=61883-61883msec
+   READ: bw=1362MiB/s (1428MB/s), 1362MiB/s-1362MiB/s (1428MB/s-1428MB/s), io=79.8GiB (85.7GB), run=60001-60001msec
+=== fio cache-part (start) ===
+seqwrite: (g=0): rw=write, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=psync, iodepth=1
+seqwrite: Laying out IO file (1 file / 4096MiB)
+seqwrite: (groupid=0, jobs=1): err= 0: pid=65468: Thu Aug 13 16:34:14 2026
+  write: IOPS=1065, BW=1066MiB/s (1118MB/s)(32.0GiB/30744msec); 0 zone resets
+  WRITE: bw=1066MiB/s (1118MB/s), 1066MiB/s-1066MiB/s (1118MB/s-1118MB/s), io=32.0GiB (34.4GB), run=30744-30744msec

@@ -1,0 +1,8 @@
+=== recovery-5: restart stargz-grpc daemon UNDER the live pod ===
+SOCKET_OK
+--- testing read on the pod that was LIVE during daemon restart ---
+dd: failed to open '/mnt/models/ballast-3.bin': Stale file handle
+command terminated with exit code 1
+--- pod status after daemon restart ---
+NAME                                         READY   STATUS    RESTARTS   AGE
+b-p03-fail-140g-predictor-7df6bdf944-vzv9z   1/1     Running   0          32s

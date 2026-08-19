@@ -1,0 +1,12 @@
+=== recovery-3: kubectl delete pod (restart, NO prune) ===
+pod "b-p03-fail-140g-predictor-7df6bdf944-429j7" deleted from bench namespace
+NAME                                         READY   STATUS    RESTARTS   AGE
+b-p03-fail-140g-predictor-7df6bdf944-vzv9z   0/1     Running   0          4s
+curl-runner-65d77865d8-45x6t                 1/1     Running   0          34m
+new pod: b-p03-fail-140g-predictor-7df6bdf944-vzv9z ready=true
+1+0 records in
+1+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.00185355 s, 2.3 GB/s
+1+0 records in
+1+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.0363626 s, 115 MB/s

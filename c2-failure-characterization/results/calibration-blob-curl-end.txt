@@ -1,0 +1,5 @@
+=== curl blob download END (A-14g layer sha256:034d6572bf287fa79604fee9be062f0683809ae3a3685bc7b0e17bd1c48c50e8) ===
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0size=2206402 bytes, time=0.007075s, speed=311858939 B/s
+100 2154k  100 2154k    0     0   297M      0 --:--:-- --:--:-- --:--:--  300M

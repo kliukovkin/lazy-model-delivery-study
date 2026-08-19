@@ -1,0 +1,2 @@
+variant=A cold_s=1.883 cold_net_GB=0.191 warm_s=1.848
+variant=B cold_s=1.904 cold_net_GB=0.007 warm_s=1.847

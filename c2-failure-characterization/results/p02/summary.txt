@@ -1,0 +1,8 @@
+GOT_READY=false (expected: false -- eager pull should never succeed under real ENOSPC)
+after corrupting ballast-1.bin on the node backing store:
+  ready=True restarts=0 sklearn_predict=200
+  confirms symmetry: node/K8s health checks are blind to on-disk corruption
+  regardless of delivery path (eager or lazy) when the app does not read the
+  affected bytes -- lazy pullings novelty is that it can corrupt data itself
+  spontaneously under normal operation (ENOSPC), not that eager is somehow safer
+  once successfully unpacked.

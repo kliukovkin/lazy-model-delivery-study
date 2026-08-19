@@ -1,0 +1,27 @@
+NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0          7:0    0 28.4M  1 loop /snap/amazon-ssm-agent/13349
+loop1          7:1    0   74M  1 loop /snap/core22/2411
+loop2          7:2    0 50.1M  1 loop /snap/snapd/27406
+nvme0n1      259:0    0   30G  0 disk 
+├─nvme0n1p1  259:2    0   29G  0 part /
+├─nvme0n1p14 259:3    0    4M  0 part 
+├─nvme0n1p15 259:4    0  106M  0 part /boot/efi
+└─nvme0n1p16 259:5    0  913M  0 part /boot
+nvme1n1      259:1    0  1.7T  0 disk 
+├─nvme1n1p1  259:6    0  1.6T  0 part /data
+└─nvme1n1p2  259:7    0 93.1G  0 part /cache-part
+---
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root         29G  3.7G   25G  13% /
+tmpfs             31G     0   31G   0% /dev/shm
+tmpfs             13G  1.1M   13G   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  3.4K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p16  881M  183M  637M  23% /boot
+/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+tmpfs            6.2G   12K  6.2G   1% /run/user/1000
+/dev/nvme1n1p1   1.6T  9.4G  1.5T   1% /data
+/dev/nvme1n1p2    92G  2.2G   85G   3% /cache-part
+--- stargz cache partition ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G  2.2G   85G   3% /cache-part

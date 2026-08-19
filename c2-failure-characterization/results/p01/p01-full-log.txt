@@ -1,0 +1,51 @@
+[19:58:41] === P0.1 cumulative induction: filling shared cache with 2g + 14g full reads ===
+[19:59:12] filled with 2g: cache now 7151196KB
+[20:01:01] filled with 14g: cache now 52198316KB
+[20:01:01] === P0.1 deploying custom predictor (normal mode) on 140g, cache already under pressure ===
+pod/b-p01-predictor-140g created
+[20:01:03] t=0.002s ready=False restarts=0 health=n/a predict=n/a lat=n/as correct=n/a eio=0
+0 cache=52198388KB
+[20:01:12] t=6.802s ready=True restarts=0 health=200 predict=200 lat=2.056s correct=STRUCTURALLY_OK eio=0
+0 cache=199519448KB
+[20:01:20] t=15.595s ready=True restarts=0 health=200 predict=200 lat=0.777s correct=STRUCTURALLY_OK eio=0
+0 cache=202275208KB
+[20:01:28] t=23.697s ready=True restarts=0 health=200 predict=200 lat=0.800s correct=STRUCTURALLY_OK eio=0
+0 cache=209078788KB
+[20:01:37] t=32.070s ready=True restarts=0 health=200 predict=200 lat=0.805s correct=STRUCTURALLY_OK eio=0
+0 cache=215722308KB
+[20:01:46] t=40.669s ready=True restarts=0 health=200 predict=200 lat=0.784s correct=STRUCTURALLY_OK eio=0
+0 cache=222507288KB
+[20:01:55] t=49.592s ready=True restarts=0 health=200 predict=200 lat=0.848s correct=STRUCTURALLY_OK eio=0
+0 cache=229636868KB
+[20:02:05] t=58.937s ready=True restarts=0 health=200 predict=200 lat=0.823s correct=STRUCTURALLY_OK eio=0
+0 cache=236848388KB
+[20:02:14] t=68.509s ready=True restarts=0 health=200 predict=200 lat=0.807s correct=STRUCTURALLY_OK eio=0
+0 cache=244433612KB
+[20:02:25] t=78.283s ready=True restarts=0 health=200 predict=200 lat=0.815s correct=STRUCTURALLY_OK eio=0
+0 cache=252289232KB
+[20:02:35] t=88.541s ready=True restarts=0 health=200 predict=200 lat=0.773s correct=STRUCTURALLY_OK eio=0
+0 cache=258336744KB
+[20:02:44] t=98.567s ready=True restarts=0 health=200 predict=200 lat=0.689s correct=STRUCTURALLY_OK eio=8 cache=259101332KB
+[20:02:53] t=107.908s ready=True restarts=0 health=200 predict=200 lat=0.677s correct=STRUCTURALLY_OK eio=8 cache=259101332KB
+[20:03:03] t=117.240s ready=True restarts=0 health=200 predict=200 lat=0.688s correct=STRUCTURALLY_OK eio=8 cache=259101332KB
+[20:03:12] t=126.651s ready=True restarts=0 health=200 predict=200 lat=0.683s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:03:22] t=136.035s ready=True restarts=0 health=200 predict=200 lat=0.676s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:03:31] t=145.347s ready=True restarts=0 health=200 predict=200 lat=0.709s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:03:40] t=154.685s ready=True restarts=0 health=200 predict=200 lat=0.674s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:03:49] t=163.973s ready=True restarts=0 health=200 predict=200 lat=0.677s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:03:59] t=173.292s ready=True restarts=0 health=200 predict=200 lat=0.679s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:08] t=182.607s ready=True restarts=0 health=200 predict=200 lat=0.680s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:17] t=191.927s ready=True restarts=0 health=200 predict=200 lat=0.675s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:27] t=201.235s ready=True restarts=0 health=200 predict=200 lat=0.675s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:36] t=210.542s ready=True restarts=0 health=200 predict=200 lat=0.676s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:45] t=219.858s ready=True restarts=0 health=200 predict=200 lat=0.673s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:04:55] t=229.240s ready=True restarts=0 health=200 predict=200 lat=0.675s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:04] t=238.555s ready=True restarts=0 health=200 predict=200 lat=0.673s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:13] t=247.871s ready=True restarts=0 health=200 predict=200 lat=0.684s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:23] t=257.241s ready=True restarts=0 health=200 predict=200 lat=0.697s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:32] t=266.561s ready=True restarts=0 health=200 predict=200 lat=0.676s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:41] t=275.861s ready=True restarts=0 health=200 predict=200 lat=0.677s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:05:51] t=285.204s ready=True restarts=0 health=200 predict=200 lat=0.678s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:06:00] t=294.570s ready=True restarts=0 health=200 predict=200 lat=0.683s correct=STRUCTURALLY_OK eio=8 cache=259101400KB
+[20:06:05] === P0.1 sampling window done -> /home/ubuntu/bench/results/p01/sampler.csv ===
+[20:06:07] P0.1 done. Results in /home/ubuntu/bench/results/p01

@@ -1,0 +1,13 @@
+inferenceservice.serving.kserve.io/b-p03-microexp-14g created
+pod=b-p03-microexp-14g-predictor-646596655f-v4hsn ready=false
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G  2.4M   87G   1% /var/lib/containerd-stargz-grpc
+error: unable to upgrade connection: container not found ("kserve-container")
+--- disk after full 14g read, with max_lru_cache_entry=1 max_cache_fds=1 ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G  2.4M   87G   1% /var/lib/containerd-stargz-grpc
+pod=b-p03-microexp-14g-predictor-646596655f-v4hsn ready=false
+error: unable to upgrade connection: container not found ("kserve-container")
+--- disk after full 14g read, with max_lru_cache_entry=1 max_cache_fds=1 ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G  2.4M   87G   1% /var/lib/containerd-stargz-grpc

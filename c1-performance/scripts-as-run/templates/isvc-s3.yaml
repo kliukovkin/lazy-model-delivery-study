@@ -1,0 +1,19 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: ${NAME}
+  namespace: ${TEST_NS}
+spec:
+  predictor:
+    serviceAccountName: bench-s3-sa
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: "s3://${MINIO_BUCKET}/${SIZE_TAG}"
+      resources:
+        requests:
+          cpu: "500m"
+          memory: "512Mi"
+        limits:
+          cpu: "2"
+          memory: "4Gi"

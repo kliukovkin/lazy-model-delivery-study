@@ -1,0 +1,20 @@
+kind: kind version 0.30.0
+kubectl client: clientVersion:
+  buildDate: "2026-07-22T18:10:35Z"
+  compiler: gc
+  gitCommit: 0f29094e5b73085e3802ecc1298ecae13866bfe6
+  gitTreeState: clean
+helm: version.BuildInfo{Version:"v3.21.3", GitCommit:"1ad6e68924fdf6fb0c7dcef8e9e1dfc0f36eaed6", GitTreeState:"clean", GoVersion:"go1.26.5"}
+docker: Docker version 29.7.2, build a7dcaa6
+containerd github.com/containerd/containerd/v2 v2.3.1 64b425cf570b3b8dd1d4cc46da7c1fce65c6651a
+Client:
+  Version:  v2.3.1
+  Revision: 64b425cf570b3b8dd1d4cc46da7c1fce65c6651a
+  Go version: go1.26.3
+
+Server:
+  Version:  v2.3.1
+  Revision: 64b425cf570b3b8dd1d4cc46da7c1fce65c6651a
+  UUID: 87dc34d5-d42a-4c8f-8f28-f96ef91fb9be
+containerd-stargz-grpc v0.18.2 3070538befb5a6c09f93e99164762b3a76310357
+ctr github.com/containerd/containerd/v2 2.2.0+unknown

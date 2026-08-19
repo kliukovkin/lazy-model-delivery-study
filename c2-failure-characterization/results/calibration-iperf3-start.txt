@@ -1,0 +1,18 @@
+=== iperf3 single-stream node->registry (start) ===
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  5.78 GBytes  4.97 Gbits/sec    0             sender
+[  5]   0.00-10.00  sec  5.78 GBytes  4.96 Gbits/sec                  receiver
+
+iperf Done.
+=== iperf3 -P8 (start) ===
+[ 15]   0.00-10.00  sec  2.27 GBytes  1.95 Gbits/sec    0             sender
+[ 15]   0.00-10.00  sec  2.27 GBytes  1.95 Gbits/sec                  receiver
+[ 17]   0.00-10.00  sec  1.56 GBytes  1.34 Gbits/sec    0             sender
+[ 17]   0.00-10.00  sec  1.56 GBytes  1.34 Gbits/sec                  receiver
+[ 19]   0.00-10.00  sec  2.38 GBytes  2.04 Gbits/sec    0             sender
+[ 19]   0.00-10.00  sec  2.37 GBytes  2.04 Gbits/sec                  receiver
+[SUM]   0.00-10.00  sec  13.9 GBytes  11.9 Gbits/sec    0             sender
+[SUM]   0.00-10.00  sec  13.9 GBytes  11.9 Gbits/sec                  receiver
+
+iperf Done.

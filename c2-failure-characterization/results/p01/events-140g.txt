@@ -1,0 +1,10 @@
+LAST SEEN   TYPE      REASON      OBJECT                     MESSAGE
+5m4s        Normal    Scheduled   pod/b-p01-predictor-140g   Successfully assigned bench/b-p01-predictor-140g to ocibench-control-plane
+5m3s        Normal    Pulling     pod/b-p01-predictor-140g   Pulling image "172.31.67.78:5000/model-ballast:estargz-140g"
+5m3s        Normal    Pulled      pod/b-p01-predictor-140g   Successfully pulled image "172.31.67.78:5000/model-ballast:estargz-140g" in 288ms (288ms including waiting). Image size: 150374666780 bytes.
+5m3s        Normal    Pulling     pod/b-p01-predictor-140g   Pulling image "172.31.67.78:5000/custom-predictor:v1"
+5m2s        Normal    Pulled      pod/b-p01-predictor-140g   Successfully pulled image "172.31.67.78:5000/custom-predictor:v1" in 1.492s (1.492s including waiting). Image size: 45531006 bytes.
+5m2s        Normal    Created     pod/b-p01-predictor-140g   Container created
+5m1s        Normal    Started     pod/b-p01-predictor-140g   Container started
+5m1s        Warning   Unhealthy   pod/b-p01-predictor-140g   Readiness probe failed: Get "http://10.244.0.17:8080/healthz": dial tcp 10.244.0.17:8080: connect: connection refused
+5s          Normal    Pulled      pod/b-p01-predictor-140g   Container image "172.31.67.78:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
