@@ -5,7 +5,7 @@ This repository is the measurement artifact for the paper:
 > **The Lazy Pod That Lies: Failure Characterization of Lazy Container-Image
 > Model Delivery in Kubernetes**
 > Georgii Kliukovkin
-> arXiv: TBD (submitted to arXiv and IEEE Access)
+> arXiv: [2608.19412](https://arxiv.org/abs/2608.19412) (submitted to IEEE Access)
 
 It contains the raw measurement data, calibration runs, failure logs, and the
 exact scripts that produced them, from two measurement campaigns run on
