@@ -1,0 +1,11 @@
+experiment=V2
+arm=ours
+prefill_pct=90
+rep=1
+partition_bytes=97828376576
+budget_bytes=80000000000
+sha=f6547d99
+started_utc=2026-09-10T19:32:53Z
+/dev/nvme0n1p2 97828376576 88891949056 3919675392  96% /cache-part
+deploy_to_ready_s=3.019
+sweep_s=8.446

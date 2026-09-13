@@ -1,0 +1,9 @@
+--- enospc ---
+journal=0
+0
+fuse_manager=0
+0
+--- writes_skipped ---
+0
+--- evictions ---
+552960

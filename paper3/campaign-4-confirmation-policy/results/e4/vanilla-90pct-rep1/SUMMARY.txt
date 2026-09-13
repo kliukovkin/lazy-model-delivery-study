@@ -1,0 +1,11 @@
+DIRSTAT ok
+LISTDIR n=280
+READ range=[0:280] attempted=280 ok=7 err=273 bytes=4127195136 elapsed_s=41.806
+ERRNOS EIO=273
+--- enospc ---
+journal=0
+fuse_manager=14
+--- writes_skipped ---
+0
+--- evictions ---
+0

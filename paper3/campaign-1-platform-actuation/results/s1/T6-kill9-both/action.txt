@@ -1,0 +1,4 @@
+kill -9 grpc pid=15418 fusemanager pid=15441
+fuse-manager.sock left in place deliberately (SIGKILL cannot unlink it) --
+StartFuseManager (fusemanager/fusemanager.go:225-231) returns newlyStarted=false
+when that socket exists, which sets snbase.NoRestore in main.go:194-199.

@@ -1,0 +1,12 @@
+DIRSTAT errno=107 ENOTCONN
+LISTDIR errno=107 ENOTCONN
+READ range=[0:8] attempted=8 ok=0 err=8 bytes=0 elapsed_s=0.000
+ERRNOS ESTALE=8
+BADFILE ballast-1.bin errno=116 ESTALE
+BADFILE ballast-2.bin errno=116 ESTALE
+BADFILE ballast-3.bin errno=116 ESTALE
+BADFILE ballast-4.bin errno=116 ESTALE
+BADFILE ballast-5.bin errno=116 ESTALE
+BADFILE ballast-6.bin errno=116 ESTALE
+BADFILE ballast-7.bin errno=116 ESTALE
+BADFILE ballast-8.bin errno=116 ESTALE

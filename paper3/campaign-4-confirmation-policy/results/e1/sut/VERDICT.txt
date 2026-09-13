@@ -1,0 +1,31 @@
+=== FACTS ===
+tag	config_policy	fm_pid	grpc_pid	n9110_cache_series	policy_labels_9110	budget_9110	lock_lost_9110	db_holders	db_corrupt
+00-baseline-lru	lru	5375	5351	41	lru	8e+10	0	1	0
+01-after-restart-1-2q	2q	5375	7500	41	2q	8e+10	0	1	0
+02-after-read-1-2q	2q	5375	7500	41	2q	8e+10	0	1	0
+03-after-restart-2-lru	lru	5375	11155	41	lru	8e+10	0	1	0
+04-after-read-2-lru	lru	5375	11155	41	lru	8e+10	0	1	0
+05-after-restart-3-2q	2q	5375	14809	41	2q	8e+10	0	1	0
+06-after-read-3-2q	2q	5375	14809	41	2q	8e+10	0	1	0
+07-after-restart-4-lru	lru	5375	18433	41	lru	8e+10	0	1	0
+08-after-read-4-lru	lru	5375	18433	41	lru	8e+10	0	1	0
+09-after-restart-5-2q	2q	5375	22049	41	2q	8e+10	0	1	0
+1-baseline-lru	lru	5375	25663	41	lru	8e+10	0	1	0
+10-after-read-5-2q	2q	5375	22049	41	2q	8e+10	0	1	0
+11-after-restart-6-lru	lru	5375	25663	41	lru	8e+10	0	1	0
+12-after-read-6-lru	lru	5375	25663	41	lru	8e+10	0	1	0
+2-after-restart-to-2q	2q	5375	31332	41	2q	8e+10	0	1	0
+3-after-read-under-2q	2q	5375	31332	41	2q	8e+10	0	1	0
+4-after-restart-to-lru	lru	5375	34948	41	lru	8e+10	0	1	0
+5-after-read-under-lru	lru	5375	34948	41	lru	8e+10	0	1	0
+
+=== SCORING (ids from PRE-REGISTRATION-v6.md) ===
+E1.7   PASS      min stargz_(cache|fs_cache)_* series on :9110 across 18 observations = 41
+E1.1   PASS      every observation's label matches its config
+E1.2   PASS      max index_lock_lost_total across all observations = 0
+E1.3   PASS      open fds on the index per observation = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] (0 = no accounting, >1 = a leak)
+E1.4   PASS      fuse-manager pids across all observations = ['5375']
+E1.5   PASS      corrupt files per observation = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+E1.6   REPORTED  index_lock_retry_total per observation = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  (non-zero means the ordering fix did not remove the race and the retry is carrying it; zero means ordering alone sufficed)
+
+E1[sut] RESULT: 6/6 expectations met

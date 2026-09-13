@@ -1,0 +1,49 @@
+LAST SEEN   TYPE      REASON             OBJECT             MESSAGE
+52m         Normal    Scheduled          pod/smoke          Successfully assigned bench/smoke to ocibench-control-plane
+52m         Normal    Pulling            pod/smoke          Pulling image "172.31.57.168:5000/model-ballast:estargz-14g"
+52m         Normal    Pulled             pod/smoke          Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-14g" in 148ms (148ms including waiting). Image size: 15039532031 bytes.
+52m         Normal    Pulling            pod/smoke          Pulling image "172.31.57.168:5000/custom-predictor:v5"
+52m         Normal    Pulled             pod/smoke          Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 1.18s (1.18s including waiting). Image size: 48519468 bytes.
+52m         Normal    Created            pod/smoke          Container created
+52m         Normal    Started            pod/smoke          Container started
+52m         Normal    Pulled             pod/smoke          Container image "172.31.57.168:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+52m         Normal    Killing            pod/smoke          Stopping container predictor
+52m         Warning   Unhealthy          pod/smoke          Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+31m         Normal    Scheduled          pod/v1-sweep       Successfully assigned bench/v1-sweep to ocibench-control-plane
+31m         Normal    Pulling            pod/v1-sweep       Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+31m         Normal    Pulled             pod/v1-sweep       Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 228ms (228ms including waiting). Image size: 150374663046 bytes.
+31m         Normal    Pulled             pod/v1-sweep       Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+31m         Normal    Created            pod/v1-sweep       Container created
+31m         Normal    Started            pod/v1-sweep       Container started
+13m         Normal    Pulled             pod/v1-sweep       Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+12m         Normal    Killing            pod/v1-sweep       Stopping container predictor
+12m         Warning   Unhealthy          pod/v1-sweep       Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+10m         Normal    Pulled             pod/v2-ours-90-1   Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+10m         Normal    Scheduled          pod/v2-ours-90-1   Successfully assigned bench/v2-ours-90-1 to ocibench-control-plane
+10m         Normal    Created            pod/v2-ours-90-1   Container created
+10m         Warning   Unhealthy          pod/v2-ours-90-1   Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+10m         Normal    Started            pod/v2-ours-90-1   Container started
+10m         Normal    Pulled             pod/v2-ours-90-1   Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+10m         Normal    Killing            pod/v2-ours-90-1   Stopping container predictor
+10m         Warning   Evicted            pod/v2-ours-90-1   The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 1488568Ki. Container predictor was using 2264Ki, request is 0, has larger consumption of ephemeral-storage.
+9m51s       Warning   FailedScheduling   pod/v2-ours-50-1   0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+9m25s       Normal    Pulling            pod/v2-ours-50-1   Pulling image "172.31.57.168:5000/custom-predictor:v5"
+9m25s       Normal    Scheduled          pod/v2-ours-50-1   Successfully assigned bench/v2-ours-50-1 to ocibench-control-plane
+9m25s       Normal    Pulling            pod/v2-ours-50-1   Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+9m25s       Normal    Pulled             pod/v2-ours-50-1   Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 238ms (238ms including waiting). Image size: 150374663046 bytes.
+9m23s       Warning   Unhealthy          pod/v2-ours-50-1   Readiness probe failed: Get "http://10.244.0.9:8080/healthz": dial tcp 10.244.0.9:8080: connect: connection refused
+9m23s       Normal    Pulled             pod/v2-ours-50-1   Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 1.16s (1.16s including waiting). Image size: 48519468 bytes.
+9m23s       Normal    Created            pod/v2-ours-50-1   Container created
+9m23s       Normal    Started            pod/v2-ours-50-1   Container started
+9m22s       Normal    Pulled             pod/v2-ours-50-1   Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+8m44s       Warning   Evicted            pod/v2-ours-50-1   The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 9370828Ki. Container predictor was using 2264Ki, request is 0, has larger consumption of ephemeral-storage.
+8m44s       Normal    Killing            pod/v2-ours-50-1   Stopping container predictor
+8m7s        Warning   FailedScheduling   pod/v2-ours-0-1    0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+7m43s       Normal    Started            pod/v2-ours-0-1    Container started
+7m43s       Warning   Unhealthy          pod/v2-ours-0-1    Readiness probe failed: Get "http://10.244.0.11:8080/healthz": dial tcp 10.244.0.11:8080: connect: connection refused
+7m43s       Normal    Created            pod/v2-ours-0-1    Container created
+7m43s       Normal    Pulled             pod/v2-ours-0-1    Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+7m43s       Normal    Scheduled          pod/v2-ours-0-1    Successfully assigned bench/v2-ours-0-1 to ocibench-control-plane
+32s         Normal    Pulled             pod/v2-ours-0-1    Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+12s         Warning   Evicted            pod/v2-ours-0-1    The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 8266296Ki. Container predictor was using 2284Ki, request is 0, has larger consumption of ephemeral-storage.
+12s         Normal    Killing            pod/v2-ours-0-1    Stopping container predictor

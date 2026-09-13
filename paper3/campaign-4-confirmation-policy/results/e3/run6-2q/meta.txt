@@ -1,0 +1,15 @@
+experiment=E3
+run_index=6
+policy=2q
+arm_sequence=lru 2q 2q lru lru 2q 2q lru
+sha=6e87e34e1d8da4ca10e44b81a1891d583a4e66d5
+budget_bytes=80000000000
+hot_files=28
+rounds=4
+resident_img=172.31.57.187:5000/model-ballast:estargz-14g
+sweep_img=172.31.57.187:5000/model-ballast:estargz-140g
+started_utc=2026-09-12T01:50:34Z
+policy_label_at_start=2q
+warm_passes=4 converged_delta=0.0037
+policy_labels_end=2q,2q-unpromoted
+ended_utc=2026-09-12T02:14:07Z

@@ -1,0 +1,3 @@
+{"duration":196924,"files":0,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-11T20:11:07.132099015Z"}
+{"error":"the accounting index is held by another process: \"/var/lib/containerd-stargz-grpc/stargz/cache-accounting.db\"","level":"warning","msg":"cache accounting: another process holds the index; this process will not account for or evict cached chunks","time":"2026-09-11T20:13:02.865991971Z"}
+{"level":"debug","msg":"cache accounting: closing the superseded index","time":"2026-09-11T20:13:02.866051179Z"}

@@ -1,0 +1,44 @@
+trial=M2-main-killmode-process fuse_manager=true killmode=process action=systemctl
+date=2026-09-09T05:12:35+00:00
+image=172.31.48.227:5000/model-ballast:estargz-140g
+--- stargz config.toml ---
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = true
+
+[[resolver.host."172.31.48.227:5000".mirrors]]
+  host = "172.31.48.227:5000"
+  insecure = true
+--- systemd unit ---
+[Unit]
+Description=stargz snapshotter
+After=network.target
+Before=containerd.service
+
+[Service]
+Type=notify
+Environment=HOME=/root
+ExecStart=/usr/local/bin/containerd-stargz-grpc --log-level=debug --config=/etc/containerd-stargz-grpc/config.toml
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
+--- systemd drop-ins ---
+# systemd's default KillMode=control-group SIGTERMs every process in the unit
+# cgroup on stop/restart, including the Setpgid-detached stargz-fuse-manager.
+# KillMode=process restricts the kill to the main process only, which is what
+# the FUSE manager design assumes. This is a systemd configuration change; the
+# snapshotter itself is untouched.
+[Service]
+KillMode=process
+--- effective KillMode ---
+KillMode=process
+--- versions ---
+containerd-stargz-grpc v0.18.2-135-g624678b4 624678b4e421947534cbf0618f9609853cccee0f
+containerd github.com/containerd/containerd/v2 v2.3.1 64b425cf570b3b8dd1d4cc46da7c1fce65c6651a

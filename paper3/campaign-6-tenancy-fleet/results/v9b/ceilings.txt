@@ -1,0 +1,7 @@
+iface=ens5
+measured_utc=2026-09-13T05:53:11Z
+instance_type=i4i.2xlarge
+iperf3_gbps_to_172.31.82.111=10.357
+iperf3_gbps_to_172.31.93.23=10.266
+iperf3_gbps_to_172.31.85.202=10.211
+fio_read_MBps=1485.1

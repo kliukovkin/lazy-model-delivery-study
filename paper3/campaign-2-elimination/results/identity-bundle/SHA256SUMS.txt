@@ -1,0 +1,4 @@
+503e3d568763ba7643400e60759a3d314164f4ed482c6737fef4cf811d7535c8  /data/stargz-bin-ours/PROVENANCE.txt
+50db76270b8eb63158167621ee33a74f20945bcce9ac6ecb01977a7cc9b9497d  /data/stargz-bin-ours/containerd-stargz-grpc
+6ddacbbe6b90f9634cd753a54d8333df87192dba25c51f7b5ebca7cc53f7546d  /data/stargz-bin-ours/ctr-remote
+93375d5462cb5770a9b867a510eaf2366690090128d3a02f275c22f511358b97  /data/stargz-bin-ours/stargz-fuse-manager

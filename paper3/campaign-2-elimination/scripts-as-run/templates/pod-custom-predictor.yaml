@@ -1,0 +1,54 @@
+# v3.1 P0.1: raw Pod (not an InferenceService) using the SAME oci+native
+# ImageVolume mechanism KServe's own oci+native path uses under the hood --
+# a K8s `image` volume with subPath "models", mounted read-only. Using a raw
+# Pod instead of fighting KServe's CRD validation for custom containers;
+# exercises the identical containerd/CRI-snapshotter delivery mechanism that
+# is the actual subject of this study.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ${NAME}
+  namespace: ${TEST_NS}
+  labels:
+    app: ${NAME}
+    predictor-mode: ${PREDICTOR_MODE}
+spec:
+  restartPolicy: Never
+  containers:
+  - name: predictor
+    image: ${PREDICTOR_IMG}
+    env:
+    - name: PREDICTOR_MODE
+      value: "${PREDICTOR_MODE}"
+    - name: MODEL_PATH
+      value: "/mnt/models"
+    - name: NUM_SAMPLE_FILES
+      value: "${NUM_SAMPLE_FILES}"
+    - name: READ_BYTES
+      value: "${READ_BYTES}"
+    ports:
+    - containerPort: 8080
+    resources:
+      requests: { cpu: "200m", memory: "256Mi" }
+      limits: { cpu: "2", memory: "1Gi" }
+    volumeMounts:
+    - name: mnt-models
+      mountPath: /mnt/models
+      subPath: models
+      readOnly: true
+    # readiness only (no liveness): a startup_load pod's port doesn't open
+    # until the full read completes -- a liveness probe would have kubelet
+    # kill+restart the container mid-load, confounding "does it reach Ready"
+    # with "did kubelet kill it first". failureThreshold is generous enough
+    # to survive a slow/never-completing startup_load read without kubelet
+    # giving up on the READINESS check either (that alone never restarts).
+    readinessProbe:
+      httpGet: { path: /healthz, port: 8080 }
+      periodSeconds: 2
+      failureThreshold: 100000
+      timeoutSeconds: 5
+  volumes:
+  - name: mnt-models
+    image:
+      reference: ${IMAGE_REF}
+      pullPolicy: IfNotPresent

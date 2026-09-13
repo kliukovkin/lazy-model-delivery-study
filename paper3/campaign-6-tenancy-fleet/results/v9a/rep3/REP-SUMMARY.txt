@@ -1,0 +1,19 @@
+========================================================================
+V9-A  pod A latency by phase   (rep3)
+========================================================================
+
+window             n    p50 ms    p95 ms    p99 ms    max ms    errs
+baseline         565     462.0     709.0    1320.5    2665.1       0
+under-sweep      991     548.9    4150.5    4902.7    6350.9       0
+after            498     459.7    1353.5    3208.0    3473.1       0
+
+  under-sweep  vs baseline:  p50   +18.8%   p95  +485.4%   p99  +271.3%
+  after        vs baseline:  p50    -0.5%   p95   +90.9%   p99  +142.9%
+
+  pod A read errors, whole repetition: 0
+  (zero read errors on A -- the pre-registered fatal condition did not fire)
+  B: READ range=[0:280] attempted=280 ok=280 err=0 bytes=150323855360 elapsed_s=1137.605
+  B: ERRNOS none
+
+  stargz_fs_cache_evicted_bytes_total         601856013702  (601.9 GB)
+  stargz_fs_cache_evictions_total                  6185502

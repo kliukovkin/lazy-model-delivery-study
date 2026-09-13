@@ -1,0 +1,4 @@
+### journal (containerd-stargz-grpc, systemd unit)
+48
+### stargz-fuse-manager.log (the detached FUSE server -- where the writes actually happen)
+34

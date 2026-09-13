@@ -1,0 +1,14 @@
+experiment=V9-C
+pair=1
+prefill_pct=0
+arm=ours
+policy=lru
+partition_bytes=97828376576
+budget_bytes=80000000000
+image=172.31.0.84:5000/model-ballast:estargz-140g
+sha=6e87e34e1d8da4ca10e44b81a1891d583a4e66d5
+started_utc=2026-09-12T19:16:49Z
+/dev/nvme1n1p2 97828376576 2583027712 90228596736   3% /cache-part
+deploy_to_ready_s=3.401
+sweep_s=974.196
+pod_phase_at_end=Running

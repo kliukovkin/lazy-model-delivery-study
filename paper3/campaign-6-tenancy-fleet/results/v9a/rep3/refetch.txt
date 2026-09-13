@@ -1,0 +1,13 @@
+registry blob traffic in this repetition's window
+tenant     requests            bytes           GB
+A             57035     117688371312      117.688
+shared-base          9          2328874        0.002
+B            107009     221647167568      221.647
+other             0                0        0.000
+
+A_bytes=117688371312
+A_requests=57035
+A_unique_blobs=10
+shared_base_bytes=2328874
+A_first_ts=1789254014.975
+A_last_ts=1789256005.957

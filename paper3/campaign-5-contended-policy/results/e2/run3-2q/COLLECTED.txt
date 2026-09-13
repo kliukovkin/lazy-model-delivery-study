@@ -1,0 +1,2 @@
+collected_utc=2026-09-12T13:14:34Z
+experiment=e2/run3-2q

@@ -1,0 +1,42 @@
+S3(a) -- byte-budget knob audit: does main add any disk-size limit for httpcache/fscache?
+Method: enumerate every `toml:"..."` struct tag in non-vendor, non-test Go source, at both
+refs, and diff the sets. Repo: github.com/containerd/stargz-snapshotter
+  v0.18.2 = 3070538befb5a6c09f93e99164762b3a76310357
+  main    = 624678b4e421947534cbf0618f9609853cccee0f (2026-09-09)
+
+RESULT: 74 TOML keys at v0.18.2, 74 at main. Set difference in BOTH directions is EMPTY.
+The user-facing configuration surface is byte-identical between the two refs.
+
+Full key set (identical at both refs):
+address allow_invalid_mounts_on_restart allow_no_verification attr_timeout auth blob
+ca_file cert_file check_always chunk_size config_path configs cri_keychain
+cri_keychain_image_service_path debug debug_address direct directory_cache
+disable_verification enable enable_keychain endpoint entry_timeout fadv_dontneed
+fetching_timeout_sec filesystem_cache_type force_single_range_mode fuse fuse_manager
+header host http_cache_type identitytoken image_service_path insecure
+insecure_skip_verify ipfs key_file kubeconfig_keychain kubeconfig_path listen_path
+log_file_access max_cache_fds max_concurrency max_lru_cache_entry max_retries
+max_wait_msec merge_buffer_size merge_worker_count metadata_store metrics_address
+min_wait_msec mirrors no_background_fetch no_prometheus noprefetch passthrough password
+path prefetch_async_size prefetch_chunk_size prefetch_size prefetch_timeout_sec registry
+request_timeout_sec resolve_result_entry resolve_result_entry_ttl_sec resolver root_path
+snapshotter sync_add tls username valid_interval
+
+Every key whose name matches size|byte|limit|quota|capacit|budget|gc|prune|evict|disk|space,
+on main:
+  fs/config/config.go:52   PrefetchSize      int64 `toml:"prefetch_size"`
+  fs/config/config.go:60   PrefetchAsyncSize int64 `toml:"prefetch_async_size"`
+  fs/config/config.go:110  ChunkSize         int64 `toml:"chunk_size"`
+  fs/config/config.go:124  PrefetchChunkSize int64 `toml:"prefetch_chunk_size"`
+  fs/config/config.go:167  MergeBufferSize   int64 `toml:"merge_buffer_size" default:"419430400"`
+None of these is a cache budget: the four prefetch/chunk keys size individual fetch
+requests, merge_buffer_size sizes an in-process buffer.
+
+The only two keys that bound anything cache-like are cardinality bounds on IN-MEMORY
+structures, not on-disk bytes (cache/cache.go:34-35, defaults 10):
+  max_lru_cache_entry -- number of entries in the in-memory data LRU
+  max_cache_fds       -- number of cached open file descriptors
+
+CONCLUSION: on main @624678b4 there is still NO configuration key of any kind that bounds
+the on-disk httpcache/fscache in bytes, or by free-space/disk-usage threshold. The v3.1/C2
+core claim "no disk-bound knob" is re-verified against current code, unchanged.

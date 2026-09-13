@@ -1,0 +1,25 @@
+=== FACTS ===
+tag	config_policy	fm_pid	grpc_pid	n9110_cache_series	policy_labels_9110	budget_9110	lock_lost_9110	db_holders	db_corrupt
+00-baseline-lru	lru	39612	39589	39	lru	8e+10	0	1	0
+01-after-restart-1-2q	2q	39612	41766	39	lru	8e+10	1	0	0
+02-after-read-1-2q	2q	39612	41766	39	lru	8e+10	1	0	0
+03-after-restart-2-lru	lru	39612	45429	39	lru	8e+10	1	1	0
+04-after-read-2-lru	lru	39612	45429	39	lru	8e+10	1	1	0
+05-after-restart-3-2q	2q	39612	49083	39	lru	8e+10	2	0	0
+06-after-read-3-2q	2q	39612	49083	39	lru	8e+10	2	0	0
+07-after-restart-4-lru	lru	39612	52695	39	lru	8e+10	2	1	0
+08-after-read-4-lru	lru	39612	52695	39	lru	8e+10	2	1	0
+09-after-restart-5-2q	2q	39612	56311	39	lru	8e+10	3	0	0
+1-baseline-lru	lru	39612	59916	39	lru	8e+10	3	1	0
+10-after-read-5-2q	2q	39612	56311	39	lru	8e+10	3	0	0
+11-after-restart-6-lru	lru	39612	59916	39	lru	8e+10	3	1	0
+12-after-read-6-lru	lru	39612	59916	39	lru	8e+10	3	1	0
+
+=== SCORING (ids from PRE-REGISTRATION-v6.md) ===
+N1.1   PASS      index_lock_lost_total reached 3 across 14 restarts (v6 C1 must reproduce, or E1 is void)
+N1.2   PASS      open fds on the index per observation = [1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1]; want at least one observation at 0
+N1.3   PASS      observations where the label lagged the config: [('01-after-restart-1-2q', '2q', 'lru'), ('02-after-read-1-2q', '2q', 'lru'), ('05-after-restart-3-2q', '2q', 'lru'), ('06-after-read-3-2q', '2q', 'lru'), ('09-after-restart-5-2q', '2q', 'lru'), ('10-after-read-5-2q', '2q', 'lru')]
+
+fuse-manager pids across observations = ['39612']
+
+E1[prev] RESULT: 3/3 expectations met

@@ -1,0 +1,8 @@
+du -sb, bytes: httpcache fscache stargz snapshotter total
+pre-restart        : 4596958967 4546848763 9143807730 150464285615 159608270178
+post-restart       : 10729008967 10720864251 21638123218 150464285615 172369270848
+post-full-re-read  : 15437108967 15292655611 30729764578 150464285615 181265944444
+
+NOTE: 'full re-read' here means re-reading the SAME 8-file warm working
+set, not all 280 files of the 140GB image -- a genuine 140GB read would itself
+exhaust the 92GB partition and confound S1 with S2's ENOSPC failure.

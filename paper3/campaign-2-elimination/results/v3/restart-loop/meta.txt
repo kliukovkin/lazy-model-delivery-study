@@ -1,0 +1,7 @@
+experiment=V3
+sha=f6547d99
+restarts=8
+budget_bytes=80000000000
+policy=lru
+warm_files=8
+started_utc=2026-09-10T21:10:55Z

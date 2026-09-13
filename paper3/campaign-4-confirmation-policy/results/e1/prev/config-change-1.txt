@@ -1,0 +1,5 @@
+[cache_accounting.budget]
+  bytes = 80000000000
+  high_watermark = 0.95
+  low_watermark = 0.85
+  policy = "2q"

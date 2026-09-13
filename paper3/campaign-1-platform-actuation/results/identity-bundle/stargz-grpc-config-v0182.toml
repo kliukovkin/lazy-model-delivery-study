@@ -1,0 +1,12 @@
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = true
+
+[[resolver.host."172.31.48.227:5000".mirrors]]
+  host = "172.31.48.227:5000"
+  insecure = true

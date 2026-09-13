@@ -1,0 +1,12 @@
+{"duration":104542,"files":0,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-11T19:39:19.530926035Z"}
+{"index_total":0,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":5016850432,"partition_used":5016850432,"time":"2026-09-11T19:39:19.531066178Z"}
+{"level":"debug","msg":"cache accounting: closing the superseded index","time":"2026-09-11T19:41:40.559664449Z"}
+{"level":"info","msg":"cache accounting: index does not match the cache tree, rebuilding","time":"2026-09-11T19:41:40.561394771Z"}
+{"duration":1254263560,"files":304361,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-11T19:41:41.815683355Z"}
+{"index_total":30074077604,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":6292872796,"partition_used":36366950400,"time":"2026-09-11T19:41:41.815843014Z"}
+{"level":"debug","msg":"cache accounting: closing the superseded index","time":"2026-09-11T19:42:10.214676991Z"}
+{"index_total":30074077604,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":6292872796,"partition_used":36366950400,"time":"2026-09-11T19:42:10.241733315Z"}
+{"level":"debug","msg":"cache accounting: closing the superseded index","time":"2026-09-11T19:42:43.008992913Z"}
+{"index_total":30074077604,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":6292872796,"partition_used":36366950400,"time":"2026-09-11T19:42:43.036970839Z"}
+{"level":"debug","msg":"cache accounting: closing the superseded index","time":"2026-09-11T19:43:14.569237483Z"}
+{"index_total":30074077604,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":6292872796,"partition_used":36366950400,"time":"2026-09-11T19:43:14.597374102Z"}

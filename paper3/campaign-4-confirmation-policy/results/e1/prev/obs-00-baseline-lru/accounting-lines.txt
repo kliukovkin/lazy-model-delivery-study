@@ -1,0 +1,1 @@
+{"duration":196924,"files":0,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-11T20:11:07.132099015Z"}

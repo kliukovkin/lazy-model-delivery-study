@@ -1,0 +1,58 @@
+[08:44:08] checking FUSE availability in node ocibench-control-plane
+[08:44:08] confirming the 92GB cache partition is bind-mounted at /var/lib/containerd-stargz-grpc
+[08:44:08] installing stargz binaries from /data/stargz-bin-prev into ocibench-control-plane
+containerd-stargz-grpc <unknown> <unknown>
+stargz-fuse-manager:
+  Version:  <unknown>
+  Revision: <unknown>
+
+[08:44:09] writing /etc/containerd-stargz-grpc/config.toml (arm=ours fuse_manager=true fm_metrics=<unset>)
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = true
+
+
+[[resolver.host."172.31.95.216:5000".mirrors]]
+  host = "172.31.95.216:5000"
+  insecure = true
+
+[cache_accounting]
+  enable = true
+  queue_size = 8192
+[cache_accounting.budget]
+  bytes = 80000000000
+  high_watermark = 0.95
+  low_watermark = 0.85
+  policy = "lru"
+[08:44:09] disabling journald rate limiting inside the node (evidence integrity)
+[08:44:11] installing upstream's stargz-snapshotter.service VERBATIM (script/config/etc/systemd/system/)
+[08:44:11] replacing the running FUSE manager so the new binaries actually take effect
+[08:44:22] manager binary confirmed: cb5cb4d0fdeb1198fbf04e2271486db7 (from /data/stargz-bin-prev)
+active
+[08:44:23] WARN: fusemanager-mode log line not found
+15:      disable_snapshot_annotations = false
+16:      snapshotter = "stargz"
+33:  [proxy_plugins.stargz]
+36:  [proxy_plugins.stargz.exports]
+37:    root = "/var/lib/containerd-stargz-grpc/"
+[08:44:23] pre-restart cluster health check
+[08:44:23] kube-system clean
+[08:44:23] restarting node-internal containerd (NOT the host's containerd.service)
+NAME                     STATUS   ROLES           AGE     VERSION
+ocibench-control-plane   Ready    control-plane   4h15m   v1.36.1
+NAME                                             READY   STATUS    RESTARTS   AGE
+coredns-589f44dc88-7p2c6                         1/1     Running   0          4h15m
+coredns-589f44dc88-rfmcd                         1/1     Running   0          4h15m
+etcd-ocibench-control-plane                      1/1     Running   0          4h15m
+kindnet-glr59                                    1/1     Running   0          4h15m
+kube-apiserver-ocibench-control-plane            1/1     Running   0          4h15m
+kube-controller-manager-ocibench-control-plane   1/1     Running   0          4h15m
+kube-proxy-jrtg8                                 1/1     Running   0          4h15m
+kube-scheduler-ocibench-control-plane            1/1     Running   0          4h15m
+KillMode=process
+[08:44:28] stargz-snapshotter arm=ours up under systemd, fuse_manager=true, budget=80000000000 policy=lru

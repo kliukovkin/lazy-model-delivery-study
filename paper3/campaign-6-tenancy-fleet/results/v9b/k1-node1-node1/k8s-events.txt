@@ -1,0 +1,18 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT             MESSAGE
+bench       35m         Normal    Scheduled   pod/smk            Successfully assigned bench/smk to ocibench-control-plane
+bench       35m         Normal    Pulling     pod/smk            Pulling image "172.31.90.228:5000/model-ballast:estargz-140g"
+bench       35m         Normal    Pulled      pod/smk            Successfully pulled image "172.31.90.228:5000/model-ballast:estargz-140g" in 187ms (187ms including waiting). Image size: 150374665466 bytes.
+bench       35m         Normal    Pulling     pod/smk            Pulling image "172.31.90.228:5000/custom-predictor:v5"
+bench       35m         Normal    Pulled      pod/smk            Successfully pulled image "172.31.90.228:5000/custom-predictor:v5" in 1.08s (1.08s including waiting). Image size: 48519464 bytes.
+bench       35m         Normal    Created     pod/smk            Container created
+bench       35m         Normal    Started     pod/smk            Container started
+bench       35m         Warning   Unhealthy   pod/smk            Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+bench       35m         Normal    Pulled      pod/smk            Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       34m         Normal    Killing     pod/smk            Stopping container predictor
+bench       23m         Normal    Scheduled   pod/v9b-k1-node1   Successfully assigned bench/v9b-k1-node1 to ocibench-control-plane
+bench       23m         Normal    Pulled      pod/v9b-k1-node1   Container image "172.31.90.228:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       23m         Normal    Created     pod/v9b-k1-node1   Container created
+bench       23m         Normal    Started     pod/v9b-k1-node1   Container started
+bench       35s         Normal    Pulled      pod/v9b-k1-node1   Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       6s          Normal    Killing     pod/v9b-k1-node1   Stopping container predictor
+bench       1s          Warning   Unhealthy   pod/v9b-k1-node1   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused

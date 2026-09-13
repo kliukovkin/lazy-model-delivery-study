@@ -1,0 +1,10 @@
+arm=ours
+READ range=[0:280] attempted=280 ok=280 err=0 bytes=150323855360 elapsed_s=1300.487
+ERRNOS none
+--- probe rounds (label,sentinel_exit,k8s_ready,healthz,predict) ---
+label,sentinel_exit,k8s_ready,healthz,predict
+before,0,True,,
+after,0,True,,
+after2,0,True,,
+--- writes_skipped ---
+4068

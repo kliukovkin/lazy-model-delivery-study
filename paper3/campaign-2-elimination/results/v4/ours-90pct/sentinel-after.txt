@@ -1,0 +1,3 @@
+sentinel-probe: ok: /mnt/models/ballast-99.bin tail 1048576 bytes
+sentinel-probe: ok: /mnt/models/ballast-98.bin tail 1048576 bytes
+sentinel-probe: ok: /mnt/models/ballast-97.bin tail 1048576 bytes

@@ -1,0 +1,70 @@
+Name:             s1-probe
+Namespace:        bench
+Priority:         0
+Service Account:  default
+Node:             ocibench-control-plane/172.18.0.2
+Start Time:       Wed, 09 Sep 2026 05:12:36 +0000
+Labels:           app=s1-probe
+                  predictor-mode=normal
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.34
+IPs:
+  IP:  10.244.0.34
+Containers:
+  predictor:
+    Container ID:   containerd://4437bc03e8f01a0fe0771f6bea54e825c8862ea474aac288f0dba2b87f7b7123
+    Image:          172.31.48.227:5000/custom-predictor:v4
+    Image ID:       172.31.48.227:5000/custom-predictor@sha256:04ad4d235f7aea241fe552826a76569acdebf68318d368bdd9dd884e647cbf45
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 09 Sep 2026 05:12:36 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      200m
+      memory:   256Mi
+    Readiness:  http-get http://:8080/healthz delay=0s timeout=5s period=2s successThreshold=1 failureThreshold=100000
+    Environment:
+      PREDICTOR_MODE:    normal
+      MODEL_PATH:        /mnt/models
+      NUM_SAMPLE_FILES:  3
+      READ_BYTES:        67108864
+    Mounts:
+      /mnt/models from mnt-models (ro,path="models")
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wg7gz (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  mnt-models:
+    Type:        Image (a container image or OCI artifact)
+    Reference:   172.31.48.227:5000/model-ballast:estargz-140g
+    PullPolicy:  IfNotPresent
+  kube-api-access-wg7gz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age               From               Message
+  ----     ------     ----              ----               -------
+  Normal   Scheduled  73s               default-scheduler  Successfully assigned bench/s1-probe to ocibench-control-plane
+  Normal   Pulled     73s               kubelet            spec.containers{predictor}: Container image "172.31.48.227:5000/custom-predictor:v4" already present on machine and can be accessed by the pod
+  Normal   Created    73s               kubelet            spec.containers{predictor}: Container created
+  Normal   Started    73s               kubelet            spec.containers{predictor}: Container started
+  Warning  Unhealthy  73s               kubelet            spec.containers{predictor}: Readiness probe failed: Get "http://10.244.0.34:8080/healthz": dial tcp 10.244.0.34:8080: connect: connection refused
+  Normal   Pulled     6s (x5 over 73s)  kubelet            Container image "172.31.48.227:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

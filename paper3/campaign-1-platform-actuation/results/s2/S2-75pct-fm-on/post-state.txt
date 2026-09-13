@@ -1,0 +1,84 @@
+--- pod status AFTER the ENOSPC storm (does k8s notice?) ---
+NAME       READY   STATUS    RESTARTS   AGE    IP            NODE                     NOMINATED NODE   READINESS GATES
+s2-probe   1/1     Running   0          102s   10.244.0.32   ocibench-control-plane   <none>           <none>
+[
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T05:08:39Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodReadyToStartContainers"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T05:08:39Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Initialized"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T05:08:40Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Ready"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T05:08:40Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "ContainersReady"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T05:08:39Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodScheduled"
+    }
+]
+restarts=0
+--- kubelet node view AFTER ---
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T05:10:16Z",
+    "availableBytes": 1654024794112,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3194728448,
+    "inodesFree": 108321230,
+    "inodes": 108339200,
+    "inodesUsed": 17970
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T05:10:19Z",
+      "availableBytes": 0,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5861281,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    },
+    "containerFs": {
+      "time": "2026-09-09T05:10:19Z",
+      "availableBytes": 0,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5861281,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    }
+  }
+}
+--- df after ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G   92G     0 100% /cache-part
+--- cache_du after (httpcache fscache stargz snapshotter total) ---
+11849158967 11626833915 23475992882 150464285615 247311724769
+--- daemon processes ---
+  17727     110 /usr/local/bin/containerd-stargz-grpc --log-level=info --config=/etc/containerd-stargz-grpc/config.toml
+  17749     110 /usr/local/bin/stargz-fuse-manager -address /run/containerd-stargz-grpc/fuse-manager.sock -fusestore-path /var/lib/containerd-stargz-grpc/fusestore.db -log-level info

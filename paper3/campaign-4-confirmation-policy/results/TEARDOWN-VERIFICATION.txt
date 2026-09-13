@@ -1,0 +1,10 @@
+=== v7 teardown verification, 2026-09-12T03:59:47Z ===
+instances (any non-terminated) = 0
+volumes (any state)            = 0
+AMIs owned                     = 0
+snapshots owned                = 1  (expected: 1, the artifact snapshot)
+snap-0118cc5716e9e8a54	completed	1200	stargz-spike-v7 artifacts: model-ballast estargz-140g + estargz-14g + predictor
+--- other regions ---
+us-west-2 running = 0
+eu-west-1 running = 0
+eu-central-1 running = 0

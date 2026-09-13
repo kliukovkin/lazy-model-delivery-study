@@ -1,0 +1,16 @@
+LAST SEEN   TYPE      REASON      OBJECT         MESSAGE
+20m         Normal    Scheduled   pod/probe140   Successfully assigned bench/probe140 to ocibench-control-plane
+20m         Normal    Pulling     pod/probe140   Pulling image "172.31.0.84:5000/model-ballast:estargz-140g"
+20m         Warning   Unhealthy   pod/probe140   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+20m         Normal    Pulled      pod/probe140   Container image "172.31.0.84:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+20m         Normal    Created     pod/probe140   Container created
+20m         Normal    Started     pod/probe140   Container started
+20m         Normal    Pulled      pod/probe140   Successfully pulled image "172.31.0.84:5000/model-ballast:estargz-140g" in 104ms (104ms including waiting). Image size: 150374665466 bytes.
+20m         Normal    Pulled      pod/probe140   Container image "172.31.0.84:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+19m         Normal    Killing     pod/probe140   Stopping container predictor
+16m         Normal    Scheduled   pod/v9c-p1-0   Successfully assigned bench/v9c-p1-0 to ocibench-control-plane
+16m         Normal    Pulled      pod/v9c-p1-0   Container image "172.31.0.84:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+16m         Normal    Created     pod/v9c-p1-0   Container created
+16m         Normal    Started     pod/v9c-p1-0   Container started
+16m         Warning   Unhealthy   pod/v9c-p1-0   Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+54s         Normal    Pulled      pod/v9c-p1-0   Container image "172.31.0.84:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

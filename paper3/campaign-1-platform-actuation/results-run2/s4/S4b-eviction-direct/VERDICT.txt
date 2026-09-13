@@ -1,0 +1,41 @@
+### Q1: did kubelet EVER raise DiskPressure=True?
+YES -- first occurrence:
+/home/ubuntu/v4/../results/s4/S4b-eviction-direct/phase1-nopod.csv: 0.117,100,0,741376,0.00,True,,,
+
+### lowest imageFs available% observed
+0.00%
+(evictionHard threshold is imagefs.available=10%)
+
+### imageFs usedBytes range (image GC keys on used/capacity)
+min=imagefs_used max=741376
+
+### was the pod evicted / did it stop Running?
+0.233,100,0,741376,0.00,True,Pending,false,
+5.459,100,0,741376,0.00,True,Pending,false,
+10.685,100,0,741376,0.00,True,Pending,false,
+15.924,100,0,741376,0.00,True,Pending,false,
+21.149,100,0,741376,0.00,True,Pending,false,
+(empty above = pod stayed Running throughout)
+
+### eviction / disk / imageGC events
+local-path-storage   16m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-ffgjs    The node had condition: [DiskPressure].
+local-path-storage   16m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-nx57r    The node had condition: [DiskPressure].
+local-path-storage   16m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-gw8mr    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-d2vqb    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-znfgb    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-tscgc    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-jhdnq    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8zmz7    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-nzmld    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-fjs8j    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-gsrx7    The node had condition: [DiskPressure].
+default              15m         Normal    NodeHasDiskPressure     node/ocibench-control-plane                    Node ocibench-control-plane status is now: NodeHasDiskPressure
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-hhc86    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8tc97    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-pgxq4    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-fwtmm    The node had condition: [DiskPressure].
+local-path-storage   15m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8gbxs    The node had condition: [DiskPressure].
+bench                15m         Warning   Evicted                 pod/curl-runner-65d77865d8-csnh6               The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 0.
+default              13m         Warning   FreeDiskSpaceFailed     node/ocibench-control-plane                    Insufficient free disk space on the node's image filesystem (100% of 91.1 GiB used). Failed to free sufficient space by deleting unused images (freed 0 bytes). Investigate disk usage, as it could be used by active images, logs, volumes, or other data.
+default              53s         Warning   EvictionThresholdMet    node/ocibench-control-plane                    Attempting to reclaim ephemeral-storage
+(empty above = none)

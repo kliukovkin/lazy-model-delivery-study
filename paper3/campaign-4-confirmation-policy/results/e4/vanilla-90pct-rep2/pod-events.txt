@@ -1,0 +1,34 @@
+LAST SEEN   TYPE      REASON      OBJECT             MESSAGE
+54m         Normal    Pulled      pod/e3-sweep       Container image "172.31.57.187:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+52m         Normal    Pulled      pod/e3-resident    Container image "172.31.57.187:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+52m         Normal    Killing     pod/e3-sweep       Stopping container predictor
+52m         Warning   Unhealthy   pod/e3-sweep       Readiness probe failed: Get "http://10.244.0.27:8080/healthz": dial tcp 10.244.0.27:8080: connect: connection refused
+52m         Normal    Killing     pod/e3-resident    Stopping container predictor
+52m         Warning   Unhealthy   pod/e3-resident    Readiness probe failed: Get "http://10.244.0.26:8080/healthz": dial tcp 10.244.0.26:8080: connect: connection refused
+51m         Normal    Scheduled   pod/e4-ours-1      Successfully assigned bench/e4-ours-1 to ocibench-control-plane
+51m         Normal    Pulled      pod/e4-ours-1      Container image "172.31.57.187:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+51m         Normal    Created     pod/e4-ours-1      Container created
+51m         Normal    Started     pod/e4-ours-1      Container started
+51m         Warning   Unhealthy   pod/e4-ours-1      Readiness probe failed: Get "http://10.244.0.28:8080/healthz": dial tcp 10.244.0.28:8080: connect: connection refused
+27m         Normal    Pulled      pod/e4-ours-1      Container image "172.31.57.187:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+27m         Normal    Killing     pod/e4-ours-1      Stopping container predictor
+27m         Normal    Created     pod/e4-ours-2      Container created
+27m         Normal    Pulled      pod/e4-ours-2      Container image "172.31.57.187:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+27m         Normal    Scheduled   pod/e4-ours-2      Successfully assigned bench/e4-ours-2 to ocibench-control-plane
+27m         Normal    Started     pod/e4-ours-2      Container started
+27m         Warning   Unhealthy   pod/e4-ours-2      Readiness probe failed: Get "http://10.244.0.29:8080/healthz": dial tcp 10.244.0.29:8080: connect: connection refused
+3m1s        Normal    Pulled      pod/e4-ours-2      Container image "172.31.57.187:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+2m42s       Normal    Killing     pod/e4-ours-2      Stopping container predictor
+115s        Normal    Pulled      pod/e4-vanilla-1   Container image "172.31.57.187:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+115s        Normal    Scheduled   pod/e4-vanilla-1   Successfully assigned bench/e4-vanilla-1 to ocibench-control-plane
+115s        Normal    Created     pod/e4-vanilla-1   Container created
+115s        Normal    Started     pod/e4-vanilla-1   Container started
+115s        Warning   Unhealthy   pod/e4-vanilla-1   Readiness probe failed: Get "http://10.244.0.30:8080/healthz": dial tcp 10.244.0.30:8080: connect: connection refused
+113s        Normal    Pulled      pod/e4-vanilla-1   Container image "172.31.57.187:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+61s         Normal    Killing     pod/e4-vanilla-1   Stopping container predictor
+39s         Normal    Scheduled   pod/e4-vanilla-2   Successfully assigned bench/e4-vanilla-2 to ocibench-control-plane
+39s         Normal    Pulled      pod/e4-vanilla-2   Container image "172.31.57.187:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+39s         Normal    Created     pod/e4-vanilla-2   Container created
+39s         Normal    Started     pod/e4-vanilla-2   Container started
+39s         Warning   Unhealthy   pod/e4-vanilla-2   Readiness probe failed: Get "http://10.244.0.31:8080/healthz": dial tcp 10.244.0.31:8080: connect: connection refused
+37s         Normal    Pulled      pod/e4-vanilla-2   Container image "172.31.57.187:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

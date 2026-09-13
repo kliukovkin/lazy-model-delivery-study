@@ -1,0 +1,74 @@
+Name:             s5-probe
+Namespace:        bench
+Priority:         0
+Service Account:  default
+Node:             ocibench-control-plane/172.18.0.2
+Start Time:       Wed, 09 Sep 2026 07:24:02 +0000
+Labels:           app=s5-probe
+                  predictor-mode=normal
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.8
+IPs:
+  IP:  10.244.0.8
+Containers:
+  predictor:
+    Container ID:   containerd://44d5c10409b6118c061ec91a3307c10b7612b3a42af4f60f4d8a4f0441c3e2eb
+    Image:          172.31.49.141:5000/custom-predictor:v4
+    Image ID:       172.31.49.141:5000/custom-predictor@sha256:3053ffc8e2431c4ab4bdb9d767dda959ed819c893124ba020273511f7cd62182
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 09 Sep 2026 07:24:04 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      200m
+      memory:   256Mi
+    Readiness:  http-get http://:8080/healthz delay=0s timeout=5s period=2s successThreshold=1 failureThreshold=100000
+    Environment:
+      PREDICTOR_MODE:    normal
+      MODEL_PATH:        /mnt/models
+      NUM_SAMPLE_FILES:  3
+      READ_BYTES:        67108864
+    Mounts:
+      /mnt/models from mnt-models (ro,path="models")
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qxpgd (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  mnt-models:
+    Type:        Image (a container image or OCI artifact)
+    Reference:   172.31.49.141:5000/model-ballast:estargz-140g
+    PullPolicy:  IfNotPresent
+  kube-api-access-qxpgd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                 From               Message
+  ----     ------            ----                ----               -------
+  Warning  FailedScheduling  2m28s               default-scheduler  0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+  Normal   Scheduled         2m22s               default-scheduler  Successfully assigned bench/s5-probe to ocibench-control-plane
+  Normal   Pulling           2m21s               kubelet            Pulling image "172.31.49.141:5000/model-ballast:estargz-140g"
+  Normal   Pulled            2m21s               kubelet            Successfully pulled image "172.31.49.141:5000/model-ballast:estargz-140g" in 132ms (132ms including waiting). Image size: 150374664101 bytes.
+  Normal   Pulling           2m21s               kubelet            spec.containers{predictor}: Pulling image "172.31.49.141:5000/custom-predictor:v4"
+  Normal   Pulled            2m20s               kubelet            spec.containers{predictor}: Successfully pulled image "172.31.49.141:5000/custom-predictor:v4" in 1.054s (1.054s including waiting). Image size: 48519468 bytes.
+  Normal   Created           2m20s               kubelet            spec.containers{predictor}: Container created
+  Normal   Started           2m20s               kubelet            spec.containers{predictor}: Container started
+  Warning  Unhealthy         2m20s               kubelet            spec.containers{predictor}: Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+  Normal   Pulled            7s (x5 over 2m20s)  kubelet            Container image "172.31.49.141:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

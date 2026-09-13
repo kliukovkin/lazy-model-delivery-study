@@ -1,0 +1,2 @@
+trial,fuse_manager,killmode,action,pod_ready_pre,pod_ready_post,restarts_post,warm_ok_pre,warm_err_pre,warm_ok_post,warm_err_post,warm_errnos_post,fresh_ok_post,fresh_err_post,fresh_errnos_post,mounts_pre,mounts_post,fm_pid_pre,fm_pid_post,httpcache_pre,fscache_pre,httpcache_post,fscache_post,httpcache_reread,fscache_reread,verdict,notes
+T1-shipped-unit-rep1,true,default,systemctl,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,9414,9789,4607308967,4546848764,5465267934,5339795448,6145766782,5939580920,MOUNT_BROKEN,listdir=errno=107 ENOTCONN

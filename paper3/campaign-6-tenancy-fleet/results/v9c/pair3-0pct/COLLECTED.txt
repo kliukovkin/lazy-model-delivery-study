@@ -1,0 +1,2 @@
+collected_utc=2026-09-12T20:46:21Z
+experiment=v9c/pair3-0pct

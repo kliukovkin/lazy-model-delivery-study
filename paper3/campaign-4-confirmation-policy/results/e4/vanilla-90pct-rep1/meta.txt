@@ -1,0 +1,12 @@
+experiment=E4
+arm=vanilla
+prefill_pct=90
+rep=1
+partition_bytes=97828376576
+budget_bytes=
+sha=v0.18.2
+started_utc=2026-09-12T03:53:23Z
+/dev/nvme1n1p2 97828376576 88753348608 4058275840  96% /cache-part
+deploy_to_ready_s=1.887
+sweep_s=41.903
+pod_phase_at_end=Running

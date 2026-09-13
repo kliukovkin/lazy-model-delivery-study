@@ -1,0 +1,44 @@
+--- final pod state ---
+NAME       READY   STATUS    RESTARTS   AGE     IP           NODE                     NOMINATED NODE   READINESS GATES
+s5-probe   1/1     Running   0          2m28s   10.244.0.8   ocibench-control-plane   <none>           <none>
+ready=true restarts=0
+--- kubelet view ---
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T07:26:20Z",
+    "availableBytes": 1654382931968,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 2836590592,
+    "inodesFree": 108321667,
+    "inodes": 108339200,
+    "inodesUsed": 17533
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T07:26:20Z",
+      "availableBytes": 91184279552,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152551424,
+      "inodesFree": 6086287,
+      "inodes": 6111232,
+      "inodesUsed": 6460
+    },
+    "containerFs": {
+      "time": "2026-09-09T07:26:20Z",
+      "availableBytes": 91184279552,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152551424,
+      "inodesFree": 6086287,
+      "inodes": 6111232,
+      "inodesUsed": 6460
+    }
+  }
+}
+--- df ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G  4.9G   82G   6% /cache-part
+--- cache dirs ---
+10 10

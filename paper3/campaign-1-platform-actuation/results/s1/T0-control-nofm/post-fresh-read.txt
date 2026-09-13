@@ -1,0 +1,8 @@
+DIRSTAT errno=107 ENOTCONN
+LISTDIR errno=107 ENOTCONN
+READ range=[8:12] attempted=4 ok=0 err=4 bytes=0 elapsed_s=0.000
+ERRNOS ENOTCONN=4
+BADFILE ballast-9.bin errno=107 ENOTCONN
+BADFILE ballast-10.bin errno=107 ENOTCONN
+BADFILE ballast-11.bin errno=107 ENOTCONN
+BADFILE ballast-12.bin errno=107 ENOTCONN

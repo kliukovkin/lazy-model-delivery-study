@@ -1,0 +1,9 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT            MESSAGE
+bench       42m         Normal    Scheduled   pod/e2-sweep      Successfully assigned bench/e2-sweep to ocibench-control-plane
+bench       42m         Normal    Pulled      pod/e2-sweep      Container image "172.31.95.216:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       42m         Normal    Created     pod/e2-sweep      Container created
+bench       42m         Normal    Started     pod/e2-sweep      Container started
+bench       2m25s       Normal    Pulled      pod/e2-resident   Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       115s        Normal    Pulled      pod/e2-sweep      Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       10s         Warning   Unhealthy   pod/e2-sweep      Readiness probe failed: Get "http://10.244.0.16:8080/healthz": dial tcp 10.244.0.16:8080: connect: connection refused
+bench       1s          Warning   Unhealthy   pod/e2-resident   Readiness probe failed: Get "http://10.244.0.15:8080/healthz": dial tcp 10.244.0.15:8080: connect: connection refused

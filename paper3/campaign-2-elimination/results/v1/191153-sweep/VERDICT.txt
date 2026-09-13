@@ -1,0 +1,17 @@
+samples=59
+peak_metric_bytes=75993973984 (95.0% of budget)
+peak_df_used=80831811584
+final_metric_bytes=75516498656
+high_watermark_bytes=76000000000 low_watermark_bytes=68000000000
+exceeded_budget=False
+exceeded_high_wm=False
+drift_pct_min=-7.75 drift_pct_max=0.08 drift_pct_final=-2.36
+drift_pct_abs_max=7.75
+df_minus_du_min=537584351 df_minus_du_max=3783166688
+evictions_final=2273279
+evicted_bytes_final=224576561660
+writes_skipped_final=0
+fetch_errors_final=2
+dropped_events_final=14085
+read_attempted=280 read_ok=280 read_err=0 read_bytes=150323855360
+ERRNOS none

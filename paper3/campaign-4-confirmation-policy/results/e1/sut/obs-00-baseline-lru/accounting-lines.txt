@@ -1,0 +1,2 @@
+{"duration":104542,"files":0,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-11T19:39:19.530926035Z"}
+{"index_total":0,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":5016850432,"partition_used":5016850432,"time":"2026-09-11T19:39:19.531066178Z"}

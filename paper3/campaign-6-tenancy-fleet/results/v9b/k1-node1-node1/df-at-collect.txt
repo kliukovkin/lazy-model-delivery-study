@@ -1,0 +1,2 @@
+Filesystem       1B-blocks       Used   Available Use% Mounted on
+/dev/nvme1n1p2 97828376576 9612120064 83199504384  11% /cache-part

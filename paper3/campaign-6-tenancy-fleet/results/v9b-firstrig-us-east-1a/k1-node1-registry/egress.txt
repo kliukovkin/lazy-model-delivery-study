@@ -1,0 +1,10 @@
+tx_before=2893112964758
+window_begin_utc=2026-09-13T04:35:03.836Z
+fanout_nodes=1
+fanout_skew_s=0.000
+tx_after=3051820549061
+window_end_utc=2026-09-13T04:54:45.390Z
+window_s=1181.6
+tx_delta_bytes=158707584303
+tx_delta_GB=158.71
+k=1

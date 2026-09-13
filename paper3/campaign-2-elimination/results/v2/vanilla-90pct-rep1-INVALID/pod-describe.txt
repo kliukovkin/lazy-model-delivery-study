@@ -1,0 +1,80 @@
+Name:             v2-vanilla-90-1
+Namespace:        bench
+Priority:         0
+Service Account:  default
+Node:             ocibench-control-plane/172.18.0.2
+Start Time:       Thu, 10 Sep 2026 19:44:10 +0000
+Labels:           app=v2-vanilla-90-1
+                  predictor-mode=normal
+Annotations:      <none>
+Status:           Failed
+Reason:           Evicted
+Message:          The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 4437048Ki. 
+IP:               10.244.0.14
+IPs:
+  IP:  10.244.0.14
+Containers:
+  predictor:
+    Container ID:   containerd://5dbcaff27a3cf7a7d93fbeafab1d6b2b308765c675ce48fd1988e15ff6415da3
+    Image:          172.31.57.168:5000/custom-predictor:v5
+    Image ID:       172.31.57.168:5000/custom-predictor@sha256:e7ea699325b790748df69f2a3e060c5611d7cd01eab3abdcc2ddd1e11d0df7f4
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Thu, 10 Sep 2026 19:44:15 +0000
+      Finished:     Thu, 10 Sep 2026 19:44:17 +0000
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      200m
+      memory:   256Mi
+    Readiness:  http-get http://:8080/healthz delay=0s timeout=5s period=2s successThreshold=1 failureThreshold=100000
+    Environment:
+      PREDICTOR_MODE:    normal
+      MODEL_PATH:        /mnt/models
+      NUM_SAMPLE_FILES:  3
+      READ_BYTES:        67108864
+    Mounts:
+      /mnt/models from mnt-models (ro,path="models")
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-8slbj (ro)
+Conditions:
+  Type                        Status
+  DisruptionTarget            True 
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  mnt-models:
+    Type:        Image (a container image or OCI artifact)
+    Reference:   172.31.57.168:5000/model-ballast:estargz-140g
+    PullPolicy:  IfNotPresent
+  kube-api-access-8slbj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age    From               Message
+  ----     ------            ----   ----               -------
+  Warning  FailedScheduling  5m     default-scheduler  0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+  Normal   Scheduled         4m53s  default-scheduler  Successfully assigned bench/v2-vanilla-90-1 to ocibench-control-plane
+  Normal   Pulling           4m53s  kubelet            Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+  Warning  Evicted           4m50s  kubelet            The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 4437048Ki.
+  Normal   Pulled            4m49s  kubelet            Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 133ms (3.397s including waiting). Image size: 150374663046 bytes.
+  Normal   Pulling           4m49s  kubelet            spec.containers{predictor}: Pulling image "172.31.57.168:5000/custom-predictor:v5"
+  Normal   Pulled            4m48s  kubelet            spec.containers{predictor}: Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 983ms (983ms including waiting). Image size: 48519468 bytes.
+  Normal   Created           4m48s  kubelet            spec.containers{predictor}: Container created
+  Normal   Started           4m48s  kubelet            spec.containers{predictor}: Container started
+  Normal   Killing           4m48s  kubelet            spec.containers{predictor}: Stopping container predictor

@@ -1,0 +1,16 @@
+steps=9
+df_used_first=9486516224 df_used_last=83694387200 df_used_max=83694387200
+budget=80000000000 exceeded_budget=True
+evicted_bytes_total=79815545100
+read_err_total=0
+fm_pids_seen=['26172'] stable=True
+--- C1 6.2 inode hypothesis ---
+step=0 df_minus_du=892892175 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=1 df_minus_du=2294003156 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=2 df_minus_du=3897089700 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=3 df_minus_du=5473787524 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=4 df_minus_du=3319519490 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=5 df_minus_du=3848243505 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=6 df_minus_du=4906865537 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=7 df_minus_du=4656280272 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0
+step=8 df_minus_du=5562863934 lsof_deleted=0 lsof_as_pct_of_gap=0.0 files=0

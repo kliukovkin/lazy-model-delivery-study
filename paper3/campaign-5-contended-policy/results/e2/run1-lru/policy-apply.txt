@@ -1,0 +1,8 @@
+policy_requested=lru
+mechanism=config-edit-plus-hard_reset
+why=CODE-FINDINGS-v6 C1: a plain restart loses the index lock race to
+    the incumbent index, leaving this process with no accounting and
+    no eviction. E1 establishes that; E2 must not measure through it.
+index_open_fds=1
+index_lock_lost_total=0
+policy_labels=lru

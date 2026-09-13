@@ -1,0 +1,19 @@
+trial=S4b-eviction-direct fill=95% watch=150s date=2026-09-09T07:34:05+00:00
+--- kubelet eviction settings actually in force ---
+{
+  "evictionHard": {
+    "imagefs.available": "10%",
+    "memory.available": "100Mi",
+    "nodefs.available": "10%",
+    "nodefs.inodesFree": "0%"
+  },
+  "evictionPressureTransitionPeriod": "30s",
+  "imageGCHighThresholdPercent": 85,
+  "imageGCLowThresholdPercent": 80
+}
+containerd-stargz-grpc v0.18.2 3070538befb5a6c09f93e99164762b3a76310357
+  [proxy_plugins.stargz]
+    address = "/run/containerd-stargz-grpc/containerd-stargz-grpc.sock"
+    type = "snapshot"
+  [proxy_plugins.stargz.exports]
+    root = "/var/lib/containerd-stargz-grpc/"

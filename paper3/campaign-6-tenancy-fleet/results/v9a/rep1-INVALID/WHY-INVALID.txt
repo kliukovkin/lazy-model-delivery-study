@@ -1,0 +1,3 @@
+pod A's warm-up did not converge: pass2 p50=607.439 ms, pass3 p50=643.144 ms, delta=0.0588
+the baseline envelope this experiment compares against would not be a
+warm baseline, so no comparison is computed for this repetition.

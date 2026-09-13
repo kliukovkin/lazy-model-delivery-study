@@ -1,0 +1,20 @@
+--- lru ---
+policy=lru
+warm_reference_n=28 p50=484.9 p95=539.7 p99=541.5 max=541.5
+resident_under_sweep_n=56 p50=578.7 p95=621.8 p99=630.3 max=658.8
+resident_read_errors=0
+hit_threshold_ms=541.5  # max of the all-hits warm reference pass
+derived_hit_rate=0.143 (8/56)  # DERIVED by latency, not a counter
+stargz_fs_cache_evictions_total=2428928
+stargz_fs_cache_evicted_bytes_total=240050839884
+stargz_fs_cache_writes_skipped_total=0
+--- 2q ---
+policy=2q
+warm_reference_n=28 p50=589.5 p95=622.7 p99=631.3 max=631.3
+resident_under_sweep_n=56 p50=516.0 p95=540.7 p99=545.7 max=552.7
+resident_read_errors=0
+hit_threshold_ms=631.3  # max of the all-hits warm reference pass
+derived_hit_rate=1.000 (56/56)  # DERIVED by latency, not a counter
+stargz_fs_cache_evictions_total=2756560
+stargz_fs_cache_evicted_bytes_total=259718648617
+stargz_fs_cache_writes_skipped_total=0

@@ -1,0 +1,8 @@
+kind: kind version 0.30.0
+Docker version 29.8.0, build 88096ef
+containerd github.com/containerd/containerd/v2 v2.3.1 64b425cf570b3b8dd1d4cc46da7c1fce65c6651a
+containerd-stargz-grpc <unknown> <unknown>
+ctr github.com/containerd/containerd/v2 2.2.3+unknown
+Client Version: v1.37.0
+Kustomize Version: v5.8.1
+Server Version: v1.36.1

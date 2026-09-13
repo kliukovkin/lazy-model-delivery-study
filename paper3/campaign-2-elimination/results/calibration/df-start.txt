@@ -1,0 +1,3 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  1.6T  3.1G  1.6T   1% /data
+/dev/nvme0n1p2   92G  116K   87G   1% /cache-part

@@ -1,0 +1,18 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT        MESSAGE
+bench       30m         Normal    Scheduled   pod/e1-warm   Successfully assigned bench/e1-warm to ocibench-control-plane
+bench       30m         Normal    Pulling     pod/e1-warm   Pulling image "172.31.57.187:5000/model-ballast:estargz-14g"
+bench       30m         Normal    Pulled      pod/e1-warm   Successfully pulled image "172.31.57.187:5000/model-ballast:estargz-14g" in 86ms (86ms including waiting). Image size: 15039530812 bytes.
+bench       30m         Normal    Pulling     pod/e1-warm   Pulling image "172.31.57.187:5000/custom-predictor:v5"
+bench       30m         Normal    Pulled      pod/e1-warm   Successfully pulled image "172.31.57.187:5000/custom-predictor:v5" in 1.038s (1.038s including waiting). Image size: 48519468 bytes.
+bench       30m         Normal    Created     pod/e1-warm   Container created
+bench       30m         Normal    Started     pod/e1-warm   Container started
+bench       26m         Normal    Pulled      pod/e1-warm   Container image "172.31.57.187:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+bench       25m         Normal    Killing     pod/e1-warm   Stopping container predictor
+bench       25m         Warning   Unhealthy   pod/e1-warm   Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+bench       25m         Normal    Scheduled   pod/e1-warm   Successfully assigned bench/e1-warm to ocibench-control-plane
+bench       25m         Normal    Pulled      pod/e1-warm   Container image "172.31.57.187:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       25m         Normal    Created     pod/e1-warm   Container created
+bench       25m         Normal    Started     pod/e1-warm   Container started
+bench       25m         Warning   Unhealthy   pod/e1-warm   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+bench       24m         Normal    Pulled      pod/e1-warm   Container image "172.31.57.187:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+bench       23m         Normal    Killing     pod/e1-warm   Stopping container predictor

@@ -1,0 +1,8 @@
+trial,fuse_manager,killmode,action,pod_ready_pre,pod_ready_post,restarts_post,warm_ok_pre,warm_err_pre,warm_ok_post,warm_err_post,warm_errnos_post,fresh_ok_post,fresh_err_post,fresh_errnos_post,mounts_pre,mounts_post,fm_pid_pre,fm_pid_post,httpcache_pre,fscache_pre,httpcache_post,fscache_post,httpcache_reread,fscache_reread,verdict,notes
+T0-control-nofm,false,default,systemctl,true,true,0,24,0,0,0,none,0,0,none,14,14,,,19600250702,19357159415,9510783470,9206943735,10353750702,10046656503,MOUNT_SURVIVED,
+T1-shipped-unit-rep1,true,default,systemctl,true,true,0,24,0,0,0,none,0,0,none,14,14,4990,5442,19642500702,19386519543,22794159669,22423418867,24296709669,24029837299,MOUNT_SURVIVED,
+T2-shipped-unit-rep2,true,default,systemctl,true,true,0,24,0,0,0,none,0,0,none,14,14,5868,6323,46449701404,45995630575,47534610371,46859880425,47534610371,46859880425,MOUNT_SURVIVED,
+T3-killmode-process-rep1,true,process,systemctl,,,,,,,,,,,,,,,,,,,,FLAGGED_CLEAN_SLATE_FAILED,
+T4-killmode-process-rep2,true,process,systemctl,,,,,,,,,,,,,,,,,,,,FLAGGED_CLEAN_SLATE_FAILED,
+T5-kill9-grpc-only,true,process,kill9-grpc,,,,,,,,,,,,,,,,,,,,FLAGGED_CLEAN_SLATE_FAILED,
+T6-kill9-both,true,process,kill9-both,,,,,,,,,,,,,,,,,,,,FLAGGED_CLEAN_SLATE_FAILED,

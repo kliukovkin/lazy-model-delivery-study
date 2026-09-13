@@ -1,0 +1,10 @@
+snapshot_id=snap-0118cc5716e9e8a54
+source_volume=vol-028c6acbe8d7e2007
+volume_size_gib=1200
+registry_data_gib=309
+state=completed
+taken_utc=2026-09-11T19:28:11Z
+verified_utc=2026-09-11T22:56:21Z
+verification=readback from a restored volume: tags, manifest digests, and 64MiB of an 18.8GB layer blob
+restore_cmd=aws ec2 create-volume --snapshot-id snap-0118cc5716e9e8a54 --availability-zone <az>
+cost_note=EBS snapshots bill on stored blocks, not volume size. Free space was zero-filled before the snapshot (fstrim is unsupported on this volume), so the ~925GB build peak should not be charged; expect billing near the 463GB live footprint, about $23/month at $0.05/GiB-month. Confirm against the first bill.

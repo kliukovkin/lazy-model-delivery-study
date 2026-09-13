@@ -1,0 +1,10 @@
+experiment=V5
+policy_configured=lru
+policy_metric_label=lru
+sha=f6547d99
+budget_bytes=80000000000
+resident_img=172.31.57.168:5000/model-ballast:estargz-14g
+sweep_img=172.31.57.168:5000/model-ballast:estargz-140g
+hot_files=28
+rounds=3
+started_utc=2026-09-10T23:30:46Z

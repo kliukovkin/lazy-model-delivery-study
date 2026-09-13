@@ -1,0 +1,10 @@
+experiment=E2
+arm=default
+queue_size=8192
+sha=6e87e34e1d8da4ca10e44b81a1891d583a4e66d5
+budget_bytes=80000000000
+partition_bytes=97828376576
+index_open_fds_at_start=1
+started_utc=2026-09-11T22:57:17Z
+startable_after=yes
+ended_utc=2026-09-11T23:20:00Z

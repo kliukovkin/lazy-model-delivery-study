@@ -1,0 +1,3 @@
+Type=notify
+Restart=always
+KillMode=control-group

@@ -1,0 +1,25 @@
+[00:52:47] terminating: i-01ecbdecc53b81968	i-024e42e7e26605c92	i-041da5c8c0a26704c	i-0bf3fd795fa616a18
+i-01ecbdecc53b81968	shutting-down
+i-024e42e7e26605c92	shutting-down
+i-041da5c8c0a26704c	shutting-down
+i-0bf3fd795fa616a18	shutting-down
+[00:53:36] disabling Fast Snapshot Restore (it bills per hour while enabled)
+=== ALL instances in this account/region, any non-terminated state ===
+non-terminated instance count = 0
+=== ALL EBS volumes, any state (v9 requires zero) ===
+volume count = 0
+=== snapshots owned by this account (v9 keeps EXACTLY ONE: the v7 artifact snapshot) ===
+------------------------------------------------------------------------
+|                           DescribeSnapshots                          |
++-------------------------+-------+------------------------------------+
+|  snap-0118cc5716e9e8a54 |  1200 |  2026-09-11T19:28:11.587000+00:00  |
++-------------------------+-------+------------------------------------+
+snapshot count = 1
+=== fast snapshot restores (v9 requires none left enabled) ===
+------------------------------------------------------
+|            DescribeFastSnapshotRestores            |
++-------------------------+--------------+-----------+
+|  snap-0118cc5716e9e8a54 |  us-east-1a  |  disabled |
++-------------------------+--------------+-----------+
+=== AMIs owned by this account (v9 requires zero) ===
+image count = 0

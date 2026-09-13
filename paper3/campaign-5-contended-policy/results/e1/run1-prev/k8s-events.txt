@@ -1,0 +1,10 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT           MESSAGE
+bench       26m         Normal    Pulled      pod/warm-sweep   Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       26m         Warning   Unhealthy   pod/warm-sweep   Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+bench       22m         Normal    Scheduled   pod/e1-prev-1    Successfully assigned bench/e1-prev-1 to ocibench-control-plane
+bench       22m         Normal    Pulled      pod/e1-prev-1    Container image "172.31.95.216:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       22m         Normal    Created     pod/e1-prev-1    Container created
+bench       22m         Normal    Started     pod/e1-prev-1    Container started
+bench       22m         Warning   Unhealthy   pod/e1-prev-1    Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+bench       13s         Normal    Pulled      pod/e1-prev-1    Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       6s          Normal    Killing     pod/e1-prev-1    Stopping container predictor

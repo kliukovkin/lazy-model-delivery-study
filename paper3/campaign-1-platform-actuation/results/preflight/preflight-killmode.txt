@@ -1,0 +1,28 @@
+=== PREFLIGHT: fuse-manager survival across systemctl restart ===
+date=2026-09-09T03:08:57+00:00
+
+--- A) unit AS SHIPPED (no drop-in; KillMode=control-group) ---
+before: grpc=2034 fm=2057
+after : grpc=2572 fm=2594
+
+--- B) with KillMode=process drop-in ---
+effective KillMode=process
+before(new baseline): grpc=2664 fm=2594
+after : grpc=2709 fm=2594
+fuse-manager PID preserved across restart: YES
+
+--- restore unit to as-shipped for the real S1 run ---
+final: KillMode=control-group active=active grpc=2773 fm=2795
+
+=== interpretation (recorded at capture time, BEFORE S1 ran) ===
+A) With the upstream unit exactly as shipped, the fuse-manager PID CHANGED across
+   systemctl restart (2057 -> 2594). systemd KillMode=control-group SIGTERMed it;
+   fusemanager/fusemanager.go:207-219 makes SIGTERM run fm.Close(ctx), unmounting
+   everything; the incoming containerd-stargz-grpc then found no fuse-manager.sock,
+   so StartFuseManager returned newlyStarted=true and spawned the new PID 2594.
+B) With a KillMode=process drop-in the manager PID was PRESERVED (2594 -> 2594)
+   while the snapshotter PID changed (2664 -> 2709) -- the intended design.
+
+This confirms source fact (3) in ../../source-audit/S1-preregistered-predictions.md.
+It does NOT by itself establish what the application sees through the mount; that is
+what S1 measures.

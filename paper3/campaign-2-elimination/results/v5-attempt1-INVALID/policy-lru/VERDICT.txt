@@ -1,0 +1,9 @@
+policy=lru
+warm_reference_n=28 p50=4101.2 p95=5396.7 p99=6268.6 max=6268.6
+resident_under_sweep_n=84 p50=4839.4 p95=5532.2 p99=7703.5 max=8639.3
+resident_read_errors=0
+hit_threshold_ms=6268.6  # max of the all-hits warm reference pass
+derived_hit_rate=0.976 (82/84)  # DERIVED by latency, not a counter
+stargz_fs_cache_evictions_total=2994166
+stargz_fs_cache_evicted_bytes_total=295839510166
+stargz_fs_cache_writes_skipped_total=7022

@@ -1,0 +1,57 @@
+========================================================================================
+V9-A  two-pod interference, rollup across 2 repetition(s)
+========================================================================================
+
+--- rep2 ---
+window              n    p50 ms    p95 ms    p99 ms    errs
+baseline          453     465.6    1770.2    3301.4       0
+under-sweep      1012     551.8    4204.1    4728.8       0
+after             575     459.3     738.6    1672.0       0
+  B: READ range=[0:280] attempted=280 ok=280 err=0 bytes=150323855360 elapsed_s=1133.462
+  B: ERRNOS none
+
+--- rep3 ---
+window              n    p50 ms    p95 ms    p99 ms    errs
+baseline          565     462.0     709.0    1320.5       0
+under-sweep       991     548.9    4150.5    4902.7       0
+after             498     459.7    1353.5    3208.0       0
+  B: READ range=[0:280] attempted=280 ok=280 err=0 bytes=150323855360 elapsed_s=1137.605
+  B: ERRNOS none
+
+----------------------------------------------------------------------------------------
+decision rule (PRE-REGISTRATION-v9 s3)
+----------------------------------------------------------------------------------------
+  baseline p99 per rep: 3301.4, 1320.5
+  between-repetition spread of the baseline p99: 1980.9 ms
+  under-sweep  rep2: p99 4728.8 vs baseline 3301.4  ->  +1427.4 ms   within the baseline envelope
+  under-sweep  rep3: p99 4902.7 vs baseline 1320.5  ->  +3582.2 ms   RISE (> baseline spread)
+  after        rep2: p99 1672.0 vs baseline 3301.4  ->  -1629.5 ms   within the baseline envelope
+  after        rep3: p99 3208.0 vs baseline 1320.5  ->  +1887.5 ms   within the baseline envelope
+
+----------------------------------------------------------------------------------------
+registry-side refetch for A's own blobs
+----------------------------------------------------------------------------------------
+  rep2: A_bytes=96.010 GB  A_requests=46469
+      tenant     requests            bytes           GB
+      A             46469      96009978324       96.010
+      B            102204     211158079297      211.158
+      other             0                0        0.000
+  rep3: A_bytes=117.688 GB  A_requests=57035
+      tenant     requests            bytes           GB
+      A             57035     117688371312      117.688
+      B            107009     221647167568      221.647
+      other             0                0        0.000
+
+----------------------------------------------------------------------------------------
+fatal condition
+----------------------------------------------------------------------------------------
+  0 read errors on pod A across every repetition. The pre-registered
+  fatal condition did not fire.
+
+----------------------------------------------------------------------------------------
+what this means for I6
+----------------------------------------------------------------------------------------
+  A refetched. The direction of the pre-registered expectation is
+  confirmed; the magnitude is above, with the p99 verdict.
+
+INVALID repetitions preserved (not deleted): rep1-INVALID

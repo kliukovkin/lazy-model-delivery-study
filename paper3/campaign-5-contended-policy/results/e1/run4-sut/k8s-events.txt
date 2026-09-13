@@ -1,0 +1,18 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT          MESSAGE
+bench       47m         Normal    Pulled      pod/e1-sut-2    Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       47m         Normal    Killing     pod/e1-sut-2    Stopping container predictor
+bench       47m         Warning   Unhealthy   pod/e1-sut-2    Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+bench       46m         Normal    Started     pod/e1-prev-3   Container started
+bench       46m         Normal    Scheduled   pod/e1-prev-3   Successfully assigned bench/e1-prev-3 to ocibench-control-plane
+bench       46m         Warning   Unhealthy   pod/e1-prev-3   Readiness probe failed: Get "http://10.244.0.9:8080/healthz": dial tcp 10.244.0.9:8080: connect: connection refused
+bench       46m         Normal    Created     pod/e1-prev-3   Container created
+bench       46m         Normal    Pulled      pod/e1-prev-3   Container image "172.31.95.216:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       24m         Normal    Pulled      pod/e1-prev-3   Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       23m         Normal    Killing     pod/e1-prev-3   Stopping container predictor
+bench       22m         Normal    Scheduled   pod/e1-sut-4    Successfully assigned bench/e1-sut-4 to ocibench-control-plane
+bench       22m         Normal    Pulled      pod/e1-sut-4    Container image "172.31.95.216:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       22m         Normal    Created     pod/e1-sut-4    Container created
+bench       22m         Normal    Started     pod/e1-sut-4    Container started
+bench       22m         Warning   Unhealthy   pod/e1-sut-4    Readiness probe failed: Get "http://10.244.0.10:8080/healthz": dial tcp 10.244.0.10:8080: connect: connection refused
+bench       7s          Normal    Pulled      pod/e1-sut-4    Container image "172.31.95.216:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       6s          Normal    Killing     pod/e1-sut-4    Stopping container predictor

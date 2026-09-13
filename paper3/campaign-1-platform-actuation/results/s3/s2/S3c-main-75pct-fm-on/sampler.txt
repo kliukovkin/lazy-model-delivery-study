@@ -1,0 +1,8 @@
+1.334 ready=true restarts=0 phase=Running cache_pct=80 health=CURLFAIL predict=CURLFAIL
+11.688 ready=true restarts=0 phase=Running cache_pct=84 health=CURLFAIL predict=CURLFAIL
+22.012 ready=true restarts=0 phase=Running cache_pct=87 health=CURLFAIL predict=CURLFAIL
+32.347 ready=true restarts=0 phase=Running cache_pct=91 health=CURLFAIL predict=CURLFAIL
+42.684 ready=true restarts=0 phase=Running cache_pct=95 health=CURLFAIL predict=CURLFAIL
+53.015 ready=true restarts=0 phase=Running cache_pct=98 health=CURLFAIL predict=CURLFAIL
+63.336 ready=true restarts=0 phase=Running cache_pct=100 health=CURLFAIL predict=CURLFAIL
+73.670 ready=true restarts=0 phase=Running cache_pct=100 health=CURLFAIL predict=CURLFAIL

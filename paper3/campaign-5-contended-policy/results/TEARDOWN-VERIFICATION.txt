@@ -1,0 +1,5 @@
+=== v8 teardown verification, 2026-09-12T14:42:15Z ===
+instances = 0
+volumes   = 0
+AMIs      = 0
+snapshots = 1  (expected 1: snap-0118cc5716e9e8a54)

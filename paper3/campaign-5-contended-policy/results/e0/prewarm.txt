@@ -1,0 +1,6 @@
+prewarm_scope=blobs referenced by estargz-140g only
+prewarm_blobs=11
+prewarm_bytes=150374662910
+prewarm_seconds=627
+prewarm_MBps=240
+prewarm_finished_utc=2026-09-12T04:55:12Z

@@ -1,0 +1,101 @@
+S3(a) -- config-key surface of the binary actually installed for S3.
+Source tree at 624678b4e421947534cbf0618f9609853cccee0f.
+
+### every toml struct tag in non-vendor, non-test Go source:
+toml:"address"
+toml:"allow_invalid_mounts_on_restart"
+toml:"allow_no_verification"
+toml:"attr_timeout"
+toml:"auth"
+toml:"blob"
+toml:"ca_file"
+toml:"cert_file"
+toml:"check_always"
+toml:"chunk_size"
+toml:"config_path"
+toml:"configs"
+toml:"cri_keychain"
+toml:"cri_keychain_image_service_path"
+toml:"debug"
+toml:"debug_address"
+toml:"direct"
+toml:"directory_cache"
+toml:"disable_verification"
+toml:"enable"
+toml:"enable_keychain"
+toml:"endpoint"
+toml:"entry_timeout"
+toml:"fadv_dontneed"
+toml:"fetching_timeout_sec"
+toml:"filesystem_cache_type"
+toml:"force_single_range_mode"
+toml:"fuse"
+toml:"fuse_manager"
+toml:"header"
+toml:"host"
+toml:"http_cache_type"
+toml:"identitytoken"
+toml:"image_service_path"
+toml:"insecure"
+toml:"insecure_skip_verify"
+toml:"ipfs"
+toml:"key_file"
+toml:"kubeconfig_keychain"
+toml:"kubeconfig_path"
+toml:"listen_path"
+toml:"log_file_access"
+toml:"max_cache_fds"
+toml:"max_concurrency"
+toml:"max_lru_cache_entry"
+toml:"max_retries"
+toml:"max_wait_msec"
+toml:"merge_buffer_size"
+toml:"merge_worker_count"
+toml:"metadata_store"
+toml:"metrics_address"
+toml:"min_wait_msec"
+toml:"mirrors"
+toml:"no_background_fetch"
+toml:"no_prometheus"
+toml:"noprefetch"
+toml:"passthrough"
+toml:"password"
+toml:"path"
+toml:"prefetch_async_size"
+toml:"prefetch_chunk_size"
+toml:"prefetch_size"
+toml:"prefetch_timeout_sec"
+toml:"registry"
+toml:"request_timeout_sec"
+toml:"resolve_result_entry"
+toml:"resolve_result_entry_ttl_sec"
+toml:"resolver"
+toml:"root_path"
+toml:"snapshotter"
+toml:"sync_add"
+toml:"tls"
+toml:"username"
+toml:"valid_interval"
+
+### keys matching size|byte|limit|quota|capacit|budget|gc|prune|evict|disk|space:
+./fs/config/config.go:52:	PrefetchSize int64 `toml:"prefetch_size" json:"prefetch_size"`
+./fs/config/config.go:60:	PrefetchAsyncSize int64 `toml:"prefetch_async_size" json:"prefetch_async_size"`
+./fs/config/config.go:110:	ChunkSize int64 `toml:"chunk_size" json:"chunk_size"`
+./fs/config/config.go:124:	PrefetchChunkSize int64 `toml:"prefetch_chunk_size" json:"prefetch_chunk_size"`
+./fs/config/config.go:167:	MergeBufferSize int64 `toml:"merge_buffer_size" default:"419430400" json:"merge_buffer_size"`
+
+### --help / flags of the built binary:
+Usage of /data/stargz-bin-main/containerd-stargz-grpc:
+  -address string
+    	address for the snapshotter's GRPC server (default "/run/containerd-stargz-grpc/containerd-stargz-grpc.sock")
+  -config string
+    	path to the configuration file (default "/etc/containerd-stargz-grpc/config.toml")
+  -log-level string
+    	set the logging level [trace, debug, info, warn, error, fatal, panic] (default "info")
+  -root string
+    	path to the root directory for this snapshotter (default "/var/lib/containerd-stargz-grpc")
+  -version
+    	print the version
+
+### version:
+containerd-stargz-grpc v0.18.2-135-g624678b4 624678b4e421947534cbf0618f9609853cccee0f

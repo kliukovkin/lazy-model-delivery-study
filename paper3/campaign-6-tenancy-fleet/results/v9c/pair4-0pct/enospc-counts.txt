@@ -1,0 +1,2 @@
+journal=0
+fuse_manager=0

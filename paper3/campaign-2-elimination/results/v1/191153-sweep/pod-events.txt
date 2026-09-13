@@ -1,0 +1,19 @@
+LAST SEEN   TYPE      REASON      OBJECT         MESSAGE
+40m         Normal    Scheduled   pod/smoke      Successfully assigned bench/smoke to ocibench-control-plane
+40m         Normal    Pulling     pod/smoke      Pulling image "172.31.57.168:5000/model-ballast:estargz-14g"
+40m         Normal    Pulled      pod/smoke      Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-14g" in 148ms (148ms including waiting). Image size: 15039532031 bytes.
+40m         Normal    Pulling     pod/smoke      Pulling image "172.31.57.168:5000/custom-predictor:v5"
+40m         Normal    Pulled      pod/smoke      Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 1.18s (1.18s including waiting). Image size: 48519468 bytes.
+40m         Normal    Created     pod/smoke      Container created
+40m         Normal    Started     pod/smoke      Container started
+40m         Normal    Pulled      pod/smoke      Container image "172.31.57.168:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+39m         Normal    Killing     pod/smoke      Stopping container predictor
+39m         Warning   Unhealthy   pod/smoke      Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+18m         Normal    Scheduled   pod/v1-sweep   Successfully assigned bench/v1-sweep to ocibench-control-plane
+18m         Normal    Pulling     pod/v1-sweep   Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+18m         Normal    Pulled      pod/v1-sweep   Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 228ms (228ms including waiting). Image size: 150374663046 bytes.
+18m         Normal    Pulled      pod/v1-sweep   Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+18m         Normal    Created     pod/v1-sweep   Container created
+18m         Normal    Started     pod/v1-sweep   Container started
+18m         Warning   Unhealthy   pod/v1-sweep   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+49s         Normal    Pulled      pod/v1-sweep   Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

@@ -1,0 +1,16 @@
+LAST SEEN   TYPE      REASON      OBJECT             MESSAGE
+41m         Normal    Pulled      pod/v2-ours-90-1   Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+41m         Normal    Killing     pod/v2-ours-90-1   Stopping container predictor
+40m         Normal    Scheduled   pod/v2-ours-50-1   Successfully assigned bench/v2-ours-50-1 to ocibench-control-plane
+40m         Normal    Created     pod/v2-ours-50-1   Container created
+40m         Normal    Pulled      pod/v2-ours-50-1   Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+40m         Normal    Started     pod/v2-ours-50-1   Container started
+40m         Warning   Unhealthy   pod/v2-ours-50-1   Readiness probe failed: Get "http://10.244.0.18:8080/healthz": dial tcp 10.244.0.18:8080: connect: connection refused
+18m         Normal    Pulled      pod/v2-ours-50-1   Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+18m         Normal    Killing     pod/v2-ours-50-1   Stopping container predictor
+18m         Normal    Scheduled   pod/v2-ours-0-1    Successfully assigned bench/v2-ours-0-1 to ocibench-control-plane
+18m         Normal    Started     pod/v2-ours-0-1    Container started
+18m         Warning   Unhealthy   pod/v2-ours-0-1    Readiness probe failed: Get "http://10.244.0.19:8080/healthz": dial tcp 10.244.0.19:8080: connect: connection refused
+18m         Normal    Created     pod/v2-ours-0-1    Container created
+18m         Normal    Pulled      pod/v2-ours-0-1    Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+4s          Normal    Pulled      pod/v2-ours-0-1    Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

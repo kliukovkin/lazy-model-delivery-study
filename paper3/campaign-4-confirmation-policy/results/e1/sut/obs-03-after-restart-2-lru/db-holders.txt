@@ -1,0 +1,1 @@
+5375 /usr/local/bin/stargz-fuse-manager -address /r

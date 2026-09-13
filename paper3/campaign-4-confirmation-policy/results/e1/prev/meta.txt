@@ -1,0 +1,7 @@
+experiment=E1
+arm=prev
+binsrc=/data/stargz-bin-prev
+fm_metrics_address=0.0.0.0:9111
+sut_sha=9829d7cf43fc645a28d2a79e86fe614d62764833
+budget_bytes=80000000000
+started_utc=2026-09-11T20:10:22Z

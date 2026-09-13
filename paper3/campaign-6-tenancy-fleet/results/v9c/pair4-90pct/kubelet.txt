@@ -1,0 +1,1 @@
+kubelet_eviction={"evictionHard": {"imagefs.available": "0%", "nodefs.available": "0%", "nodefs.inodesFree": "0%"}, "imageGCHighThresholdPercent": 100}

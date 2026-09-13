@@ -1,0 +1,26 @@
+=== FACTS: per arm-run ===
+run	policy	warm2_p50	warm3_p50	warm3_n	meas_p50	meas_p95	meas_p99	meas_n	res_err	evictions	skipped	policy_label_end
+1	lru	4507.3	4512.3	130	4515.9	5420.9	5762.0	520	0	10768380	0	lru
+2	2q	4984.1	4890.5	130	4926.5	5824.8	6399.2	520	0	10545161	0	2q,2q-unpromoted
+3	2q	4864.0	4849.8	130	4995.5	5836.1	6141.3	520	0	10350794	0	2q,2q-unpromoted
+4	lru	4862.9	4963.9	130	4929.2	5862.2	6511.9	520	0	10645092	0	lru
+
+=== HOW THE POLICY WAS APPLIED (v6 finding C1) ===
+A plain `systemctl restart` should be enough. Where it was not, the run
+fell back to replacing the FUSE manager, and said so. See CODE-FINDINGS-v6 C1.
+run1 lru  plain_restart_sufficient=?   labels_right_after_restart=[]
+run2 2q   plain_restart_sufficient=?   labels_right_after_restart=[]
+run3 2q   plain_restart_sufficient=?   labels_right_after_restart=[]
+run4 lru  plain_restart_sufficient=?   labels_right_after_restart=[]
+
+=== GATE ===
+G0 PASS  4 of 4 arm-runs valid
+G1 FAIL  warm(pass3) p50 per run = 4512.3, 4890.5, 4849.8, 4963.9 ; mean=4804.1 ; max deviation=6.1% (tolerance 5%)
+G2 PASS  |ref-prev|/prev per run = run1:0.1%, run2:1.9%, run3:0.3%, run4:2.1% (tolerance 5%)
+
+=== GATE FAILED -- NO POLICY COMPARISON IS COMPUTED ===
+PRE-REGISTRATION-v7.md s3.3 makes this binding: the arms do not share a
+baseline, so any latency difference between them is confounded with
+whatever moved the baseline. v5 published such a comparison and it could
+not be quoted. Diagnosis goes to results/e2/GATE-FAILURE.md.
+wrote /home/ubuntu/v8/../results/e2/GATE-FAILURE.md

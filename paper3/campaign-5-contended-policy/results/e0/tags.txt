@@ -1,0 +1,7 @@
+{"name":"model-ballast","tags":["estargz-14g","B-140g","estargz-140g","B-14g"]}
+
+estargz-140g: 200
+estargz-14g: 200
+B-140g: 200
+B-14g: 200
+tags_resolving=4/4

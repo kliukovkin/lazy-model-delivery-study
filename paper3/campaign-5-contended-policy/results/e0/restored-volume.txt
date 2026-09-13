@@ -1,0 +1,6 @@
+data_device=/dev/nvme1n1
+data_kind=ebs
+/dev/nvme1n1    1.2T  463G  664G  42% /data
+--- artifacts ---
+309G	/data/registry
+DATA-DEVICE.txt bench containerd docker lost+found registry stargz-bin tmp 

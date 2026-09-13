@@ -1,0 +1,11 @@
+repo=https://github.com/kliukovkin/stargz-snapshotter.git
+branch=c2-eviction
+sha=f6547d991f0587429af5f9e42a3d80acc0f26f09
+go=go version go1.26.0 linux/amd64
+built_at=2026-09-10T17:40:47Z
+--- git log -1 ---
+f6547d991f0587429af5f9e42a3d80acc0f26f09
+Georgii Kliukovkin
+2026-09-10T09:45:08-07:00
+fs/remote: say which "fetched" a chunk that could not be cached joins
+--- git status (must be clean) ---

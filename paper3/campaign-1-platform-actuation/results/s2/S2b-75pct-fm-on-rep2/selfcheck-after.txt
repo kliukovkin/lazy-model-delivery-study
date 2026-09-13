@@ -1,0 +1,6 @@
+=== AFTER induction ===
+cache_pct=100
+pod_ready=true phase=Running restarts=0
+HEALTH  status=200 body=b'{"ready": true, "mode": "normal"}'
+PREDICT status=200 body=b'{"predictions": [{"file": "ballast-248.bin", "offset": 173115853, "sha256": "52d240976fd24a214f4c355b5f3b2e77a84c24c810a852732eddd20f1108abf9"}, {"file": "ballast-169.bin", "offset": 63058107, "sha256'
+DATA    readable=280 unreadable=0 total=280

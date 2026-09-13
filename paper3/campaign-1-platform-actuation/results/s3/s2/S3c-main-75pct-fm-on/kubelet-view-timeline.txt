@@ -1,0 +1,140 @@
+=== 1.335 ===
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T05:14:27Z",
+    "availableBytes": 1654021664768,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3197857792,
+    "inodesFree": 108321229,
+    "inodes": 108339200,
+    "inodesUsed": 17971
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T05:14:29Z",
+      "availableBytes": 92658429952,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152592384,
+      "inodesFree": 6104696,
+      "inodes": 6111232,
+      "inodesUsed": 6472
+    },
+    "containerFs": {
+      "time": "2026-09-09T05:14:29Z",
+      "availableBytes": 92658429952,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152592384,
+      "inodesFree": 6104696,
+      "inodes": 6111232,
+      "inodesUsed": 6472
+    }
+  }
+}
+=== 21.521 ===
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T05:14:47Z",
+    "availableBytes": 1654021591040,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3197931520,
+    "inodesFree": 108321208,
+    "inodes": 108339200,
+    "inodesUsed": 17992
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T05:14:49Z",
+      "availableBytes": 13450469376,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 6045403,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    },
+    "containerFs": {
+      "time": "2026-09-09T05:14:49Z",
+      "availableBytes": 13450469376,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 6045403,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    }
+  }
+}
+=== 41.700 ===
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T05:15:07Z",
+    "availableBytes": 1654021591040,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3197931520,
+    "inodesFree": 108321206,
+    "inodes": 108339200,
+    "inodesUsed": 17994
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T05:15:09Z",
+      "availableBytes": 6778269696,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5979136,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    },
+    "containerFs": {
+      "time": "2026-09-09T05:15:09Z",
+      "availableBytes": 6778269696,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5979136,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    }
+  }
+}
+=== 61.874 ===
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T05:15:27Z",
+    "availableBytes": 1654021591040,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3197931520,
+    "inodesFree": 108321205,
+    "inodes": 108339200,
+    "inodesUsed": 17995
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T05:15:29Z",
+      "availableBytes": 222187520,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5914706,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    },
+    "containerFs": {
+      "time": "2026-09-09T05:15:29Z",
+      "availableBytes": 222187520,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 5914706,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    }
+  }
+}

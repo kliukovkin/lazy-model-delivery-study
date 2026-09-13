@@ -1,0 +1,7 @@
+t_s,cache_pct,imagefs_avail,imagefs_used,disk_pressure,pod_phase,pod_ready,restarts,pod_reason
+1.609,81,92658515968,150212608,False,Running,true,0,
+6.956,83,92658515968,150212608,False,Running,true,0,
+12.301,85,15634321408,152551424,False,Running,true,0,
+17.635,87,15634321408,152551424,False,Running,true,0,
+22.965,89,12350726144,152551424,False,Running,true,0,
+28.307,91,12350726144,152551424,False,Running,true,0,

@@ -1,0 +1,4 @@
+label,sentinel_exit,k8s_ready,healthz,predict
+before,0,True,,
+after,0,True,,
+after2,0,True,,

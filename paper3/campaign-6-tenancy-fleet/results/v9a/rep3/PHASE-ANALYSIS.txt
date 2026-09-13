@@ -1,0 +1,23 @@
+==============================================================================
+V9-A  registry bytes served for A's OWN blobs, by phase  (rep3)
+==============================================================================
+phase                        requests            bytes         GB
+warm-up (not refetch)           11074      22977050000     22.977
+baseline  (A alone)              1932       4054172004      4.054
+under-sweep (B running)         37736      77681614105     77.682
+after  (B gone)                  5936      12314757825     12.315
+
+  REFETCH (everything after warm-up completed) = 94.051 GB
+  A's image size                               = 21.475 GB
+  refetch as a multiple of A's hot set         = 4.38x
+
+  >0 refetched bytes: the pre-registered expectation's refetch clause is
+  CONFIRMED -- B's sweep did evict part of A's resident hot set.
+
+==============================================================================
+A's cache hit rate by phase (read bytes served without touching the registry)
+==============================================================================
+phase                         A read GB  registry GB   hit rate  MB/s ref
+baseline  (A alone)               303.3        4.054     98.66%      13.5
+under-sweep (B running)           532.0       77.682     85.40%      68.3
+after  (B gone)                   267.4       12.315     95.39%      40.1

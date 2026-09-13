@@ -1,0 +1,17 @@
+NAMESPACE   LAST SEEN   TYPE      REASON      OBJECT              MESSAGE
+bench       46m         Normal    Pulled      pod/v9b-k1-node3    Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       46m         Normal    Killing     pod/v9b-k1-node3    Stopping container predictor
+bench       45m         Normal    Scheduled   pod/v9b-k3-round1   Successfully assigned bench/v9b-k3-round1 to ocibench-control-plane
+bench       45m         Normal    Pulled      pod/v9b-k3-round1   Container image "172.31.90.228:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       45m         Normal    Created     pod/v9b-k3-round1   Container created
+bench       45m         Normal    Started     pod/v9b-k3-round1   Container started
+bench       45m         Warning   Unhealthy   pod/v9b-k3-round1   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+bench       23m         Normal    Pulled      pod/v9b-k3-round1   Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       23m         Normal    Killing     pod/v9b-k3-round1   Stopping container predictor
+bench       22m         Normal    Scheduled   pod/v9b-k3-round2   Successfully assigned bench/v9b-k3-round2 to ocibench-control-plane
+bench       22m         Normal    Pulled      pod/v9b-k3-round2   Container image "172.31.90.228:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+bench       22m         Normal    Created     pod/v9b-k3-round2   Container created
+bench       22m         Normal    Started     pod/v9b-k3-round2   Container started
+bench       22m         Warning   Unhealthy   pod/v9b-k3-round2   Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+bench       43s         Normal    Pulled      pod/v9b-k3-round2   Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench       6s          Normal    Killing     pod/v9b-k3-round2   Stopping container predictor

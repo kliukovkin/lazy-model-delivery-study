@@ -1,0 +1,821 @@
+{"level":"info","msg":"serving the fuse manager's metrics on \"/run/containerd-stargz-grpc/fuse-manager-metrics.sock\"","time":"2026-09-12T21:42:39.154140191Z"}
+{"duration":148932,"files":0,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-12T21:42:39.171534449Z"}
+{"index_total":0,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":5167620096,"partition_used":5167620096,"time":"2026-09-12T21:42:39.171664478Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/12/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.172049645Z"}
+{"digest":"sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/12/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.172119403Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/12/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.185092825Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/12/fs","msg":"verified","time":"2026-09-12T21:42:39.185217788Z"}
+{"layer_sha":"sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","level":"info","metrics":"latency","msg":"value=0.072715 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.185272607Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.185355871Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.186876067Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.186904544Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.186904759Z"}
+{"digest":"sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.186981571Z"}
+{"digest":"sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.187014656Z"}
+{"digest":"sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.187039247Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.186895968Z"}
+{"digest":"sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.187159301Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.186915456Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","time":"2026-09-12T21:42:39.186922289Z"}
+{"digest":"sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.187260673Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.186886754Z"}
+{"digest":"sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","time":"2026-09-12T21:42:39.187348198Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.186925275Z"}
+{"digest":"sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.187615680Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.205383136Z"}
+{"layer_sha":"sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","level":"info","metrics":"latency","msg":"value=0.021828 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.205446783Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.205476936Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.206913026Z"}
+{"layer_sha":"sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","level":"info","metrics":"latency","msg":"value=0.011428 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.206972804Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.206995771Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.207249733Z"}
+{"layer_sha":"sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","level":"info","metrics":"latency","msg":"value=0.015277 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.207332760Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.207364178Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.207770544Z"}
+{"layer_sha":"sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","level":"info","metrics":"latency","msg":"value=0.012385 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.207817912Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.207829213Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.209183209Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.209389791Z"}
+{"layer_sha":"sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","level":"info","metrics":"latency","msg":"value=0.00985 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.209395302Z"}
+{"layer_sha":"sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","level":"info","metrics":"latency","msg":"value=0.008573 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.209435490Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.209452848Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.209436612Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","time":"2026-09-12T21:42:39.209496543Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/5/fs","msg":"verified","time":"2026-09-12T21:42:39.209529492Z"}
+{"layer_sha":"sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","level":"info","metrics":"latency","msg":"value=0.008511 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.209533269Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.209647225Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.210970145Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.211000274Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.211024613Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","time":"2026-09-12T21:42:39.211007238Z"}
+{"digest":"sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.211105703Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.211026947Z"}
+{"digest":"sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.211073099Z"}
+{"digest":"sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","time":"2026-09-12T21:42:39.211161967Z"}
+{"digest":"sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.211203531Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.210992639Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.210979736Z"}
+{"digest":"sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.211359925Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","time":"2026-09-12T21:42:39.211032184Z"}
+{"digest":"sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.211088197Z"}
+{"digest":"sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","time":"2026-09-12T21:42:39.211457922Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","time":"2026-09-12T21:42:39.211013617Z"}
+{"digest":"sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.211375780Z"}
+{"digest":"sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-140g","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","time":"2026-09-12T21:42:39.211608555Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","time":"2026-09-12T21:42:39.221567413Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"verified","time":"2026-09-12T21:42:39.221597542Z"}
+{"layer_sha":"sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","level":"info","metrics":"latency","msg":"value=0.010976 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.221607909Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.221660465Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.222797810Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.222821348Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.222836018Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.222843220Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.222835903Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.222850426Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.222806878Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/6/fs","msg":"verified","time":"2026-09-12T21:42:39.222919381Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","time":"2026-09-12T21:42:39.259249587Z"}
+{"layer_sha":"sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","level":"info","metrics":"latency","msg":"value=0.017537 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.259361831Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.259390085Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.262506184Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.262564168Z"}
+{"layer_sha":"sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","level":"info","metrics":"latency","msg":"value=0.011517 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.262569595Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.262618322Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.263715361Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.263776802Z"}
+{"layer_sha":"sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","level":"info","metrics":"latency","msg":"value=0.012925 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.263794319Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.263863173Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.267044341Z"}
+{"layer_sha":"sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","level":"info","metrics":"latency","msg":"value=0.015384 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.267369641Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.267406469Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.267662075Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.267697343Z"}
+{"layer_sha":"sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","level":"info","metrics":"latency","msg":"value=0.150193 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.267841502Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.268013537Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.268121051Z"}
+{"layer_sha":"sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","level":"info","metrics":"latency","msg":"value=0.009695 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.268173754Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.268204829Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.268175047Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"verified","time":"2026-09-12T21:42:39.268247094Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.268510244Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/25/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.268557294Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/21/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","time":"2026-09-12T21:42:39.268568516Z"}
+{"layer_sha":"sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","level":"info","metrics":"latency","msg":"value=0.013234 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.268570336Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.268625187Z"}
+{"layer_sha":"sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","level":"info","metrics":"latency","msg":"value=0.007978 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.268643543Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.268664887Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/11/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.269729949Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/11/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.269731463Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/11/fs","msg":"verified","time":"2026-09-12T21:42:39.269765133Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/9/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.270809423Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/9/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.270821057Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/9/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.270829997Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/9/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.270851459Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/9/fs","msg":"verified","time":"2026-09-12T21:42:39.270893933Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.271960973Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","time":"2026-09-12T21:42:39.271994895Z"}
+{"digest":"sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","time":"2026-09-12T21:42:39.272065661Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","time":"2026-09-12T21:42:39.272229596Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.272252200Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.272266024Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.272288041Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.272300205Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.272331418Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.272347834Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","time":"2026-09-12T21:42:39.277279476Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/4/fs","msg":"verified","time":"2026-09-12T21:42:39.277304279Z"}
+{"layer_sha":"sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","level":"info","metrics":"latency","msg":"value=0.015962 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.287194282Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.287220474Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.287875986Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.287897758Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.287905643Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.287907887Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.287886267Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"verified","time":"2026-09-12T21:42:39.287953020Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/24/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.287956971Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.288688368Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.288714441Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.288692760Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.288693267Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.288706789Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/8/fs","msg":"verified","time":"2026-09-12T21:42:39.288795884Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.289514268Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","time":"2026-09-12T21:42:39.289537447Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.289559158Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.289545689Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.289563784Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:9f8815f6e7ec12e3ad2d11827c5599422ef6c9b9470848f92628fbefbb3eee29","time":"2026-09-12T21:42:39.289529733Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.289552546Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.289519191Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/22/fs","msg":"verified","time":"2026-09-12T21:42:39.289606422Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/28/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.290577465Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/28/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.290597270Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/28/fs","msg":"verified","time":"2026-09-12T21:42:39.290618629Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/26/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.291470257Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/26/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.291494675Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/26/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.291512047Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/26/fs","msg":"verified","time":"2026-09-12T21:42:39.291530506Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/26/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.291535453Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.292381563Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:e7430551a523c32756008054164bb4ab7b65f1f7fdbd8576eb533a3186165140","time":"2026-09-12T21:42:39.292406542Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.292425544Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:7b8132580965d2127f7bb9a1d79c594f5feaf83a90ee8c5bcee8f001ffccb716","time":"2026-09-12T21:42:39.292393846Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:75d13641bb1c27580d107e31032a20b3b4d7f782e406360ae2514b23a151f1d7","time":"2026-09-12T21:42:39.292427654Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:dd713e37c0d9977fb819235a4fcb7f2058c42b49bc6d955d9c748765fea6ca42","time":"2026-09-12T21:42:39.292414861Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"verified","time":"2026-09-12T21:42:39.292437137Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/23/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.292432129Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/10/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.293168376Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/10/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.293188894Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/10/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.293193564Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/10/fs","msg":"verified","time":"2026-09-12T21:42:39.293214814Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/27/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.293967683Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/27/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:831a377ae8f29c241188254792555161e139fb84e1f9fd016b7de5345303317f","time":"2026-09-12T21:42:39.293995263Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/27/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c5be7e35a6e385ee79e543df74542cc58c6867af7bf59883aff989a980bcafcb","time":"2026-09-12T21:42:39.294014040Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/27/fs","msg":"verified","time":"2026-09-12T21:42:39.294039021Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/29/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5\"","src":"172.31.0.84:5000/model-ballast:estargz-140g/sha256:c2f7735a288961a4667e4b671cdd48ee088b043356139481574e9ece5e2a48a5","time":"2026-09-12T21:42:39.294797202Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/29/fs","msg":"verified","time":"2026-09-12T21:42:39.294821762Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.295541149Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.295576012Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.295590709Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.295599487Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.295615329Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.295624084Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/7/fs","msg":"verified","time":"2026-09-12T21:42:39.295602619Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:35fd270a19915993ad3550d0c272858bf828a61d2987e7f0b76fc5187b6d3abd","time":"2026-09-12T21:42:39.296628468Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"resolving","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","time":"2026-09-12T21:42:39.296662639Z"}
+{"digest":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","error":null,"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"using default handler","ref":"172.31.0.84:5000/model-ballast:estargz-20g","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","time":"2026-09-12T21:42:39.296728646Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","time":"2026-09-12T21:42:39.296853585Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d655b341d3888821e49ecaa2d7e59c498ae0a1d65e5d012b8a8903b531aa53e7","time":"2026-09-12T21:42:39.296879339Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:6666e847946db50ce8ed11eb220aecb974c40fe5154094ed1b63d3d20f7660d4","time":"2026-09-12T21:42:39.296895814Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:1d3a8b4ed312ae872abfb55cdca534619d4beb0d23ebdf9af1852a08bbd95a43","time":"2026-09-12T21:42:39.296921945Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:97c6cec8c10f7f6ed5624596df198e0f2c372edf39bef2080ee1457a4981dd22","time":"2026-09-12T21:42:39.296933834Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:f065278feabdf85db2e71bd2e5a2a9402073504676208a950889cb418231739c","time":"2026-09-12T21:42:39.296945328Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:8889a835b6f582b479d5247292bd66d00279638eef53123351833c951624a793","time":"2026-09-12T21:42:39.296956709Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"hit layer cache \"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93\"","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:d95432c3cfcb9087bc79a832b46c8ff6cfca290ba3cea5db3793fa8b212f5c93","time":"2026-09-12T21:42:39.296975221Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"resolved","src":"172.31.0.84:5000/model-ballast:estargz-20g/sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","time":"2026-09-12T21:42:39.304030986Z"}
+{"level":"debug","mountpoint":"/var/lib/containerd-stargz-grpc/snapshotter/snapshots/3/fs","msg":"verified","time":"2026-09-12T21:42:39.304070558Z"}
+{"layer_sha":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","level":"info","metrics":"latency","msg":"value=0.008586 milliseconds; prefetch_size=0 bytes","operation":"prefetch_total","time":"2026-09-12T21:42:39.304072301Z"}
+{"level":"debug","msg":"completed to prefetch","time":"2026-09-12T21:42:39.304121579Z"}
+{"layer_sha":"sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","level":"info","metrics":"latency","msg":"value=5100.807112 milliseconds","operation":"background_fetch_decompress","time":"2026-09-12T21:42:44.322394219Z"}
+{"layer_sha":"sha256:a8225f3f77aecc4fae99c8b3611befcda80781f71090af9c723970779ae3ff57","level":"info","metrics":"latency","msg":"value=5100.844093 milliseconds","operation":"background_fetch_total","time":"2026-09-12T21:42:44.322427987Z"}
+{"level":"debug","msg":"completed to fetch all layer data in background","time":"2026-09-12T21:42:44.322436699Z"}
+{"layer_sha":"sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","level":"info","metrics":"latency","msg":"value=5113.078344 milliseconds","operation":"background_fetch_decompress","time":"2026-09-12T21:42:44.390376963Z"}
+{"layer_sha":"sha256:d8f796b0e14fa4435c21dc086408a6f2ec3e8f9cdb8a0f199c55e25848bb41e2","level":"info","metrics":"latency","msg":"value=5113.11896 milliseconds","operation":"background_fetch_total","time":"2026-09-12T21:42:44.390413707Z"}
+{"level":"debug","msg":"completed to fetch all layer data in background","time":"2026-09-12T21:42:44.390423419Z"}
+{"layer_sha":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","level":"info","metrics":"latency","msg":"value=6270.45883 milliseconds","operation":"background_fetch_decompress","time":"2026-09-12T21:42:45.574518100Z"}
+{"layer_sha":"sha256:2815354e116ddd9390c84e5d44644945de0592e5c97a795d5600b4efa7ff937c","level":"info","metrics":"latency","msg":"value=6270.509056 milliseconds","operation":"background_fetch_total","time":"2026-09-12T21:42:45.574564067Z"}
+{"level":"debug","msg":"completed to fetch all layer data in background","time":"2026-09-12T21:42:45.574575185Z"}
+{"bytes":704442053,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:20.922914768Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:24.171618721Z"}
+{"bytes":395416856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:24.331617907Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:25.766410160Z"}
+{"bytes":577787360,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:25.877226935Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:28.236583744Z"}
+{"bytes":349850640,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:28.357145703Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:29.301254496Z"}
+{"bytes":536344320,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:30.744564363Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:32.031592154Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:33.286541361Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:34.323352385Z"}
+{"bytes":395437984,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:35.578693316Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:36.816085587Z"}
+{"bytes":557065840,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:36.971459289Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:39.296022470Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:40.760134671Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:40.935114577Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:42.177755306Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:43.396283822Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:44.295734195Z"}
+{"bytes":395437984,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:45.560749029Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:46.897526633Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:48.194488177Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:49.536038855Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:49.709661190Z"}
+{"bytes":490756976,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:51.003612898Z"}
+{"bytes":474179760,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:52.369828057Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:54.023748580Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:56.212755579Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:57.599820814Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:58.974942616Z"}
+{"bytes":341562032,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:46:59.533449202Z"}
+{"bytes":478324064,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:00.984951392Z"}
+{"bytes":345706336,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:02.417775422Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:03.847761641Z"}
+{"bytes":573643056,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:05.470677925Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:06.688691656Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:07.945266861Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:09.180264682Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:09.591123688Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:10.800596565Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:12.029074060Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:13.293032815Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:14.313442461Z"}
+{"bytes":528055712,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:15.702482148Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:17.182649496Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:18.596646044Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:19.557859760Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:20.947783106Z"}
+{"bytes":573643056,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:22.164124354Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:23.459907757Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:24.295791464Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:25.690651374Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:27.097818667Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:28.640795257Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:31.209465863Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:31.473354008Z"}
+{"bytes":507334192,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:33.050078277Z"}
+{"bytes":345706336,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:34.340237689Z"}
+{"bytes":490756976,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:35.747622190Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:37.139141917Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:38.558836184Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:39.400159801Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:52.906369283Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:53.582938178Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:53.873271564Z"}
+{"bytes":569498752,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:54.423744783Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:55.006858482Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:55.338250194Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:55.999751355Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:56.470293454Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:47:59.942193218Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.077012877Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.199608332Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.334576063Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.457794645Z"}
+{"bytes":573643056,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.573033696Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.731835573Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:00.847555210Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.195502940Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.324977767Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.437178009Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.551082178Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.658344776Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:01.768100313Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:03.097150040Z"}
+{"bytes":565354448,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:04.292072322Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:05.781096529Z"}
+{"bytes":349850640,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:07.119870224Z"}
+{"bytes":341562032,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:07.235583326Z"}
+{"bytes":503189888,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:08.601163643Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:10.566553089Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:12.026866792Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:13.463038527Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:14.298857308Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:15.949865729Z"}
+{"bytes":573643056,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:17.412077860Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:18.786576765Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:19.290837967Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:20.497972865Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:21.940763441Z"}
+{"bytes":391293680,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:23.382278408Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:25.863067008Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:38.094140969Z"}
+{"dropped":66685,"filesystem_bytes":79563079680,"index_bytes":69509349418,"level":"warning","msg":"cache accounting: the filesystem holds materially more than the index accounts for; rescanning the cache tree to regain an accurate index","time":"2026-09-12T21:48:38.094179566Z"}
+{"duration":5171636868,"files":792273,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-12T21:48:43.265831623Z"}
+{"index_total":78325572928,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":8149342912,"partition_used":86474915840,"time":"2026-09-12T21:48:43.266465185Z"}
+{"duration":5172288065,"index_bytes":78325572928,"level":"info","msg":"cache accounting: reconciliation rescan complete","time":"2026-09-12T21:48:43.266481101Z"}
+{"bytes":486612672,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:43.785968581Z"}
+{"bytes":1771346912,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:43.968654791Z"}
+{"bytes":9818865664,"chunks":2341,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:48:44.322271289Z"}
+{"bytes":8006926336,"chunks":1909,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:49:09.732034003Z"}
+{"bytes":8053063680,"chunks":1920,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:49:35.971191870Z"}
+{"bytes":8132755456,"chunks":1939,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:02.135371792Z"}
+{"bytes":3462222944,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:28.971171741Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:39.057948109Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:39.252828462Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:40.596028002Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:40.700101657Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:42.049001816Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:42.151949103Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:43.537352992Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:43.921165552Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:44.272782706Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:45.633477968Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:45.734461697Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:47.119443628Z"}
+{"bytes":204797395,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:47.230520948Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:48.594390523Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:48.696483944Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:49.539803184Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:50.898689474Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:51.004122387Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:51.087922846Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:52.434764195Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:52.533614135Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:53.894257854Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:54.004018201Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:55.778399811Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:55.895950618Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:55.982973479Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:57.355125323Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:57.477529594Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:59.184496220Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:59.325186527Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:50:59.622497791Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:01.617221128Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:01.735155823Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:03.110784444Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:03.206995086Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:04.268125460Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:04.355652089Z"}
+{"bytes":204797427,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:05.624599528Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:05.731767825Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:07.185814121Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:07.292435991Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:07.390897673Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:08.577274842Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:08.685161717Z"}
+{"bytes":204797747,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:09.269373888Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:10.641898608Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:10.739087649Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:12.388560241Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:12.495677649Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:12.585789360Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:13.965800842Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:14.070158778Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:15.548973988Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:15.652875661Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:17.059939746Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:17.471691072Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:17.568285036Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:18.985794687Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:19.086965439Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:20.548698455Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:20.651360611Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:22.007081804Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:22.102775563Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:23.686681726Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:23.797557547Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:23.939799050Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:24.263878171Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:25.441584873Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:25.544855816Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:26.769346863Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:26.876033974Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:28.501268533Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:28.598511591Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:28.692354351Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:30.564756227Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:30.669725408Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:32.023232258Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:32.122041241Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:32.210396797Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:33.958490569Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:34.070175924Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:35.655308833Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:35.934587206Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:36.165195208Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:36.322460138Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:37.810922923Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:38.386720961Z"}
+{"bytes":204796787,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:50.724602276Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:50.835357639Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:50.938563939Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.046660500Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.162589806Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.250221952Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.360300585Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.432501766Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.786394399Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.876242752Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:51.949521010Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.022721552Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.094832185Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.163560552Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.235692596Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.306777460Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:52.662562738Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:54.049612314Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:54.146258493Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:54.222881136Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:55.571688590Z"}
+{"bytes":204797193,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:55.666776509Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:57.007573477Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:57.107456246Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:58.731229559Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:58.867350374Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:51:58.954116171Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:00.501717775Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:00.633216014Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:01.973571905Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:02.073731069Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:02.154158507Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:03.909183169Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:04.017599387Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:05.395415757Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:05.494280027Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:05.585063519Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:06.761001777Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:06.861518052Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:08.035216987Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:08.446673915Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:08.543544470Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:09.272483007Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:10.466054462Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:10.564998720Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:11.917644461Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:12.009864316Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:12.091231958Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:13.710239553Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:13.807734196Z"}
+{"bytes":204797582,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:14.254633839Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:15.651407630Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:15.746684984Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:17.150500388Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:17.251799636Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:18.639405374Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:19.065918065Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:19.153945644Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:20.535887728Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:20.631865084Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:21.986531569Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:22.107434948Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:22.198759385Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:23.557298846Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:23.946389599Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:24.253593886Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:25.603261303Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:25.700987155Z"}
+{"bytes":204797804,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:27.037363880Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:27.130990784Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:28.535007458Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:28.630766426Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:29.559122787Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:29.648825696Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:31.009561117Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:31.146672465Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:32.543283622Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:32.644958214Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:33.929781678Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:34.034124241Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:34.413972257Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:35.627598958Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:35.730143077Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:37.036596956Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:37.131960620Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:37.209607523Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:38.547110041Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:38.643043833Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:39.545220887Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:40.921366395Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:41.017641782Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:41.098216072Z"}
+{"bytes":204797329,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:42.425723145Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:42.521625830Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:43.808998658Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:43.967067951Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:45.675570766Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:45.774859379Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:45.864743283Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:47.070257086Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:47.178015529Z"}
+{"bytes":395437984,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:47.284431144Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:48.705583221Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:50.608567152Z"}
+{"bytes":565354448,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:52.257221823Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:53.644787912Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:54.296644771Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:55.728822895Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:57.118346448Z"}
+{"bytes":519767104,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:52:58.507445720Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:00.557569216Z"}
+{"bytes":353994944,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:00.720190976Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:02.457399427Z"}
+{"bytes":532200016,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:03.868624720Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:05.577736906Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:07.010818883Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:08.411581988Z"}
+{"bytes":511478496,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:08.544897156Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:10.616006574Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:12.038779731Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:13.666985988Z"}
+{"bytes":312551904,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:14.300431492Z"}
+{"bytes":470035456,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:15.727228017Z"}
+{"bytes":333273424,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:17.178587567Z"}
+{"bytes":499045584,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:18.700169742Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:21.024944692Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:21.269224662Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:23.025611213Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:24.526949377Z"}
+{"bytes":528055712,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:25.926234258Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:27.185841569Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:28.428820155Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:29.313915059Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:30.580039693Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:31.844288994Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:33.218594793Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:34.595247513Z"}
+{"bytes":528055712,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:34.723369407Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:37.390408445Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:38.774737337Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:38.920577250Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:40.567542663Z"}
+{"bytes":478324064,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:41.926890066Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:43.369640484Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:44.556912625Z"}
+{"bytes":511478496,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:45.979812265Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:47.437702988Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:48.812689757Z"}
+{"bytes":507334192,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:49.287884039Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:51.693971213Z"}
+{"bytes":345706336,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:51.826901833Z"}
+{"bytes":470035456,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:53.106929328Z"}
+{"bytes":337417728,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:54.625360554Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:56.132098904Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:58.308032697Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:53:58.456112227Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:00.599706685Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:00.739267022Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:03.398781795Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:04.311104329Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:05.964628877Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:06.105397064Z"}
+{"bytes":474179760,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:07.516063470Z"}
+{"bytes":353994944,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:08.928810730Z"}
+{"bytes":519767104,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:10.570726544Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:12.015909153Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:13.427966533Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:14.314186201Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:15.969339638Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:17.370796905Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:18.765654831Z"}
+{"bytes":511478496,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:19.293703318Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:21.877732983Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:23.118048039Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:23.252054965Z"}
+{"bytes":528055712,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:24.338410334Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:27.313869141Z"}
+{"bytes":353994944,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:27.443896259Z"}
+{"bytes":486612672,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:28.963808321Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:30.666258331Z"}
+{"bytes":349850640,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:32.376376425Z"}
+{"bytes":507334192,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:32.612753807Z"}
+{"bytes":329129120,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:35.222180410Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:37.419860603Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:50.727578188Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:51.977823296Z"}
+{"bytes":353994944,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:52.664267786Z"}
+{"bytes":523911408,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:53.662265703Z"}
+{"bytes":387149376,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:54.787456631Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:55.371901052Z"}
+{"bytes":378860768,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:56.201509899Z"}
+{"bytes":349850640,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:54:56.802416992Z"}
+{"bytes":507334192,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:55:04.125080368Z"}
+{"dropped":176181,"filesystem_bytes":79300588864,"index_bytes":69561571296,"level":"warning","msg":"cache accounting: the filesystem holds materially more than the index accounts for; rescanning the cache tree to regain an accurate index","time":"2026-09-12T21:55:04.125119083Z"}
+{"duration":4432201735,"files":813189,"level":"info","msg":"cache accounting: rebuilt index by scanning the cache tree","time":"2026-09-12T21:55:08.557335736Z"}
+{"index_total":80403325360,"level":"debug","msg":"cache accounting: reconciled against the filesystem","non_cache":8480087632,"partition_used":88883412992,"time":"2026-09-12T21:55:08.564280517Z"}
+{"duration":4439168119,"index_bytes":80403325360,"level":"info","msg":"cache accounting: reconciliation rescan complete","time":"2026-09-12T21:55:08.564302022Z"}
+{"bytes":523911408,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:55:09.269637222Z"}
+{"bytes":1779635520,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:55:09.522256567Z"}
+{"bytes":11622416384,"chunks":2771,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:55:10.047569404Z"}
+{"bytes":8128561152,"chunks":1938,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:55:35.846308172Z"}
+{"bytes":8061452288,"chunks":1922,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:56:02.264228000Z"}
+{"bytes":8153726976,"chunks":1944,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:56:28.256233920Z"}
+{"bytes":2517321632,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:56:53.516382506Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:00.791595669Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:02.378387556Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:02.505765347Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:02.591899648Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:03.754927597Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:03.858557964Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:05.590126694Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:05.985496715Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:06.079890204Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:07.419854251Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:07.518139887Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:08.865746178Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:08.966004345Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:10.573051574Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:10.670151446Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:12.327367075Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:12.427543948Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:12.518744274Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:13.899632721Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:14.001776019Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:15.624512012Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:15.721911786Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:17.118032437Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:17.506450326Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:17.597869745Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:18.964092973Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:19.063678836Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:20.556382050Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:20.656961854Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:21.986516356Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:22.093813105Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:23.717431943Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:23.823464374Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:23.919059478Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:24.262800975Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:25.638794847Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:25.732808822Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:27.064832286Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:27.159763906Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:28.884135810Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:28.990794590Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:29.081172007Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:30.585449429Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:30.693047329Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:31.989239513Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:32.094463432Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:33.500685758Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:33.883697806Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:33.973920564Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:35.599898535Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:35.708868231Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:37.044100858Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:37.145352861Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:38.475064190Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:38.587902200Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:39.554801405Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:39.642520519Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:40.984731986Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:41.088729998Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:42.384345238Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:42.490914640Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:43.660793355Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:43.767175816Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:44.598963919Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:44.722774370Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:46.042504939Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:46.148483357Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:47.522833044Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:47.624155710Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:48.991400472Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:49.099878039Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:50.781814156Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:50.888885949Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:50.983683578Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:52.139065971Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:52.237533160Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:53.588435282Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:53.687677059Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:54.273276633Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:56.055525905Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:56.157527394Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:56.252397767Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:57.586076788Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:57.679481366Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:59.083557227Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:57:59.209733832Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:01.120573546Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:16.614031879Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:16.720289017Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:16.827928676Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:16.935584944Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:17.034708353Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:17.238208145Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:17.376531015Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:17.474195016Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.282031868Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.384174108Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.464168753Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.539773115Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.617074594Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.693233642Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.775278047Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:18.851876635Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.237356553Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.406619630Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.483886300Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.560478379Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.634782321Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.708383350Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.790586353Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:19.871356408Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:21.526429058Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:21.631079983Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:21.726640384Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:23.119889304Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:23.225393474Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:24.369658226Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:24.462009398Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:25.771368851Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:26.171451085Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:26.260482270Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:27.598947700Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:27.694043434Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:29.038099333Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:29.138277265Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:30.597554615Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:30.697047962Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:32.397870651Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:32.502221387Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:32.590692310Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:33.959632666Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:34.063185996Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:34.252243070Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:35.587634114Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:35.691833222Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:37.193476420Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:37.293069456Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:37.384247016Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:38.678545180Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:38.786112394Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:39.305170512Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:40.695946437Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:40.801743958Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:46.865054400Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:46.997201821Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:47.111536801Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:47.224444252Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:47.318912470Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:47.894479590Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:48.022533686Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:48.574818928Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:49.012672224Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:49.127405411Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:49.253788685Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:49.359272430Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:49.914568222Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:50.321271426Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:50.433461658Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:50.543212420Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:51.582494259Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:51.762289791Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:51.984460266Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:52.128475907Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:52.263349472Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:52.462941175Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:52.679991559Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:53.059630224Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:53.803749221Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:54.013519272Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:54.192942019Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:54.304406048Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:54.416654316Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:55.001863257Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:55.119225072Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:55.225751714Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:55.630554468Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:55.764659039Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:56.366858285Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:56.735648414Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:56.862451894Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:56.972212482Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:57.069045263Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:57.636395631Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:58.257216652Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:58.608470038Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:58.769455378Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:58.938762548Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:59.095578971Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:59.253897020Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:59.704158350Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:58:59.926638446Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:00.376245001Z"}
+{"bytes":204800000,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:00.646373667Z"}
+{"bytes":449313936,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:01.107366559Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:01.634883217Z"}
+{"bytes":383005072,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:02.068883506Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:02.534415970Z"}
+{"bytes":515622800,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:03.256712862Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:03.568792159Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:04.514328474Z"}
+{"bytes":374716464,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:04.810486355Z"}
+{"bytes":370572160,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:05.218247773Z"}
+{"bytes":519767104,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:05.850417064Z"}
+{"bytes":366427856,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:06.147746509Z"}
+{"bytes":362283552,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:06.846447114Z"}
+{"bytes":358139248,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:07.376410982Z"}
+{"bytes":507334192,"chunks":4096,"level":"debug","msg":"cache accounting: evicted cached chunks","policy":"lru","time":"2026-09-12T21:59:07.929863746Z"}

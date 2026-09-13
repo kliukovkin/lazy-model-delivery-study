@@ -1,0 +1,3 @@
+trial,fuse_manager,killmode,action,pod_ready_pre,pod_ready_post,restarts_post,warm_ok_pre,warm_err_pre,warm_ok_post,warm_err_post,warm_errnos_post,fresh_ok_post,fresh_err_post,fresh_errnos_post,mounts_pre,mounts_post,fm_pid_pre,fm_pid_post,httpcache_pre,fscache_pre,httpcache_post,fscache_post,httpcache_reread,fscache_reread,verdict,notes
+M1-main-shipped-unit,true,default,systemctl,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,18871,19240,4541608967,4299384827,6351467934,5914415094,6351467934,5914415094,MOUNT_BROKEN,listdir=errno=107 ENOTCONN
+M2-main-killmode-process,true,process,systemctl,true,true,0,8,0,8,0,none,4,0,none,15,15,19709,19709,4568258967,4521682938,8775208967,8778901498,13380158967,13291972602,MOUNT_SURVIVED,listdir=n=280

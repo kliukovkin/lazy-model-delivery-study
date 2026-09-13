@@ -1,0 +1,114 @@
+NAMESPACE            LAST SEEN   TYPE      REASON                  OBJECT                                         MESSAGE
+bench                31m         Normal    Pulling                 pod/smoke-probe                                Pulling image "172.31.49.141:5000/custom-predictor:v4"
+bench                31m         Normal    Pulling                 pod/smoke-probe                                Pulling image "172.31.49.141:5000/model-ballast:estargz-140g"
+bench                31m         Normal    Scheduled               pod/smoke-probe                                Successfully assigned bench/smoke-probe to ocibench-control-plane
+bench                31m         Normal    Pulled                  pod/smoke-probe                                Successfully pulled image "172.31.49.141:5000/model-ballast:estargz-140g" in 165ms (165ms including waiting). Image size: 150374664101 bytes.
+bench                31m         Normal    Started                 pod/smoke-probe                                Container started
+bench                31m         Normal    Created                 pod/smoke-probe                                Container created
+bench                31m         Normal    Pulled                  pod/smoke-probe                                Successfully pulled image "172.31.49.141:5000/custom-predictor:v4" in 1.182s (1.182s including waiting). Image size: 48519468 bytes.
+bench                31m         Warning   Unhealthy               pod/smoke-probe                                Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+bench                31m         Normal    Pulled                  pod/smoke-probe                                Container image "172.31.49.141:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench                31m         Normal    Killing                 pod/smoke-probe                                Stopping container predictor
+bench                31m         Normal    Started                 pod/s5-probe                                   Container started
+bench                31m         Warning   Unhealthy               pod/s5-probe                                   Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+bench                31m         Normal    Created                 pod/s5-probe                                   Container created
+bench                31m         Normal    Pulled                  pod/s5-probe                                   Container image "172.31.49.141:5000/custom-predictor:v4" already present on machine and can be accessed by the pod
+bench                31m         Normal    Scheduled               pod/s5-probe                                   Successfully assigned bench/s5-probe to ocibench-control-plane
+bench                28m         Normal    Pulled                  pod/s5-probe                                   Container image "172.31.49.141:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench                28m         Normal    Killing                 pod/s5-probe                                   Stopping container predictor
+bench                28m         Warning   Evicted                 pod/s5-probe                                   The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 820872Ki. Container predictor was using 2268Ki, request is 0, has larger consumption of ephemeral-storage.
+bench                27m         Warning   FailedScheduling        pod/s5-probe                                   0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+bench                27m         Normal    Scheduled               pod/s5-probe                                   Successfully assigned bench/s5-probe to ocibench-control-plane
+bench                27m         Normal    Pulling                 pod/s5-probe                                   Pulling image "172.31.49.141:5000/model-ballast:estargz-140g"
+bench                27m         Normal    Pulling                 pod/s5-probe                                   Pulling image "172.31.49.141:5000/custom-predictor:v4"
+bench                27m         Normal    Pulled                  pod/s5-probe                                   Successfully pulled image "172.31.49.141:5000/model-ballast:estargz-140g" in 132ms (132ms including waiting). Image size: 150374664101 bytes.
+bench                27m         Normal    Created                 pod/s5-probe                                   Container created
+bench                27m         Normal    Pulled                  pod/s5-probe                                   Successfully pulled image "172.31.49.141:5000/custom-predictor:v4" in 1.054s (1.054s including waiting). Image size: 48519468 bytes.
+bench                27m         Normal    Started                 pod/s5-probe                                   Container started
+bench                25m         Normal    Pulled                  pod/s5-probe                                   Container image "172.31.49.141:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench                25m         Normal    Killing                 pod/s5-probe                                   Stopping container predictor
+bench                25m         Warning   Unhealthy               pod/s5-probe                                   Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+bench                24m         Normal    Scheduled               pod/s4-probe                                   Successfully assigned bench/s4-probe to ocibench-control-plane
+bench                24m         Warning   Unhealthy               pod/s4-probe                                   Readiness probe failed: Get "http://10.244.0.9:8080/healthz": dial tcp 10.244.0.9:8080: connect: connection refused
+bench                24m         Normal    Started                 pod/s4-probe                                   Container started
+bench                24m         Normal    Created                 pod/s4-probe                                   Container created
+bench                24m         Normal    Pulled                  pod/s4-probe                                   Container image "172.31.49.141:5000/custom-predictor:v4" already present on machine and can be accessed by the pod
+bench                24m         Normal    Pulled                  pod/s4-probe                                   Container image "172.31.49.141:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+bench                24m         Warning   Evicted                 pod/s4-probe                                   The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 8885644Ki. Container predictor was using 2264Ki, request is 0, has larger consumption of ephemeral-storage.
+bench                24m         Normal    Killing                 pod/s4-probe                                   Stopping container predictor
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8kkz7    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-696t7    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-8kkz7
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-rsxmx
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-nx57r
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-rtgdz
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-ffgjs
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-r99dt
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-gw8mr
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-696t7
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   Created pod: local-path-provisioner-855c7b7774-c7dtb
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-gw8mr    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-gw8mr to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-gw8mr    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Killing                 pod/local-path-provisioner-855c7b7774-vm5dq    Stopping container local-path-provisioner
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-696t7    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-696t7 to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-r99dt    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-r99dt to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-vm5dq    The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 0. Container local-path-provisioner was using 4Ki, request is 0, has larger consumption of ephemeral-storage.
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-nx57r    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-nx57r to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-8kkz7    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-8kkz7 to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-nx57r    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-rtgdz    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-rtgdz    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-rtgdz to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-ffgjs    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-ffgjs    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-ffgjs to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-c7dtb    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-c7dtb to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-c7dtb    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-rsxmx    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-rsxmx    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-rsxmx to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-r99dt    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-znfgb    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-nzmld    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-nzmld    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-nzmld to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-d2vqb    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-d2vqb to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-d2vqb    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8zmz7    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-8zmz7    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-8zmz7 to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-tscgc    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-tscgc to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-tscgc    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-jhdnq    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-jhdnq    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-jhdnq to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-znfgb    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-znfgb to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-8tc97    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-8tc97 to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-pgxq4    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-pgxq4 to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-gsrx7    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-gsrx7 to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-hhc86    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-hhc86 to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-hhc86    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-fwtmm    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-fwtmm    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-fwtmm to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-fjs8j    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-fjs8j    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-fjs8j to ocibench-control-plane
+local-path-storage   18m         Normal    Scheduled               pod/local-path-provisioner-855c7b7774-8gbxs    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-8gbxs to ocibench-control-plane
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8gbxs    The node had condition: [DiskPressure].
+default              18m         Normal    NodeHasDiskPressure     node/ocibench-control-plane                    Node ocibench-control-plane status is now: NodeHasDiskPressure
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-pgxq4    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-8tc97    The node had condition: [DiskPressure].
+local-path-storage   18m         Warning   Evicted                 pod/local-path-provisioner-855c7b7774-gsrx7    The node had condition: [DiskPressure].
+local-path-storage   18m         Normal    SuccessfulCreate        replicaset/local-path-provisioner-855c7b7774   (combined from similar events): Created pod: local-path-provisioner-855c7b7774-cmzw4
+bench                18m         Warning   Evicted                 pod/curl-runner-65d77865d8-csnh6               The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 0.
+bench                18m         Normal    Killing                 pod/curl-runner-65d77865d8-csnh6               Stopping container curl
+bench                18m         Normal    SuccessfulCreate        replicaset/curl-runner-65d77865d8              Created pod: curl-runner-65d77865d8-4dxnq
+default              15m         Warning   FreeDiskSpaceFailed     node/ocibench-control-plane                    Insufficient free disk space on the node's image filesystem (100% of 91.1 GiB used). Failed to free sufficient space by deleting unused images (freed 0 bytes). Investigate disk usage, as it could be used by active images, logs, volumes, or other data.
+bench                4m57s       Warning   FailedScheduling        pod/s4b-probe                                  0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+default              3m31s       Warning   EvictionThresholdMet    node/ocibench-control-plane                    Attempting to reclaim ephemeral-storage
+local-path-storage   3m27s       Warning   FailedScheduling        pod/local-path-provisioner-855c7b7774-cmzw4    0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+bench                2m57s       Warning   FailedScheduling        pod/curl-runner-65d77865d8-4dxnq               0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+default              2m5s        Normal    NodeHasNoDiskPressure   node/ocibench-control-plane                    Node ocibench-control-plane status is now: NodeHasNoDiskPressure
+local-path-storage   2m4s        Normal    Scheduled               pod/local-path-provisioner-855c7b7774-cmzw4    Successfully assigned local-path-storage/local-path-provisioner-855c7b7774-cmzw4 to ocibench-control-plane
+bench                2m4s        Normal    Scheduled               pod/curl-runner-65d77865d8-4dxnq               Successfully assigned bench/curl-runner-65d77865d8-4dxnq to ocibench-control-plane
+bench                2m4s        Normal    Pulling                 pod/curl-runner-65d77865d8-4dxnq               Pulling image "curlimages/curl:8.9.1"
+local-path-storage   2m4s        Normal    Pulling                 pod/local-path-provisioner-855c7b7774-cmzw4    Pulling image "docker.io/kindest/local-path-provisioner:v20260521-9fb22683"
+bench                2m3s        Normal    Pulled                  pod/curl-runner-65d77865d8-4dxnq               Successfully pulled image "curlimages/curl:8.9.1" in 922ms (922ms including waiting). Image size: 9384907 bytes.
+bench                2m3s        Normal    Created                 pod/curl-runner-65d77865d8-4dxnq               Container created
+bench                2m3s        Normal    Started                 pod/curl-runner-65d77865d8-4dxnq               Container started
+local-path-storage   2m          Normal    Pulled                  pod/local-path-provisioner-855c7b7774-cmzw4    Successfully pulled image "docker.io/kindest/local-path-provisioner:v20260521-9fb22683" in 2.748s (3.67s including waiting). Image size: 15864063 bytes.
+local-path-storage   2m          Normal    Created                 pod/local-path-provisioner-855c7b7774-cmzw4    Container created
+local-path-storage   2m          Normal    Started                 pod/local-path-provisioner-855c7b7774-cmzw4    Container started

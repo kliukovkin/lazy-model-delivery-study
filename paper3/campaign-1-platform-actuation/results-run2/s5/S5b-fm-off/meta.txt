@@ -1,0 +1,16 @@
+trial=S5b-fm-off fuse_manager=false killmode=default restarts=8
+date=2026-09-09T07:23:56+00:00
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = false
+
+[[resolver.host."172.31.49.141:5000".mirrors]]
+  host = "172.31.49.141:5000"
+  insecure = true
+KillMode=control-group
+containerd-stargz-grpc v0.18.2 3070538befb5a6c09f93e99164762b3a76310357

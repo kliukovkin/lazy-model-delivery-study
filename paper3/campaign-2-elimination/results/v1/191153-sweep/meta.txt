@@ -1,0 +1,11 @@
+experiment=V1
+sha=f6547d99
+budget_bytes=80000000000
+high_watermark=0.95
+low_watermark=0.85
+policy=lru
+image=172.31.57.168:5000/model-ballast:estargz-140g
+sample_interval_s=15
+started_utc=2026-09-10T19:11:53Z
+deploy_to_ready_s=1.862
+sweep_s=1089.186

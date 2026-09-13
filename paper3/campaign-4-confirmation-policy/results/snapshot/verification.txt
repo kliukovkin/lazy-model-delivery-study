@@ -1,0 +1,16 @@
+=== snapshot readback verification ===
+mounted: /dev/nvme3n1 /mnt/verify
+--- repository metadata (small files, read in full) ---
+B-140g
+B-14g
+estargz-140g
+estargz-14g
+--- tag -> manifest digest, read end to end ---
+estargz-140g -> sha256:82756576229f65580e9728248c4c878689caaa8cf70709c78c65525a56e2881b
+estargz-14g -> sha256:1722c16da2fc850e942a2f4bc8612f4dd898240799d7a53508854fc6c5de8237
+--- blob inventory ---
+blobs >1GiB: 32
+309G	/mnt/verify/registry
+--- bounded read of a large layer blob (first 64MiB, real bytes off the restored volume) ---
+blob=2c859839eda6a6a93bbcb39fb4e09cf2e67e779dc9ac3ecb46ba897a1a2c6b67 total_size=18796220913 first64MiB_sha256=104bf1a4e3841cb2016d0bfa1a6003e2
+VERIFICATION_OK

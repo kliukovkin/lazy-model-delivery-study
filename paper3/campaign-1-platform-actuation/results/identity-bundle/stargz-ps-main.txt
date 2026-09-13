@@ -1,0 +1,2 @@
+root       20524  0.1  0.0 2204356 46152 ?       Ssl  05:14   0:00 /usr/local/bin/containerd-stargz-grpc --log-level=info --config=/etc/containerd-stargz-grpc/config.toml
+root       20547 87.2  0.4 5835140 274412 ?      Sl   05:14   1:44 /usr/local/bin/stargz-fuse-manager -address /run/containerd-stargz-grpc/fuse-manager.sock -fusestore-path /var/lib/containerd-stargz-grpc/fusestore.db -log-level info

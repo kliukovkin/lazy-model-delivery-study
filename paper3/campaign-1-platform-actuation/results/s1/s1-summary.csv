@@ -1,0 +1,8 @@
+trial,fuse_manager,killmode,action,pod_ready_pre,pod_ready_post,restarts_post,warm_ok_pre,warm_err_pre,warm_ok_post,warm_err_post,warm_errnos_post,fresh_ok_post,fresh_err_post,fresh_errnos_post,mounts_pre,mounts_post,fm_pid_pre,fm_pid_post,httpcache_pre,fscache_pre,httpcache_post,fscache_post,httpcache_reread,fscache_reread,verdict,notes
+T0-control-nofm,false,default,systemctl,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,,,4610758967,4555237371,2492708967,2407753724,2833308967,2688772092,MOUNT_BROKEN,listdir=errno=107 ENOTCONN
+T1-shipped-unit-rep1,true,default,systemctl,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,11120,11551,4298658967,4294967296,6493517934,6438479867,7075867934,6975350779,MOUNT_BROKEN,listdir=errno=107 ENOTCONN
+T2-shipped-unit-rep2,true,default,systemctl,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,12014,12432,4557908967,4517488635,7201317934,6942019572,7201317934,6942019572,MOUNT_BROKEN,listdir=errno=107 ENOTCONN
+T3-killmode-process-rep1,true,process,systemctl,true,true,0,8,0,8,0,none,4,0,none,15,15,12949,12949,4564258967,4513294332,10821608967,10732726268,15575908967,15485593596,MOUNT_SURVIVED,listdir=n=280
+T4-killmode-process-rep2,true,process,systemctl,true,true,0,8,0,8,0,none,4,0,none,15,15,13789,13789,4596958967,4546848763,10729008967,10720864251,15437108967,15292655611,MOUNT_SURVIVED,listdir=n=280
+T5-kill9-grpc-only,true,process,kill9-grpc,true,true,0,8,0,8,0,none,4,0,none,15,15,14584,14584,4580708967,4525877244,9860308967,9861031932,14126508967,13946284028,MOUNT_SURVIVED,listdir=n=280
+T6-kill9-both,true,process,kill9-both,true,true,0,8,0,0,8,ESTALE=8,0,4,ENOTCONN=4,15,15,15441,,4612208967,4546848762,4612208967,4546848762,4612208967,4546848762,MOUNT_BROKEN,listdir=errno=107 ENOTCONN

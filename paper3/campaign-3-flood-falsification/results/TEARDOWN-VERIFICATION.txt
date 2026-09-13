@@ -1,0 +1,13 @@
+=== v6 teardown verification, 2026-09-11T16:03:39Z ===
+--- instances (any non-terminated state), all of us-east-1 ---
+instance count = 0
+--- EBS volumes, any state ---
+volume count = 0
+--- snapshots owned by this account ---
+snapshot count = 0
+--- AMIs owned by this account ---
+image count = 0
+--- other regions with running instances ---
+us-west-2 = 0
+eu-west-1 = 0
+eu-central-1 = 0

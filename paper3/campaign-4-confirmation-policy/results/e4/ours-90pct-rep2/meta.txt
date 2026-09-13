@@ -1,0 +1,12 @@
+experiment=E4
+arm=ours
+prefill_pct=90
+rep=2
+partition_bytes=97828376576
+budget_bytes=80000000000
+sha=6e87e34e1d8da4ca10e44b81a1891d583a4e66d5
+started_utc=2026-09-12T03:28:09Z
+/dev/nvme1n1p2 97828376576 88956465152 3855159296  96% /cache-part
+deploy_to_ready_s=1.892
+sweep_s=1454.690
+pod_phase_at_end=Running

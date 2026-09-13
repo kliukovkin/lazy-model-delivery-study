@@ -1,0 +1,23 @@
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = true
+  # v5 finding 1: without this the accounting/eviction metrics are unreachable,
+  # because they are registered in the manager process, not in this one.
+  metrics_address = "0.0.0.0:9111"
+
+[[resolver.host."172.31.57.168:5000".mirrors]]
+  host = "172.31.57.168:5000"
+  insecure = true
+
+[cache_accounting]
+  enable = true
+[cache_accounting.budget]
+  bytes = 80000000000
+  high_watermark = 0.95
+  low_watermark = 0.85
+  policy = "lru"

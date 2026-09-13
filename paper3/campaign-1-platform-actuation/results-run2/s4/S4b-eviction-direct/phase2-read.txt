@@ -1,0 +1,1 @@
+error: unable to upgrade connection: pod s4b-probe does not have a host assigned

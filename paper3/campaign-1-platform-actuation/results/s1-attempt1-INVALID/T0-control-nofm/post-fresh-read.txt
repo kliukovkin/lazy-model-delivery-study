@@ -1,0 +1,2 @@
+READ range=[24:32] ok=0 err=0 bytes=0 elapsed_s=0.000
+ERRNOS none

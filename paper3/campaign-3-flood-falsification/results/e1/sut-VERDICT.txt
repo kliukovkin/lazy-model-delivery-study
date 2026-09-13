@@ -1,0 +1,20 @@
+=== FACTS ===
+tag	config_policy	fm_pid	grpc_pid	n9110_cache_series	policy_labels_9110	budget_9110	lock_lost_9110	db_holders	db_corrupt
+1-baseline-lru	lru	14929	14905	39	lru	8e+10	0	1	0
+2-after-restart-to-2q	2q	14929	16066	39	lru	8e+10	1	0	0
+3-after-read-under-2q	2q	14929	16066	39	lru	8e+10	1	0	0
+4-after-restart-to-lru	lru	14929	17871	39	lru	8e+10	1	1	0
+5-after-read-under-lru	lru	14929	17871	39	lru	8e+10	1	1	0
+
+=== SCORING (ids from PRE-REGISTRATION-v6.md) ===
+E1.1   PASS      min stargz_(cache|fs_cache)_* series on :9110 across 5 observations = 39
+E1.2   FAIL      policy labels after the lru->2q restart: [lru,lru]
+E1.3   PASS      policy labels after the 2q->lru restart: [lru,lru]
+E1.4   FAIL      present at every scrape=True, max value=1
+E1.5   PASS      db holders per observation = [1, 0, 0, 1, 1]
+E1.6   PASS      corrupt files per observation = [0, 0, 0, 0, 0]
+E1.7   PASS      fuse-manager pids seen across all observations = ['14929']
+E1.8   PASS      duplicated runtime collectors: none
+E1.9   PASS      duplicate metric families: none
+
+E1[sut] RESULT: 7/9 expectations met   FAILED: E1.2,E1.4

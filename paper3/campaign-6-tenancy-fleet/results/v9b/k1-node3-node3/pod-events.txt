@@ -1,0 +1,10 @@
+LAST SEEN   TYPE      REASON      OBJECT             MESSAGE
+22m         Normal    Scheduled   pod/v9b-k1-node3   Successfully assigned bench/v9b-k1-node3 to ocibench-control-plane
+22m         Normal    Pulling     pod/v9b-k1-node3   Pulling image "172.31.90.228:5000/model-ballast:estargz-140g"
+22m         Normal    Pulled      pod/v9b-k1-node3   Successfully pulled image "172.31.90.228:5000/model-ballast:estargz-140g" in 140ms (140ms including waiting). Image size: 150374665466 bytes.
+22m         Normal    Pulling     pod/v9b-k1-node3   Pulling image "172.31.90.228:5000/custom-predictor:v5"
+22m         Normal    Pulled      pod/v9b-k1-node3   Successfully pulled image "172.31.90.228:5000/custom-predictor:v5" in 994ms (994ms including waiting). Image size: 48519464 bytes.
+22m         Normal    Created     pod/v9b-k1-node3   Container created
+22m         Normal    Started     pod/v9b-k1-node3   Container started
+22m         Warning   Unhealthy   pod/v9b-k1-node3   Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+12s         Normal    Pulled      pod/v9b-k1-node3   Container image "172.31.90.228:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod

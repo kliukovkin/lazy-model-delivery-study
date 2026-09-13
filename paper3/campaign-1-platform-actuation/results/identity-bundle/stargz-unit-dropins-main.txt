@@ -1,0 +1,7 @@
+# systemd's default KillMode=control-group SIGTERMs every process in the unit
+# cgroup on stop/restart, including the Setpgid-detached stargz-fuse-manager.
+# KillMode=process restricts the kill to the main process only, which is what
+# the FUSE manager design assumes. This is a systemd configuration change; the
+# snapshotter itself is untouched.
+[Service]
+KillMode=process

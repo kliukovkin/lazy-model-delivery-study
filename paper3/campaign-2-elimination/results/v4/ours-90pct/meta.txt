@@ -1,0 +1,5 @@
+experiment=V4
+arm=ours
+prefill_pct=90
+sha=f6547d99
+started_utc=2026-09-10T21:32:46Z

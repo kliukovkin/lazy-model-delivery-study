@@ -1,0 +1,89 @@
+[09:33:15] === E2 run 1: policy=lru ===
+[09:33:42] hard_reset ok: cache 1% used, grpc=30823 fm=30847
+[09:33:43]   accounting live: index_fds=1 lock_lost=0 labels=[lru]
+[09:33:47]   warm pass 1 (cold: populates the cache)
+[09:42:55]   E4 index sampling stopped before the reference pass
+[09:42:55]   warm pass 2 (adaptive; converges when two consecutive agree within 5%)
+[09:52:40]     pass 2 p50=4507.921 ms (first comparable pass)
+[09:52:40]   warm pass 3 (adaptive; converges when two consecutive agree within 5%)
+[10:02:25]     pass 3 p50=4513.050 ms (previous 4507.921 ms, delta 0.1%)
+[10:02:25]     converged after 3 passes
+[10:02:25] sampler 103554 -> /home/ubuntu/v8/../results/e2/run1-lru/sampler.csv every 10s
+[10:02:25]   starting the 140GB sweep beside it
+[10:02:26]   measuring resident latency, 4 rounds, under sweep pressure
+[10:43:20]   run 1 done: policy_labels_end=lru
+-rw-rw-r-- 1 ubuntu ubuntu 1.8G Sep 12 10:45 /data/v7-e2-run1-lru.tar.gz
+COLLECTED e2/run1-lru -> /data/v7-e2-run1-lru.tar.gz
+[10:45:52] === E2 run 2: policy=2q ===
+[10:46:23] hard_reset ok: cache 1% used, grpc=40095 fm=40117
+[10:46:24]   accounting live: index_fds=1 lock_lost=0 labels=[2q]
+[10:46:28]   warm pass 1 (cold: populates the cache)
+[10:56:29]   warm pass 2 (adaptive; converges when two consecutive agree within 5%)
+[11:07:09]     pass 2 p50=4984.919 ms (first comparable pass)
+[11:07:09]   warm pass 3 (adaptive; converges when two consecutive agree within 5%)
+[11:17:32]     pass 3 p50=4890.557 ms (previous 4984.919 ms, delta 1.9%)
+[11:17:32]     converged after 3 passes
+[11:17:32] sampler 128846 -> /home/ubuntu/v8/../results/e2/run2-2q/sampler.csv every 10s
+[11:17:32]   starting the 140GB sweep beside it
+[11:17:34]   measuring resident latency, 4 rounds, under sweep pressure
+[12:00:35]   run 2 done: policy_labels_end=2q,2q-unpromoted
+-rw-rw-r-- 1 ubuntu ubuntu 83K Sep 12 12:00 /data/v7-e2-run2-2q.tar.gz
+COLLECTED e2/run2-2q -> /data/v7-e2-run2-2q.tar.gz
+[12:00:35] === E2 run 3: policy=2q ===
+[12:01:06] hard_reset ok: cache 1% used, grpc=49690 fm=49712
+[12:01:07]   accounting live: index_fds=1 lock_lost=0 labels=[2q]
+[12:01:11]   warm pass 1 (cold: populates the cache)
+[12:11:22]   warm pass 2 (adaptive; converges when two consecutive agree within 5%)
+[12:21:55]     pass 2 p50=4864.172 ms (first comparable pass)
+[12:21:55]   warm pass 3 (adaptive; converges when two consecutive agree within 5%)
+[12:32:25]     pass 3 p50=4853.427 ms (previous 4864.172 ms, delta 0.2%)
+[12:32:25]     converged after 3 passes
+[12:32:25] sampler 155377 -> /home/ubuntu/v8/../results/e2/run3-2q/sampler.csv every 10s
+[12:32:25]   starting the 140GB sweep beside it
+[12:32:26]   measuring resident latency, 4 rounds, under sweep pressure
+[13:14:34]   run 3 done: policy_labels_end=2q,2q-unpromoted
+-rw-rw-r-- 1 ubuntu ubuntu 87K Sep 12 13:14 /data/v7-e2-run3-2q.tar.gz
+COLLECTED e2/run3-2q -> /data/v7-e2-run3-2q.tar.gz
+[13:14:34] === E2 run 4: policy=lru ===
+[13:15:05] hard_reset ok: cache 1% used, grpc=59300 fm=59324
+[13:15:06]   accounting live: index_fds=1 lock_lost=0 labels=[lru]
+[13:15:09]   warm pass 1 (cold: populates the cache)
+[13:25:20]   warm pass 2 (adaptive; converges when two consecutive agree within 5%)
+[13:35:49]     pass 2 p50=4864.016 ms (first comparable pass)
+[13:35:49]   warm pass 3 (adaptive; converges when two consecutive agree within 5%)
+[13:46:15]     pass 3 p50=4963.951 ms (previous 4864.016 ms, delta 2.1%)
+[13:46:15]     converged after 3 passes
+[13:46:15] sampler 181722 -> /home/ubuntu/v8/../results/e2/run4-lru/sampler.csv every 10s
+[13:46:15]   starting the 140GB sweep beside it
+[13:46:17]   measuring resident latency, 4 rounds, under sweep pressure
+[14:29:30]   run 4 done: policy_labels_end=lru
+-rw-rw-r-- 1 ubuntu ubuntu 87K Sep 12 14:29 /data/v7-e2-run4-lru.tar.gz
+COLLECTED e2/run4-lru -> /data/v7-e2-run4-lru.tar.gz
+[14:29:30] === E2 gate + analysis ===
+=== FACTS: per arm-run ===
+run	policy	warm2_p50	warm3_p50	warm3_n	meas_p50	meas_p95	meas_p99	meas_n	res_err	evictions	skipped	policy_label_end
+1	lru	4507.3	4512.3	130	4515.9	5420.9	5762.0	520	0	10768380	0	lru
+2	2q	4984.1	4890.5	130	4926.5	5824.8	6399.2	520	0	10545161	0	2q,2q-unpromoted
+3	2q	4864.0	4849.8	130	4995.5	5836.1	6141.3	520	0	10350794	0	2q,2q-unpromoted
+4	lru	4862.9	4963.9	130	4929.2	5862.2	6511.9	520	0	10645092	0	lru
+
+=== HOW THE POLICY WAS APPLIED (v6 finding C1) ===
+A plain `systemctl restart` should be enough. Where it was not, the run
+fell back to replacing the FUSE manager, and said so. See CODE-FINDINGS-v6 C1.
+run1 lru  plain_restart_sufficient=?   labels_right_after_restart=[]
+run2 2q   plain_restart_sufficient=?   labels_right_after_restart=[]
+run3 2q   plain_restart_sufficient=?   labels_right_after_restart=[]
+run4 lru  plain_restart_sufficient=?   labels_right_after_restart=[]
+
+=== GATE ===
+G0 PASS  4 of 4 arm-runs valid
+G1 FAIL  warm(pass3) p50 per run = 4512.3, 4890.5, 4849.8, 4963.9 ; mean=4804.1 ; max deviation=6.1% (tolerance 5%)
+G2 PASS  |ref-prev|/prev per run = run1:0.1%, run2:1.9%, run3:0.3%, run4:2.1% (tolerance 5%)
+
+=== GATE FAILED -- NO POLICY COMPARISON IS COMPUTED ===
+PRE-REGISTRATION-v7.md s3.3 makes this binding: the arms do not share a
+baseline, so any latency difference between them is confounded with
+whatever moved the baseline. v5 published such a comparison and it could
+not be quoted. Diagnosis goes to results/e2/GATE-FAILURE.md.
+wrote /home/ubuntu/v8/../results/e2/GATE-FAILURE.md
+[14:29:30] E2 done -> /home/ubuntu/v8/../results/e2

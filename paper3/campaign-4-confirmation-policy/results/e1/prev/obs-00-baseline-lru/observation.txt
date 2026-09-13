@@ -1,0 +1,22 @@
+tag=00-baseline-lru
+iso=2026-09-11T20:12:55Z
+grpc_pid=39589
+fm_pid=39612
+config_policy=lru
+db_holders=1
+index_open_fds=1
+lock_retry_9110=0
+pressure_9110=0
+db_corrupt=0
+n9110_bytes=294546
+n9110_stargz_series=1632
+n9110_cache_series=39
+policy_labels_9110=lru
+budget_9110=8e+10
+lock_lost_9110=0
+lock_lost_present_9110=1
+bytes_used_9110=29854431395
+n9111_cache_series=39
+policy_labels_9111=lru
+--- exposition check (9110) ---
+go_goroutines_lines=1 process_open_fds_lines=1

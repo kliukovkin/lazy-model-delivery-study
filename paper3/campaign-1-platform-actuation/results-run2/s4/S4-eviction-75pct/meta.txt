@@ -1,0 +1,35 @@
+trial=S4-eviction-75pct fuse_manager=true prefill=75%
+date=2026-09-09T07:27:12+00:00
+--- kubelet eviction settings actually in force ---
+{
+  "evictionHard": {
+    "imagefs.available": "10%",
+    "memory.available": "100Mi",
+    "nodefs.available": "10%",
+    "nodefs.inodesFree": "0%"
+  },
+  "evictionSoft": null,
+  "evictionPressureTransitionPeriod": "30s",
+  "imageGCHighThresholdPercent": 85,
+  "imageGCLowThresholdPercent": 80
+}
+--- stargz config ---
+metrics_address = "0.0.0.0:9110"
+
+# Exact TOML per cmd/containerd-stargz-grpc/main.go:89,92-100 and docs/overview.md:111-121
+# of v0.18.2. 'address' and 'path' are left at their documented defaults
+# (/run/containerd-stargz-grpc/fuse-manager.sock, and PATH lookup for the
+# "stargz-fuse-manager" binary).
+[fuse_manager]
+  enable = true
+
+[[resolver.host."172.31.49.141:5000".mirrors]]
+  host = "172.31.49.141:5000"
+  insecure = true
+--- containerd exports ---
+  [proxy_plugins.stargz]
+    address = "/run/containerd-stargz-grpc/containerd-stargz-grpc.sock"
+    type = "snapshot"
+  [proxy_plugins.stargz.exports]
+    root = "/var/lib/containerd-stargz-grpc/"
+containerd-stargz-grpc v0.18.2 3070538befb5a6c09f93e99164762b3a76310357

@@ -1,0 +1,4 @@
+DIRSTAT ok
+LISTDIR n=280
+READ range=[8:12] attempted=4 ok=4 err=0 bytes=2147483648 elapsed_s=13.762
+ERRNOS none

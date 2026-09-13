@@ -1,0 +1,232 @@
+LAST SEEN   TYPE      REASON             OBJECT                              MESSAGE
+58m         Normal    Scheduled          pod/smoke                           Successfully assigned bench/smoke to ocibench-control-plane
+58m         Normal    Pulling            pod/smoke                           Pulling image "172.31.57.168:5000/model-ballast:estargz-14g"
+58m         Normal    Pulling            pod/smoke                           Pulling image "172.31.57.168:5000/custom-predictor:v5"
+58m         Normal    Pulled             pod/smoke                           Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-14g" in 148ms (148ms including waiting). Image size: 15039532031 bytes.
+58m         Normal    Created            pod/smoke                           Container created
+58m         Normal    Started            pod/smoke                           Container started
+58m         Normal    Pulled             pod/smoke                           Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 1.18s (1.18s including waiting). Image size: 48519468 bytes.
+58m         Normal    Pulled             pod/smoke                           Container image "172.31.57.168:5000/model-ballast:estargz-14g" already present on machine and can be accessed by the pod
+58m         Normal    Killing            pod/smoke                           Stopping container predictor
+58m         Warning   Unhealthy          pod/smoke                           Readiness probe failed: Get "http://10.244.0.6:8080/healthz": dial tcp 10.244.0.6:8080: connect: connection refused
+37m         Normal    Scheduled          pod/v1-sweep                        Successfully assigned bench/v1-sweep to ocibench-control-plane
+37m         Normal    Pulling            pod/v1-sweep                        Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+37m         Normal    Started            pod/v1-sweep                        Container started
+37m         Normal    Pulled             pod/v1-sweep                        Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 228ms (228ms including waiting). Image size: 150374663046 bytes.
+37m         Normal    Created            pod/v1-sweep                        Container created
+37m         Normal    Pulled             pod/v1-sweep                        Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+19m         Normal    Pulled             pod/v1-sweep                        Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+18m         Normal    Killing            pod/v1-sweep                        Stopping container predictor
+18m         Warning   Unhealthy          pod/v1-sweep                        Readiness probe failed: Get "http://10.244.0.7:8080/healthz": dial tcp 10.244.0.7:8080: connect: connection refused
+16m         Normal    Pulled             pod/v2-ours-90-1                    Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+16m         Normal    Scheduled          pod/v2-ours-90-1                    Successfully assigned bench/v2-ours-90-1 to ocibench-control-plane
+16m         Normal    Created            pod/v2-ours-90-1                    Container created
+16m         Warning   Unhealthy          pod/v2-ours-90-1                    Readiness probe failed: Get "http://10.244.0.8:8080/healthz": dial tcp 10.244.0.8:8080: connect: connection refused
+16m         Normal    Started            pod/v2-ours-90-1                    Container started
+16m         Normal    Pulled             pod/v2-ours-90-1                    Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+16m         Normal    Killing            pod/v2-ours-90-1                    Stopping container predictor
+16m         Warning   Evicted            pod/v2-ours-90-1                    The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 1488568Ki. Container predictor was using 2264Ki, request is 0, has larger consumption of ephemeral-storage.
+15m         Warning   FailedScheduling   pod/v2-ours-50-1                    0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+15m         Normal    Pulling            pod/v2-ours-50-1                    Pulling image "172.31.57.168:5000/custom-predictor:v5"
+15m         Normal    Pulled             pod/v2-ours-50-1                    Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 238ms (238ms including waiting). Image size: 150374663046 bytes.
+15m         Normal    Scheduled          pod/v2-ours-50-1                    Successfully assigned bench/v2-ours-50-1 to ocibench-control-plane
+15m         Normal    Pulling            pod/v2-ours-50-1                    Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+15m         Warning   Unhealthy          pod/v2-ours-50-1                    Readiness probe failed: Get "http://10.244.0.9:8080/healthz": dial tcp 10.244.0.9:8080: connect: connection refused
+15m         Normal    Started            pod/v2-ours-50-1                    Container started
+15m         Normal    Created            pod/v2-ours-50-1                    Container created
+15m         Normal    Pulled             pod/v2-ours-50-1                    Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 1.16s (1.16s including waiting). Image size: 48519468 bytes.
+15m         Normal    Pulled             pod/v2-ours-50-1                    Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+14m         Normal    Killing            pod/v2-ours-50-1                    Stopping container predictor
+14m         Warning   Evicted            pod/v2-ours-50-1                    The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 9370828Ki. Container predictor was using 2264Ki, request is 0, has larger consumption of ephemeral-storage.
+13m         Warning   FailedScheduling   pod/v2-ours-0-1                     0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+13m         Normal    Pulled             pod/v2-ours-0-1                     Container image "172.31.57.168:5000/custom-predictor:v5" already present on machine and can be accessed by the pod
+13m         Normal    Created            pod/v2-ours-0-1                     Container created
+13m         Normal    Started            pod/v2-ours-0-1                     Container started
+13m         Warning   Unhealthy          pod/v2-ours-0-1                     Readiness probe failed: Get "http://10.244.0.11:8080/healthz": dial tcp 10.244.0.11:8080: connect: connection refused
+13m         Normal    Scheduled          pod/v2-ours-0-1                     Successfully assigned bench/v2-ours-0-1 to ocibench-control-plane
+6m24s       Normal    Pulled             pod/v2-ours-0-1                     Container image "172.31.57.168:5000/model-ballast:estargz-140g" already present on machine and can be accessed by the pod
+6m4s        Warning   Evicted            pod/v2-ours-0-1                     The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 8266296Ki. Container predictor was using 2284Ki, request is 0, has larger consumption of ephemeral-storage.
+6m4s        Normal    Killing            pod/v2-ours-0-1                     Stopping container predictor
+5m11s       Warning   FailedScheduling   pod/v2-vanilla-90-1                 0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+5m4s        Warning   Evicted            pod/curl-runner-65d77865d8-qc75r    The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 4384788Ki.
+5m4s        Normal    Scheduled          pod/v2-vanilla-90-1                 Successfully assigned bench/v2-vanilla-90-1 to ocibench-control-plane
+5m4s        Normal    Pulling            pod/v2-vanilla-90-1                 Pulling image "172.31.57.168:5000/model-ballast:estargz-140g"
+5m4s        Normal    Killing            pod/curl-runner-65d77865d8-qc75r    Stopping container curl
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-sxftl
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-lc7qb    Successfully assigned bench/curl-runner-65d77865d8-lc7qb to ocibench-control-plane
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-qzbvs    Successfully assigned bench/curl-runner-65d77865d8-qzbvs to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-qzbvs    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-r24rl    Successfully assigned bench/curl-runner-65d77865d8-r24rl to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-r24rl    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-r69jw    Successfully assigned bench/curl-runner-65d77865d8-r69jw to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-r69jw    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-fh44p    Successfully assigned bench/curl-runner-65d77865d8-fh44p to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-fh44p    The node had condition: [DiskPressure].
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-nlc4d    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-nlc4d    Successfully assigned bench/curl-runner-65d77865d8-nlc4d to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-5fh4c    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-5fh4c    Successfully assigned bench/curl-runner-65d77865d8-5fh4c to ocibench-control-plane
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-5jx5x    Successfully assigned bench/curl-runner-65d77865d8-5jx5x to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-5jx5x    The node had condition: [DiskPressure].
+5m2s        Normal    Scheduled          pod/curl-runner-65d77865d8-sxftl    Successfully assigned bench/curl-runner-65d77865d8-sxftl to ocibench-control-plane
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-sxftl    The node had condition: [DiskPressure].
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-fh44p
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-5fh4c
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-lc7qb
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-r24rl
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-r69jw
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-nlc4d
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-qzbvs
+5m2s        Warning   Evicted            pod/curl-runner-65d77865d8-lc7qb    The node had condition: [DiskPressure].
+5m2s        Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   Created pod: curl-runner-65d77865d8-5jx5x
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-pwdz5    The node had condition: [DiskPressure].
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-6jsg6    Successfully assigned bench/curl-runner-65d77865d8-6jsg6 to ocibench-control-plane
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-bspf8    The node had condition: [DiskPressure].
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-m7qpf    Successfully assigned bench/curl-runner-65d77865d8-m7qpf to ocibench-control-plane
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-m7qpf    The node had condition: [DiskPressure].
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-bspf8    Successfully assigned bench/curl-runner-65d77865d8-bspf8 to ocibench-control-plane
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-pwdz5    Successfully assigned bench/curl-runner-65d77865d8-pwdz5 to ocibench-control-plane
+5m1s        Warning   Evicted            pod/v2-vanilla-90-1                 The node was low on resource: ephemeral-storage. Threshold quantity: 9782837803, available: 4437048Ki.
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-6jsg6    The node had condition: [DiskPressure].
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-27fpm    The node had condition: [DiskPressure].
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-cgj64    Successfully assigned bench/curl-runner-65d77865d8-cgj64 to ocibench-control-plane
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-cgj64    The node had condition: [DiskPressure].
+5m1s        Warning   Evicted            pod/curl-runner-65d77865d8-zjdx2    The node had condition: [DiskPressure].
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-zjdx2    Successfully assigned bench/curl-runner-65d77865d8-zjdx2 to ocibench-control-plane
+5m1s        Normal    Scheduled          pod/curl-runner-65d77865d8-27fpm    Successfully assigned bench/curl-runner-65d77865d8-27fpm to ocibench-control-plane
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-xpfjf    The node had condition: [DiskPressure].
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-xpfjf    Successfully assigned bench/curl-runner-65d77865d8-xpfjf to ocibench-control-plane
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-6kpvl    Successfully assigned bench/curl-runner-65d77865d8-6kpvl to ocibench-control-plane
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-6kpvl    The node had condition: [DiskPressure].
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-4zpbx    The node had condition: [DiskPressure].
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-4zpbx    Successfully assigned bench/curl-runner-65d77865d8-4zpbx to ocibench-control-plane
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-4gd4q    The node had condition: [DiskPressure].
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-4gd4q    Successfully assigned bench/curl-runner-65d77865d8-4gd4q to ocibench-control-plane
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-8qz8d    Successfully assigned bench/curl-runner-65d77865d8-8qz8d to ocibench-control-plane
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-8qz8d    The node had condition: [DiskPressure].
+5m          Normal    Pulled             pod/v2-vanilla-90-1                 Successfully pulled image "172.31.57.168:5000/model-ballast:estargz-140g" in 133ms (3.397s including waiting). Image size: 150374663046 bytes.
+5m          Normal    Pulling            pod/v2-vanilla-90-1                 Pulling image "172.31.57.168:5000/custom-predictor:v5"
+5m          Normal    Scheduled          pod/curl-runner-65d77865d8-97g2n    Successfully assigned bench/curl-runner-65d77865d8-97g2n to ocibench-control-plane
+5m          Warning   Evicted            pod/curl-runner-65d77865d8-97g2n    The node had condition: [DiskPressure].
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-nkvs4    Successfully assigned bench/curl-runner-65d77865d8-nkvs4 to ocibench-control-plane
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-s8hw2    Successfully assigned bench/curl-runner-65d77865d8-s8hw2 to ocibench-control-plane
+4m59s       Normal    Killing            pod/v2-vanilla-90-1                 Stopping container predictor
+4m59s       Normal    Started            pod/v2-vanilla-90-1                 Container started
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-bx7zp    The node had condition: [DiskPressure].
+4m59s       Normal    Created            pod/v2-vanilla-90-1                 Container created
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-bx7zp    Successfully assigned bench/curl-runner-65d77865d8-bx7zp to ocibench-control-plane
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-hhkkv    Successfully assigned bench/curl-runner-65d77865d8-hhkkv to ocibench-control-plane
+4m59s       Normal    Pulled             pod/v2-vanilla-90-1                 Successfully pulled image "172.31.57.168:5000/custom-predictor:v5" in 983ms (983ms including waiting). Image size: 48519468 bytes.
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-dtx6v    Successfully assigned bench/curl-runner-65d77865d8-dtx6v to ocibench-control-plane
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-prkm9    The node had condition: [DiskPressure].
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-prkm9    Successfully assigned bench/curl-runner-65d77865d8-prkm9 to ocibench-control-plane
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-hhkkv    The node had condition: [DiskPressure].
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-zks2n    The node had condition: [DiskPressure].
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-zks2n    Successfully assigned bench/curl-runner-65d77865d8-zks2n to ocibench-control-plane
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-nd2sv    Successfully assigned bench/curl-runner-65d77865d8-nd2sv to ocibench-control-plane
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-dtx6v    The node had condition: [DiskPressure].
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-tt6g9    The node had condition: [DiskPressure].
+4m59s       Normal    Scheduled          pod/curl-runner-65d77865d8-tt6g9    Successfully assigned bench/curl-runner-65d77865d8-tt6g9 to ocibench-control-plane
+4m59s       Normal    SuccessfulCreate   replicaset/curl-runner-65d77865d8   (combined from similar events): Created pod: curl-runner-65d77865d8-hhkkv
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-nd2sv    The node had condition: [DiskPressure].
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-nkvs4    The node had condition: [DiskPressure].
+4m59s       Warning   Evicted            pod/curl-runner-65d77865d8-s8hw2    The node had condition: [DiskPressure].
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-h6nbx    The node had condition: [DiskPressure].
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-9mgmx    The node had condition: [DiskPressure].
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-6mh9d    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-6mh9d    Successfully assigned bench/curl-runner-65d77865d8-6mh9d to ocibench-control-plane
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-h6blr    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-prqnc    Successfully assigned bench/curl-runner-65d77865d8-prqnc to ocibench-control-plane
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-prqnc    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-mbt4h    Successfully assigned bench/curl-runner-65d77865d8-mbt4h to ocibench-control-plane
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-h6nbx    Successfully assigned bench/curl-runner-65d77865d8-h6nbx to ocibench-control-plane
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-h6blr    Successfully assigned bench/curl-runner-65d77865d8-h6blr to ocibench-control-plane
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-9489h    Successfully assigned bench/curl-runner-65d77865d8-9489h to ocibench-control-plane
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-4zf55    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-4zf55    Successfully assigned bench/curl-runner-65d77865d8-4zf55 to ocibench-control-plane
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-9489h    The node had condition: [DiskPressure].
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-mbt4h    The node had condition: [DiskPressure].
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-pc4dq    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-9mgmx    Successfully assigned bench/curl-runner-65d77865d8-9mgmx to ocibench-control-plane
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-pc4dq    Successfully assigned bench/curl-runner-65d77865d8-pc4dq to ocibench-control-plane
+4m58s       Warning   Evicted            pod/curl-runner-65d77865d8-xwxws    The node had condition: [DiskPressure].
+4m58s       Normal    Scheduled          pod/curl-runner-65d77865d8-xwxws    Successfully assigned bench/curl-runner-65d77865d8-xwxws to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-qdxmq    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-nzvv8    Successfully assigned bench/curl-runner-65d77865d8-nzvv8 to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-bgcjt    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-7m2k7    Successfully assigned bench/curl-runner-65d77865d8-7m2k7 to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-w8f6n    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-bldns    Successfully assigned bench/curl-runner-65d77865d8-bldns to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-bldns    The node had condition: [DiskPressure].
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-nzvv8    The node had condition: [DiskPressure].
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-958zc    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-w8f6n    Successfully assigned bench/curl-runner-65d77865d8-w8f6n to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-mrzd2    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-qdxmq    Successfully assigned bench/curl-runner-65d77865d8-qdxmq to ocibench-control-plane
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-bgcjt    Successfully assigned bench/curl-runner-65d77865d8-bgcjt to ocibench-control-plane
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-mrzd2    Successfully assigned bench/curl-runner-65d77865d8-mrzd2 to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-mjb7m    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-mjb7m    Successfully assigned bench/curl-runner-65d77865d8-mjb7m to ocibench-control-plane
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-958zc    Successfully assigned bench/curl-runner-65d77865d8-958zc to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-7qbrw    The node had condition: [DiskPressure].
+4m57s       Normal    Scheduled          pod/curl-runner-65d77865d8-7qbrw    Successfully assigned bench/curl-runner-65d77865d8-7qbrw to ocibench-control-plane
+4m57s       Warning   Evicted            pod/curl-runner-65d77865d8-7m2k7    The node had condition: [DiskPressure].
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-k5b49    The node had condition: [DiskPressure].
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-r6l9m    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-k5b49    Successfully assigned bench/curl-runner-65d77865d8-k5b49 to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-cbr4s    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-r6l9m    Successfully assigned bench/curl-runner-65d77865d8-r6l9m to ocibench-control-plane
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-cbr4s    Successfully assigned bench/curl-runner-65d77865d8-cbr4s to ocibench-control-plane
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-r8g5j    Successfully assigned bench/curl-runner-65d77865d8-r8g5j to ocibench-control-plane
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-ggnh7    Successfully assigned bench/curl-runner-65d77865d8-ggnh7 to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-ggnh7    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-5jmft    Successfully assigned bench/curl-runner-65d77865d8-5jmft to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-9tt6q    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-9tt6q    Successfully assigned bench/curl-runner-65d77865d8-9tt6q to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-5jmft    The node had condition: [DiskPressure].
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-vplv7    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-h4ng8    Successfully assigned bench/curl-runner-65d77865d8-h4ng8 to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-h4ng8    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-vplv7    Successfully assigned bench/curl-runner-65d77865d8-vplv7 to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-r8g5j    The node had condition: [DiskPressure].
+4m56s       Normal    Scheduled          pod/curl-runner-65d77865d8-t2hd8    Successfully assigned bench/curl-runner-65d77865d8-t2hd8 to ocibench-control-plane
+4m56s       Warning   Evicted            pod/curl-runner-65d77865d8-t2hd8    The node had condition: [DiskPressure].
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-dcf9f    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-q4kb6    Successfully assigned bench/curl-runner-65d77865d8-q4kb6 to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-q4kb6    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-ms9g6    Successfully assigned bench/curl-runner-65d77865d8-ms9g6 to ocibench-control-plane
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-qlnr2    Successfully assigned bench/curl-runner-65d77865d8-qlnr2 to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-s647m    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-s647m    Successfully assigned bench/curl-runner-65d77865d8-s647m to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-rf72d    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-dcf9f    Successfully assigned bench/curl-runner-65d77865d8-dcf9f to ocibench-control-plane
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-rf72d    Successfully assigned bench/curl-runner-65d77865d8-rf72d to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-6c6db    The node had condition: [DiskPressure].
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-qlnr2    The node had condition: [DiskPressure].
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-ms9g6    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-6c6db    Successfully assigned bench/curl-runner-65d77865d8-6c6db to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-zmdnh    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-4nrkr    Successfully assigned bench/curl-runner-65d77865d8-4nrkr to ocibench-control-plane
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-x6lpc    Successfully assigned bench/curl-runner-65d77865d8-x6lpc to ocibench-control-plane
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-x6lpc    The node had condition: [DiskPressure].
+4m55s       Warning   Evicted            pod/curl-runner-65d77865d8-4nrkr    The node had condition: [DiskPressure].
+4m55s       Normal    Scheduled          pod/curl-runner-65d77865d8-zmdnh    Successfully assigned bench/curl-runner-65d77865d8-zmdnh to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-v5kfc    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-gclrl    Successfully assigned bench/curl-runner-65d77865d8-gclrl to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-gclrl    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-mzzcr    Successfully assigned bench/curl-runner-65d77865d8-mzzcr to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-mzzcr    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-gr6wf    Successfully assigned bench/curl-runner-65d77865d8-gr6wf to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-gr6wf    The node had condition: [DiskPressure].
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-hcv9w    The node had condition: [DiskPressure].
+4m54s       Warning   FailedScheduling   pod/curl-runner-65d77865d8-4bgnl    0/1 nodes are available: 1 node(s) had untolerated taint(s). no new claims to deallocate, preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-2lv4s    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-2lv4s    Successfully assigned bench/curl-runner-65d77865d8-2lv4s to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-dksgm    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-dksgm    Successfully assigned bench/curl-runner-65d77865d8-dksgm to ocibench-control-plane
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-hcv9w    Successfully assigned bench/curl-runner-65d77865d8-hcv9w to ocibench-control-plane
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-ts5hj    Successfully assigned bench/curl-runner-65d77865d8-ts5hj to ocibench-control-plane
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-v5kfc    Successfully assigned bench/curl-runner-65d77865d8-v5kfc to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-ts5hj    The node had condition: [DiskPressure].
+4m54s       Normal    Scheduled          pod/curl-runner-65d77865d8-tln8n    Successfully assigned bench/curl-runner-65d77865d8-tln8n to ocibench-control-plane
+4m54s       Warning   Evicted            pod/curl-runner-65d77865d8-tln8n    The node had condition: [DiskPressure].

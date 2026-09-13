@@ -1,0 +1,13 @@
+DIRSTAT ok
+LISTDIR n=280
+READ range=[0:280] attempted=280 ok=280 err=0 bytes=150323855360 elapsed_s=1174.044
+ERRNOS none
+--- read_s ---
+1174.163
+--- du (h f stargz snap total) ---
+4540200000 4513071104 9104024640 171939122467 269089635134
+--- df after ---
+/dev/nvme1n1p2 97828376576 97638690816         0 100% /cache-part
+--- evictions --- 3055565
+--- evicted_bytes --- 301735208075
+--- writes_skipped --- 7584

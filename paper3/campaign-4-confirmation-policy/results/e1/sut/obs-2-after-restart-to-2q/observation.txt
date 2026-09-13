@@ -1,0 +1,20 @@
+tag=2-after-restart-to-2q
+iso=2026-09-11T19:45:28Z
+grpc_pid=31332
+fm_pid=5375
+config_policy=2q
+db_holders=1
+index_open_fds=1
+lock_retry_9110=0
+pressure_9110=3.0074077604e+10
+db_corrupt=0
+n9110_bytes=351855
+n9110_stargz_series=1957
+n9110_cache_series=41
+policy_labels_9110=2q
+budget_9110=8e+10
+lock_lost_9110=0
+lock_lost_present_9110=1
+bytes_used_9110=30074077604
+--- exposition check (9110) ---
+go_goroutines_lines=1 process_open_fds_lines=1

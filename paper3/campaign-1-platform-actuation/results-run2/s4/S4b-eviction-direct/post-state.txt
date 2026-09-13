@@ -1,0 +1,8 @@
+--- node conditions ---
+MemoryPressure=False DiskPressure=True PIDPressure=False Ready=True 
+--- df ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p2   92G   87G     0 100% /cache-part
+--- pod ---
+NAME        READY   STATUS    RESTARTS   AGE   IP       NODE     NOMINATED NODE   READINESS GATES
+s4b-probe   0/1     Pending   0          12m   <none>   <none>   <none>           <none>

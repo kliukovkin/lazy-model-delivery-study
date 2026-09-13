@@ -1,0 +1,14 @@
+pod_ready=true phase=Running restarts=0
+grpc_pid=4968 fusemanager_pid=4990
+stargz_mounts_in_mountinfo=14
+cache_du(httpcache fscache stargz snapshotter total)=19642500702 19386519543 39029020245 150464285615 189493471084
+df: /dev/nvme1n1p2 97828376576 40528564224 52283060224  44% /var/lib/containerd-stargz-grpc
+--- ps ---
+   4968      92 /usr/local/bin/containerd-stargz-grpc --log-level=debug --config=/etc/containerd-stargz-grpc/config.toml
+   4990      92 /usr/local/bin/stargz-fuse-manager -address /run/containerd-stargz-grpc/fuse-manager.sock -fusestore-path /var/lib/containerd-stargz-grpc/fusestore.db -log-level debug
+--- sockets ---
+total 0
+drwx------  2 root root  80 Sep  9 04:33 .
+drwxr-xr-x 12 root root 260 Sep  9 03:05 ..
+srwxr-xr-x  1 root root   0 Sep  9 04:33 containerd-stargz-grpc.sock
+srwxr-xr-x  1 root root   0 Sep  9 04:33 fuse-manager.sock

@@ -1,0 +1,91 @@
+action=systemctl action_to_active_s=14.407
+unit_active=active
+pod_ready=true phase=Running restarts=0
+grpc_pid=12410 fusemanager_pid=12432 (pre: 12014)
+fusemanager_pid_changed=YES
+stargz_mounts_in_mountinfo=15 (pre: 15)
+cache_du(httpcache fscache stargz snapshotter total)=7201317934 6942019572 14143337506 150464285615 164607794151
+df: /dev/nvme1n1p2 97828376576 14789787648 78021836800  16% /var/lib/containerd-stargz-grpc
+--- ps ---
+  12410      15 /usr/local/bin/containerd-stargz-grpc --log-level=debug --config=/etc/containerd-stargz-grpc/config.toml
+  12432      13 /usr/local/bin/stargz-fuse-manager -address /run/containerd-stargz-grpc/fuse-manager.sock -fusestore-path /var/lib/containerd-stargz-grpc/fusestore.db -log-level debug
+--- sockets ---
+total 0
+drwx------  2 root root  80 Sep  9 04:54 .
+drwxr-xr-x 12 root root 260 Sep  9 03:05 ..
+srwxr-xr-x  1 root root   0 Sep  9 04:54 containerd-stargz-grpc.sock
+srwxr-xr-x  1 root root   0 Sep  9 04:54 fuse-manager.sock
+--- pod conditions (does k8s notice anything?) ---
+[
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T04:53:38Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodReadyToStartContainers"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T04:53:37Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Initialized"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T04:53:39Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Ready"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T04:53:39Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "ContainersReady"
+    },
+    {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-09T04:53:37Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodScheduled"
+    }
+]
+--- kubelet node view ---
+--- node conditions ---
+MemoryPressure=False DiskPressure=False PIDPressure=False Ready=True 
+--- stats/summary node.fs + imageFs ---
+{
+  "fs": {
+    "time": "2026-09-09T04:54:15Z",
+    "availableBytes": 1654025453568,
+    "capacityBytes": 1745986248704,
+    "usedBytes": 3194068992,
+    "inodesFree": 108321214,
+    "inodes": 108339200,
+    "inodesUsed": 17986
+  },
+  "runtime": {
+    "imageFs": {
+      "time": "2026-09-09T04:54:19Z",
+      "availableBytes": 83269914624,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 6009382,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    },
+    "containerFs": {
+      "time": "2026-09-09T04:54:19Z",
+      "availableBytes": 83269914624,
+      "capacityBytes": 97828376576,
+      "usedBytes": 152571904,
+      "inodesFree": 6009382,
+      "inodes": 6111232,
+      "inodesUsed": 6466
+    }
+  }
+}
+post_listdir=errno=107 ENOTCONN attempted=8 ok=0

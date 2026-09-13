@@ -1,0 +1,7 @@
+main_sha=624678b4e421947534cbf0618f9609853cccee0f
+main_sha_short=624678b4
+624678b4e421947534cbf0618f9609853cccee0f
+2026-09-09 02:06:01 +0900
+Merge pull request #2371 from ktock/k8s-io-1.36
+--- go version ---
+go version go1.24.7 linux/amd64

@@ -1,0 +1,64 @@
+============================================================================================
+V9-B  multi-node registry amplification
+============================================================================================
+
+registry ceilings (measured, not assumed):
+  iface=ens5
+  measured_utc=2026-09-13T05:53:11Z
+  instance_type=i4i.2xlarge
+  iperf3_gbps_to_172.31.82.111=10.357
+  iperf3_gbps_to_172.31.93.23=10.266
+  iperf3_gbps_to_172.31.85.202=10.211
+  fio_read_MBps=1485.1
+
+round          node           k     read_s      ok     err      du_GB    evictions df_used_GB
+k1-node1       node1          1   1344.565     280       0        9.1      3059657       97.7
+k1-node2       node2          1   1320.042     280       0        8.9      3051455       97.5
+k1-node3       node3          1   1327.898     280       0        8.8      3042575       97.4
+k3-round1      node1          3   1305.408     280       0        9.0      3051462       97.6
+k3-round1      node2          3   1305.454     280       0        9.1      3051465       97.6
+k3-round1      node3          3   1305.155     280       0        9.0      3051465       97.6
+k3-round2      node1          3   1269.620     280       0        9.2      3051474       97.8
+k3-round2      node2          3   1269.556     280       0        8.9      3043243       97.5
+k3-round2      node3          3   1269.465     280       0        9.0      3047359       97.6
+
+--------------------------------------------------------------------------------------------
+clause (i): every node's budget holds, zero read errors
+--------------------------------------------------------------------------------------------
+  PASS -- no node exceeded its budget and no node saw a read error
+
+--------------------------------------------------------------------------------------------
+clause (ii): aggregate registry egress linear in k (+-15%% of k x in-session k=1)
+--------------------------------------------------------------------------------------------
+  k1-node1       k=1  NIC tx   157.92 GB   access-log   154.91 GB   skew 0.000 s   window  1350.7 s
+  k1-node2       k=1  NIC tx   157.53 GB   access-log   155.60 GB   skew 0.000 s   window  1328.8 s
+  k1-node3       k=1  NIC tx   157.05 GB   access-log   155.00 GB   skew 0.000 s   window  1328.5 s
+  k3-round1      k=3  NIC tx   473.94 GB   access-log   464.04 GB   skew 0.004 s   window  1307.5 s
+  k3-round2      k=3  NIC tx   473.48 GB   access-log   452.34 GB   skew 0.020 s   window  1281.9 s
+
+  in-session k=1 baseline egress: 157.92 GB  (k1-node1)
+  k3-round1      k=3  observed 473.94 GB vs 3 x 157.92 = 473.77 GB  ->  +0.0%  LINEAR
+  k3-round2      k=3  observed 473.48 GB vs 3 x 157.92 = 473.77 GB  ->  -0.1%  LINEAR
+
+--------------------------------------------------------------------------------------------
+clause (iii): per-node completion vs that node's OWN k=1 time
+--------------------------------------------------------------------------------------------
+  (rule 0.2: nodes are separate instances and are never compared with each other)
+  node1: k=1 1344.6 s
+      k3-round1      k=3  1305.4 s  (-2.9% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+      k3-round2      k=3  1269.6 s  (-5.6% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+  node2: k=1 1320.0 s
+      k3-round1      k=3  1305.5 s  (-1.1% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+      k3-round2      k=3  1269.6 s  (-3.8% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+  node3: k=1 1327.9 s
+      k3-round1      k=3  1305.2 s  (-1.7% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+      k3-round2      k=3  1269.5 s  (-4.4% vs own k=1)  FASTER than k=1 -- falsifies (iii)
+
+--------------------------------------------------------------------------------------------
+registry throughput during each round, against the measured ceilings
+--------------------------------------------------------------------------------------------
+  k1-node1       k=1  mean egress 0.94 Gb/s (117 MB/s)  = 9% of the 10.28 Gb/s NIC ceiling
+  k1-node2       k=1  mean egress 0.95 Gb/s (119 MB/s)  = 9% of the 10.28 Gb/s NIC ceiling
+  k1-node3       k=1  mean egress 0.95 Gb/s (118 MB/s)  = 9% of the 10.28 Gb/s NIC ceiling
+  k3-round1      k=3  mean egress 2.90 Gb/s (362 MB/s)  = 28% of the 10.28 Gb/s NIC ceiling
+  k3-round2      k=3  mean egress 2.95 Gb/s (369 MB/s)  = 29% of the 10.28 Gb/s NIC ceiling
