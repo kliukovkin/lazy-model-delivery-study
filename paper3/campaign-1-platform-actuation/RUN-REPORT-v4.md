@@ -1,5 +1,11 @@
 # v4 spike — FuseManager & upstream-fix verification — RUN REPORT
 
+> **Erratum (2026-11-16).** Three corrections to §14 (S4b) and the S4 notes below; the original text is left unchanged.
+>
+> 1. 91.1 GiB is the capacity of the cache partition, not the size of the cache. S4b starts with `hard_reset` (`scripts-as-run/lib.sh:169` wipes `stargz/httpcache`, `stargz/fscache` and all fillers) and then fills the partition with a `fallocate` filler (`s4b-filler.img`, 95% of capacity). The 741,376 B `imagefs_used`, the 100% df and "freed 0 bytes" were measured with the partition held by that filler. The measured cache growth is in S4: on top of a 75% filler, df went from 81% to 91% (about 14 GiB above the filler) while `imagefs_used` grew from 150,212,608 to 152,551,424 B (`results-run2/s4/S4-eviction-75pct/eviction-timeline.csv`).
+> 2. The 26 Evicted events in `results-run2/s4/S4b-eviction-direct/all-events.txt` are cluster events collected at the end of S4b and span S5, S4 and S4b. 23 are one local-path-provisioner crash-evict loop, 1 is curl-runner, and 2 are the eStargz pods s5-probe and s4-probe, whose lazy reads did write cache to the partition. "None of which put a byte on that partition" in §14 is wrong for those two.
+> 3. S4 did cross the threshold. kubelet evicted s4-probe with "available: 8885644Ki" against the 9,782,837,803 B `imagefs.available` threshold, and the `exit code 137` in `S4-eviction-75pct/full-read.txt` is that eviction. 12.6% was the last 5 s sample before it, not the final state, so "never reached the decisive point" (§14) is wrong.
+
 Private research artifact. Follow-up to the v3.1 capture run, driven by the red-team
 review of the article-#3 plan. Numbers here are private — do not post, quote, or
 reference externally.
